@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-05-25T07:49:40.558590+00:00",
+  "generated_at": "2026-05-25T08:45:33.988368+00:00",
   "project": "meme-onchain-explorer",
   "chain": "solana",
-  "round": 45,
-  "scan_count": 21,
-  "last_round_at": "2026-05-25T07:45:27.866703+00:00",
-  "next_round_in_seconds": 3347,
-  "updated_at": "2026-05-25T07:46:35.810761+00:00",
+  "round": 46,
+  "scan_count": 22,
+  "last_round_at": "2026-05-25T08:45:30.502162+00:00",
+  "next_round_in_seconds": 3597,
+  "updated_at": "2026-05-25T08:45:32.440909+00:00",
   "config": {
     "initial_cash_usd": 1000.0,
     "max_positions": 5,
@@ -18,23 +18,23 @@
     "strategy_version": "v3-whale-strict"
   },
   "summary": {
-    "cash_usd": 567.91757299,
-    "positions_value_usd": 201.0738073276213,
-    "equity_usd": 768.9913803176214,
+    "cash_usd": 490.61825099,
+    "positions_value_usd": 282.3749689564752,
+    "equity_usd": 772.9932199464752,
     "realized_pnl_usd": -225.83040345,
-    "open_positions": 2,
+    "open_positions": 3,
     "initial_cash_usd": 1000.0,
-    "total_pnl_usd": -231.0086,
-    "total_pnl_pct": -23.1009,
-    "unrealized_pnl_usd": -5.1782
+    "total_pnl_usd": -227.0068,
+    "total_pnl_pct": -22.7007,
+    "unrealized_pnl_usd": -1.1764
   },
   "reconciliation": {
     "initial_cash_usd": 1000.0,
-    "cash_usd": 567.91757299,
-    "positions_value_usd": 201.0738073276213,
-    "equity_usd": 768.9913803176214,
+    "cash_usd": 490.61825099,
+    "positions_value_usd": 282.3749689564752,
+    "equity_usd": 772.9932199464752,
     "realized_pnl_usd": -225.83040345,
-    "unrealized_pnl_usd": -5.1782
+    "unrealized_pnl_usd": -1.1764
   },
   "open_positions": [
     {
@@ -50,14 +50,14 @@
       "entry_price": 0.00045526247682841844,
       "signal_price": 0.0004778332261898731,
       "execution_price": 0.00045526247682841844,
-      "last_price": 0.0004286891443198148,
+      "last_price": 0.0004343494369226921,
       "take_profit_price": 0.000628262218,
       "stop_loss_price": 0.000386973105,
       "units": 293892.35720721,
       "cost_usd": 133.7982,
-      "market_value_usd": 125.9885,
-      "unrealized_pnl_usd": -7.8097,
-      "unrealized_pnl_pct": -5.8369,
+      "market_value_usd": 127.652,
+      "unrealized_pnl_usd": -6.1462,
+      "unrealized_pnl_pct": -4.5936,
       "max_pnl_pct": 0.0,
       "min_pnl_pct": -12.1908,
       "score": 53.28,
@@ -117,15 +117,15 @@
       "entry_price": 8.370202864124231e-05,
       "signal_price": 0.00027268073589098804,
       "execution_price": 8.370202864124231e-05,
-      "last_price": 8.674203882490145e-05,
+      "last_price": 8.944337685291833e-05,
       "take_profit_price": 0.0001155088,
       "stop_loss_price": 7.1146724e-05,
       "units": 865616.54777216,
       "cost_usd": 72.4539,
-      "market_value_usd": 75.0853,
-      "unrealized_pnl_usd": 2.6315,
-      "unrealized_pnl_pct": 3.6319,
-      "max_pnl_pct": 3.9116,
+      "market_value_usd": 77.4237,
+      "unrealized_pnl_usd": 4.9698,
+      "unrealized_pnl_pct": 6.8593,
+      "max_pnl_pct": 6.8593,
       "min_pnl_pct": 0.0,
       "score": 95.89,
       "wallet_type_label": "Whale",
@@ -173,6 +173,75 @@
         "signal_timestamp_ms": "1779209114588",
         "signal_cursor": "1779209114588!@#158240",
         "score": 95.89
+      }
+    },
+    {
+      "trade_id": "T000030",
+      "status": "OPEN",
+      "address": "6dNiiLN2n3MEJH3Zn7phKLH4nVvzhndf8DrLoGUfpump",
+      "symbol": "Ask ",
+      "name": "Ask Jeeves",
+      "opened_at": "2026-05-25T08:45:31.391985+00:00",
+      "closed_at": null,
+      "entry_round": 46,
+      "exit_round": null,
+      "entry_price": 2.6260688620128618e-05,
+      "signal_price": 0.00021725401894837236,
+      "execution_price": 2.6260688620128618e-05,
+      "last_price": 2.6260688620128618e-05,
+      "take_profit_price": 3.623975e-05,
+      "stop_loss_price": 2.2321585e-05,
+      "units": 2943537.51012777,
+      "cost_usd": 77.2993,
+      "market_value_usd": 77.2993,
+      "unrealized_pnl_usd": 0.0,
+      "unrealized_pnl_pct": 0.0,
+      "max_pnl_pct": 0.0,
+      "min_pnl_pct": 0.0,
+      "score": 81.88,
+      "wallet_type_label": "Whale",
+      "trigger_wallet_count": 4,
+      "trigger_wallets": [
+        "EjzFMH4MnJZny9C7KTR5gN5WzLHtVRFtsNd19t8cLLQM",
+        "3kB9srbUyxpCczvbXNWUKK1rR5PQKjFQWmnaVWZwCFWY",
+        "FXRvLRzLJckQDCZKXCAo6yoxTLg9y72T3YgXXbmVStDs",
+        "GjSqSf7u74o5ri1AP7nSm1dVdLAHQ5DHxBS9dU98oWXZ"
+      ],
+      "signal_amount_usd": 1770.7153,
+      "sold_ratio_pct": 55.73,
+      "holders": 480.0,
+      "market_cap_usd": 26259.2307,
+      "top10_holder_pct": 24.9696,
+      "cash_before_buy": 567.9176,
+      "cash_after_buy": 490.6183,
+      "equity_at_entry": 772.9932,
+      "exit_reason": null,
+      "realized_pnl_usd": null,
+      "realized_pnl_pct": null,
+      "held_rounds": null,
+      "signal_snapshot": {
+        "chain": "solana",
+        "token_address": "6dNiiLN2n3MEJH3Zn7phKLH4nVvzhndf8DrLoGUfpump",
+        "symbol": "Ask ",
+        "name": "Ask Jeeves",
+        "holders": 480.0,
+        "market_cap_usd": 26259.2307,
+        "top10_holder_pct": 24.9696,
+        "wallet_type": "3",
+        "wallet_type_label": "Whale",
+        "trigger_wallet_count": 4,
+        "trigger_wallets": [
+          "EjzFMH4MnJZny9C7KTR5gN5WzLHtVRFtsNd19t8cLLQM",
+          "3kB9srbUyxpCczvbXNWUKK1rR5PQKjFQWmnaVWZwCFWY",
+          "FXRvLRzLJckQDCZKXCAo6yoxTLg9y72T3YgXXbmVStDs",
+          "GjSqSf7u74o5ri1AP7nSm1dVdLAHQ5DHxBS9dU98oWXZ"
+        ],
+        "signal_amount_usd": 1770.7153,
+        "signal_price": 0.00021725401894837236,
+        "sold_ratio_pct": 55.73,
+        "signal_timestamp_ms": "1779473954415",
+        "signal_cursor": "1779473954415!@#159363",
+        "score": 81.88
       }
     }
   ],
@@ -933,10 +1002,10 @@
       "status": "持仓中",
       "buy_price": 0.00045526247682841844,
       "sell_price": null,
-      "current_price": 0.0004286891443198148,
+      "current_price": 0.0004343494369226921,
       "cost_usd": 133.7982,
-      "pnl_usd": -7.8097,
-      "pnl_pct": -5.8369,
+      "pnl_usd": -6.1462,
+      "pnl_pct": -4.5936,
       "opened_at": "2026-05-24T18:10:52.787904+00:00",
       "closed_at": null,
       "exit_reason": null
@@ -948,11 +1017,26 @@
       "status": "持仓中",
       "buy_price": 8.370202864124231e-05,
       "sell_price": null,
-      "current_price": 8.674203882490145e-05,
+      "current_price": 8.944337685291833e-05,
       "cost_usd": 72.4539,
-      "pnl_usd": 2.6315,
-      "pnl_pct": 3.6319,
+      "pnl_usd": 4.9698,
+      "pnl_pct": 6.8593,
       "opened_at": "2026-05-25T06:12:02.221162+00:00",
+      "closed_at": null,
+      "exit_reason": null
+    },
+    {
+      "trade_id": "T000030",
+      "symbol": "Ask ",
+      "name": "Ask Jeeves",
+      "status": "持仓中",
+      "buy_price": 2.6260688620128618e-05,
+      "sell_price": null,
+      "current_price": 2.6260688620128618e-05,
+      "cost_usd": 77.2993,
+      "pnl_usd": 0.0,
+      "pnl_pct": 0.0,
+      "opened_at": "2026-05-25T08:45:31.391985+00:00",
       "closed_at": null,
       "exit_reason": null
     },
@@ -1482,6 +1566,14 @@
       "cash_usd": 567.9176,
       "positions_value_usd": 201.0738,
       "open_positions": 2
+    },
+    {
+      "round": 46,
+      "ts": "2026-05-25T08:45:33.982978+00:00",
+      "equity_usd": 772.9932,
+      "cash_usd": 490.6183,
+      "positions_value_usd": 282.375,
+      "open_positions": 3
     }
   ],
   "round_activity": [
@@ -1572,29 +1664,17 @@
       "candidates": 0,
       "opened": 0,
       "positions": 2
+    },
+    {
+      "round": 46,
+      "ts": "2026-05-25T08:45:31.393284+00:00",
+      "signals": 23,
+      "candidates": 1,
+      "opened": 1,
+      "positions": 3
     }
   ],
   "recent_trades": [
-    {
-      "ts": "2026-05-24T16:03:56.364268+00:00",
-      "type": "BUY",
-      "round": 15,
-      "trade_id": null,
-      "symbol": "LCPT",
-      "name": "Lowest Cost Per Token",
-      "address": "HfQK7KmKJcwqKNixnAmmuVWdPQXEt7HASQherzd8pump",
-      "buy_price": 3.2001551062785255e-05,
-      "sell_price": null,
-      "entry_price": 3.2001551062785255e-05,
-      "last_price": 3.2001551062785255e-05,
-      "cost_usd": 173.09413225598558,
-      "pnl_usd": null,
-      "pnl_pct": null,
-      "realized_pnl_usd": null,
-      "realized_pnl_pct": null,
-      "unrealized_pnl_pct": null,
-      "exit_reason": null
-    },
     {
       "ts": "2026-05-24T17:03:53.685626+00:00",
       "type": "SELL",
@@ -2374,21 +2454,41 @@
       "realized_pnl_pct": 67.2491,
       "unrealized_pnl_pct": 67.2491,
       "exit_reason": "TAKE_PROFIT"
+    },
+    {
+      "ts": "2026-05-25T08:45:31.392145+00:00",
+      "type": "BUY",
+      "round": 46,
+      "trade_id": "T000030",
+      "symbol": "Ask ",
+      "name": "Ask Jeeves",
+      "address": "6dNiiLN2n3MEJH3Zn7phKLH4nVvzhndf8DrLoGUfpump",
+      "buy_price": 2.6260688620128618e-05,
+      "sell_price": null,
+      "entry_price": 2.6260688620128618e-05,
+      "last_price": 2.6260688620128618e-05,
+      "cost_usd": 77.2993,
+      "pnl_usd": null,
+      "pnl_pct": 0.0,
+      "realized_pnl_usd": null,
+      "realized_pnl_pct": null,
+      "unrealized_pnl_pct": 0.0,
+      "exit_reason": null
     }
   ],
   "risk": {
-    "cooldowns": 4,
+    "cooldowns": 2,
     "blacklist": 4,
     "stop_loss_counts": 17
   },
   "strategy_analysis": {
     "strategy_version": "v3-whale-strict",
-    "round": 45,
-    "equity_usd": 768.9914,
-    "total_return_pct": -23.1009,
+    "round": 46,
+    "equity_usd": 772.9932,
+    "total_return_pct": -22.7007,
     "realized_pnl_usd": -225.83040345,
     "closed_trades": 11,
-    "open_trades": 2,
+    "open_trades": 3,
     "overall_closed": {
       "count": 11,
       "win_rate": 0.2727,
@@ -2397,9 +2497,9 @@
     },
     "by_wallet_type": {
       "Whale": {
-        "count": 8,
-        "win_rate": 0.375,
-        "avg_pnl_pct": 11.5135,
+        "count": 9,
+        "win_rate": 0.3333,
+        "avg_pnl_pct": 10.2342,
         "total_pnl_usd": 100.961
       },
       "SmartMoney": {
@@ -2417,9 +2517,9 @@
         "total_pnl_usd": 136.964
       },
       "mid_sold_51_75": {
-        "count": 5,
+        "count": 6,
         "win_rate": 0.0,
-        "avg_pnl_pct": -15.4183,
+        "avg_pnl_pct": -12.8486,
         "total_pnl_usd": -108.1719
       },
       "high_sold>75": {
@@ -2431,9 +2531,9 @@
     },
     "by_score_bucket": {
       "80+": {
-        "count": 6,
-        "win_rate": 0.3333,
-        "avg_pnl_pct": 5.094,
+        "count": 7,
+        "win_rate": 0.2857,
+        "avg_pnl_pct": 4.3663,
         "total_pnl_usd": 16.1427
       },
       "60-69": {
@@ -2461,17 +2561,6 @@
       "raise_min_signal_score: scores below 70 show negative expectancy"
     ],
     "recent_trades": [
-      {
-        "symbol": "PP420",
-        "status": "closed",
-        "exit_reason": "TAKE_PROFIT",
-        "score": 72.1,
-        "wallet_type": "Whale",
-        "sold_ratio_pct": 39.99,
-        "trigger_wallet_count": 3,
-        "pnl_usd": 101.9982,
-        "pnl_pct": 77.5563
-      },
       {
         "symbol": "HypurrClaw",
         "status": "closed",
@@ -2568,6 +2657,17 @@
         "wallet_type": "Whale",
         "sold_ratio_pct": 63.38,
         "trigger_wallet_count": 5,
+        "pnl_usd": null,
+        "pnl_pct": null
+      },
+      {
+        "symbol": "Ask ",
+        "status": "open",
+        "exit_reason": null,
+        "score": 81.88,
+        "wallet_type": "Whale",
+        "sold_ratio_pct": 55.73,
+        "trigger_wallet_count": 4,
         "pnl_usd": null,
         "pnl_pct": null
       }
