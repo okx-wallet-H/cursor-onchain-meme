@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-05-25T22:06:34.709396+00:00",
+  "generated_at": "2026-05-25T22:36:39.478282+00:00",
   "project": "meme-onchain-explorer",
   "chain": "solana",
-  "round": 23,
-  "scan_count": 23,
-  "last_round_at": "2026-05-25T22:06:32.821375+00:00",
-  "next_round_in_seconds": 1798,
-  "updated_at": "2026-05-25T22:06:33.805415+00:00",
+  "round": 24,
+  "scan_count": 24,
+  "last_round_at": "2026-05-25T22:36:38.528154+00:00",
+  "next_round_in_seconds": 1799,
+  "updated_at": "2026-05-25T22:36:39.171587+00:00",
   "config": {
     "initial_cash_usd": 1000.0,
     "max_positions": 3,
@@ -18,23 +18,23 @@
     "strategy_version": "v4.1-whale-tuned"
   },
   "summary": {
-    "cash_usd": 828.56227945,
-    "positions_value_usd": 167.58837642268065,
-    "equity_usd": 996.1506558726807,
-    "realized_pnl_usd": -11.78143335,
-    "open_positions": 2,
+    "cash_usd": 898.15714245,
+    "positions_value_usd": 78.15848988257686,
+    "equity_usd": 976.3156323325769,
+    "realized_pnl_usd": -21.84285755,
+    "open_positions": 1,
     "initial_cash_usd": 1000.0,
-    "total_pnl_usd": -3.8493,
-    "total_pnl_pct": -0.3849,
-    "unrealized_pnl_usd": 7.9321
+    "total_pnl_usd": -23.6844,
+    "total_pnl_pct": -2.3684,
+    "unrealized_pnl_usd": -1.8415
   },
   "reconciliation": {
     "initial_cash_usd": 1000.0,
-    "cash_usd": 828.56227945,
-    "positions_value_usd": 167.58837642268065,
-    "equity_usd": 996.1506558726807,
-    "realized_pnl_usd": -11.78143335,
-    "unrealized_pnl_usd": 7.9321
+    "cash_usd": 898.15714245,
+    "positions_value_usd": 78.15848988257686,
+    "equity_usd": 976.3156323325769,
+    "realized_pnl_usd": -21.84285755,
+    "unrealized_pnl_usd": -1.8415
   },
   "open_positions": [
     {
@@ -50,16 +50,16 @@
       "entry_price": 0.0003516335462391845,
       "signal_price": 0.00047271186011608356,
       "execution_price": 0.0003516335462391845,
-      "last_price": 0.0003503824770950183,
+      "last_price": 0.00034353933707637405,
       "take_profit_price": 0.000474705287,
       "stop_loss_price": 0.000309437521,
       "units": 227509.57880902,
       "cost_usd": 80.0,
-      "market_value_usd": 79.7154,
-      "unrealized_pnl_usd": -0.2846,
-      "unrealized_pnl_pct": -0.3558,
+      "market_value_usd": 78.1585,
+      "unrealized_pnl_usd": -1.8415,
+      "unrealized_pnl_pct": -2.3019,
       "max_pnl_pct": 13.1551,
-      "min_pnl_pct": -1.2557,
+      "min_pnl_pct": -2.3019,
       "score": 88.28,
       "wallet_type_label": "Whale",
       "trigger_wallet_count": 4,
@@ -104,79 +104,6 @@
         "signal_timestamp_ms": "1779318958937",
         "signal_cursor": "1779318958937!@#158677",
         "score": 88.28
-      }
-    },
-    {
-      "trade_id": "T000003",
-      "status": "OPEN",
-      "address": "3y3X6Bk6zpZpaFJ1KYJ7b33HbFM7ip5TqQPYLWJhpump",
-      "symbol": "GAPLA",
-      "name": "Federated States of Gapla",
-      "opened_at": "2026-05-25T16:05:26.778749+00:00",
-      "closed_at": null,
-      "entry_round": 11,
-      "exit_round": null,
-      "entry_price": 0.00040326280529689616,
-      "signal_price": 0.00021841653446730673,
-      "execution_price": 0.00040326280529689616,
-      "last_price": 0.0004448602415860094,
-      "take_profit_price": 0.000544404787,
-      "stop_loss_price": 0.000354871269,
-      "units": 197529.46750972,
-      "cost_usd": 79.6563,
-      "market_value_usd": 87.873,
-      "unrealized_pnl_usd": 8.2167,
-      "unrealized_pnl_pct": 10.3152,
-      "max_pnl_pct": 25.4045,
-      "min_pnl_pct": -5.9212,
-      "score": 112.02,
-      "wallet_type_label": "Whale",
-      "trigger_wallet_count": 6,
-      "trigger_wallets": [
-        "8p4FzY2KRwoWzaWCuYuBXgSPDNnjr9gian2hpNwwCTFs",
-        "HpDRSJwFKZC2xdfQ554XYd74HaBniP3txtWk5iWdn3AJ",
-        "Bpz8E65CiunaqtXo5eWLA71UFt8btGDmNEFDfeifHZTa",
-        "9VL5LaHxAj9irfBDDhikzFRB4qZLu8Xfce3w19rNnNYZ",
-        "4jSFFerakA4PBUfkWhhGfbYwuwWLgPuJA4bmtbeHcCGM",
-        "DNfuF1L62WWyW3pNakVkyGGFzVVhj4Yr52jSmdTyeBHm"
-      ],
-      "signal_amount_usd": 3816.5121,
-      "sold_ratio_pct": 44.88,
-      "holders": 1768.0,
-      "market_cap_usd": 402770.417,
-      "top10_holder_pct": 19.8638,
-      "cash_before_buy": 908.2186,
-      "cash_after_buy": 828.5623,
-      "equity_at_entry": 995.7036,
-      "exit_reason": null,
-      "realized_pnl_usd": null,
-      "realized_pnl_pct": null,
-      "held_rounds": null,
-      "signal_snapshot": {
-        "chain": "solana",
-        "token_address": "3y3X6Bk6zpZpaFJ1KYJ7b33HbFM7ip5TqQPYLWJhpump",
-        "symbol": "GAPLA",
-        "name": "Federated States of Gapla",
-        "holders": 1768.0,
-        "market_cap_usd": 402770.417,
-        "top10_holder_pct": 19.8638,
-        "wallet_type": "3",
-        "wallet_type_label": "Whale",
-        "trigger_wallet_count": 6,
-        "trigger_wallets": [
-          "8p4FzY2KRwoWzaWCuYuBXgSPDNnjr9gian2hpNwwCTFs",
-          "HpDRSJwFKZC2xdfQ554XYd74HaBniP3txtWk5iWdn3AJ",
-          "Bpz8E65CiunaqtXo5eWLA71UFt8btGDmNEFDfeifHZTa",
-          "9VL5LaHxAj9irfBDDhikzFRB4qZLu8Xfce3w19rNnNYZ",
-          "4jSFFerakA4PBUfkWhhGfbYwuwWLgPuJA4bmtbeHcCGM",
-          "DNfuF1L62WWyW3pNakVkyGGFzVVhj4Yr52jSmdTyeBHm"
-        ],
-        "signal_amount_usd": 3816.5121,
-        "signal_price": 0.00021841653446730673,
-        "sold_ratio_pct": 44.88,
-        "signal_timestamp_ms": "1779689578260",
-        "signal_cursor": "1779689578260!@#160060",
-        "score": 112.02
       }
     }
   ],
@@ -253,6 +180,79 @@
         "signal_cursor": "1779689578260!@#160060",
         "score": 111.6
       }
+    },
+    {
+      "trade_id": "T000003",
+      "status": "CLOSED",
+      "address": "3y3X6Bk6zpZpaFJ1KYJ7b33HbFM7ip5TqQPYLWJhpump",
+      "symbol": "GAPLA",
+      "name": "Federated States of Gapla",
+      "opened_at": "2026-05-25T16:05:26.778749+00:00",
+      "closed_at": "2026-05-25T22:36:38.526660+00:00",
+      "entry_round": 11,
+      "exit_round": 23,
+      "entry_price": 0.00040326280529689616,
+      "signal_price": 0.00021841653446730673,
+      "execution_price": 0.00040326280529689616,
+      "last_price": 0.00035232648515107787,
+      "take_profit_price": 0.000544404787,
+      "stop_loss_price": 0.000354871269,
+      "units": 197529.46750972,
+      "cost_usd": 79.6563,
+      "market_value_usd": 69.5949,
+      "unrealized_pnl_usd": 0.0,
+      "unrealized_pnl_pct": -12.631,
+      "max_pnl_pct": 25.4045,
+      "min_pnl_pct": -12.631,
+      "score": 112.02,
+      "wallet_type_label": "Whale",
+      "trigger_wallet_count": 6,
+      "trigger_wallets": [
+        "8p4FzY2KRwoWzaWCuYuBXgSPDNnjr9gian2hpNwwCTFs",
+        "HpDRSJwFKZC2xdfQ554XYd74HaBniP3txtWk5iWdn3AJ",
+        "Bpz8E65CiunaqtXo5eWLA71UFt8btGDmNEFDfeifHZTa",
+        "9VL5LaHxAj9irfBDDhikzFRB4qZLu8Xfce3w19rNnNYZ",
+        "4jSFFerakA4PBUfkWhhGfbYwuwWLgPuJA4bmtbeHcCGM",
+        "DNfuF1L62WWyW3pNakVkyGGFzVVhj4Yr52jSmdTyeBHm"
+      ],
+      "signal_amount_usd": 3816.5121,
+      "sold_ratio_pct": 44.88,
+      "holders": 1768.0,
+      "market_cap_usd": 402770.417,
+      "top10_holder_pct": 19.8638,
+      "cash_before_buy": 908.2186,
+      "cash_after_buy": 828.5623,
+      "equity_at_entry": 995.7036,
+      "exit_reason": "STOP_LOSS",
+      "realized_pnl_usd": -10.0614,
+      "realized_pnl_pct": -12.631,
+      "held_rounds": 12,
+      "signal_snapshot": {
+        "chain": "solana",
+        "token_address": "3y3X6Bk6zpZpaFJ1KYJ7b33HbFM7ip5TqQPYLWJhpump",
+        "symbol": "GAPLA",
+        "name": "Federated States of Gapla",
+        "holders": 1768.0,
+        "market_cap_usd": 402770.417,
+        "top10_holder_pct": 19.8638,
+        "wallet_type": "3",
+        "wallet_type_label": "Whale",
+        "trigger_wallet_count": 6,
+        "trigger_wallets": [
+          "8p4FzY2KRwoWzaWCuYuBXgSPDNnjr9gian2hpNwwCTFs",
+          "HpDRSJwFKZC2xdfQ554XYd74HaBniP3txtWk5iWdn3AJ",
+          "Bpz8E65CiunaqtXo5eWLA71UFt8btGDmNEFDfeifHZTa",
+          "9VL5LaHxAj9irfBDDhikzFRB4qZLu8Xfce3w19rNnNYZ",
+          "4jSFFerakA4PBUfkWhhGfbYwuwWLgPuJA4bmtbeHcCGM",
+          "DNfuF1L62WWyW3pNakVkyGGFzVVhj4Yr52jSmdTyeBHm"
+        ],
+        "signal_amount_usd": 3816.5121,
+        "signal_price": 0.00021841653446730673,
+        "sold_ratio_pct": 44.88,
+        "signal_timestamp_ms": "1779689578260",
+        "signal_cursor": "1779689578260!@#160060",
+        "score": 112.02
+      }
     }
   ],
   "position_ledger": [
@@ -263,26 +263,11 @@
       "status": "持仓中",
       "buy_price": 0.0003516335462391845,
       "sell_price": null,
-      "current_price": 0.0003503824770950183,
+      "current_price": 0.00034353933707637405,
       "cost_usd": 80.0,
-      "pnl_usd": -0.2846,
-      "pnl_pct": -0.3558,
+      "pnl_usd": -1.8415,
+      "pnl_pct": -2.3019,
       "opened_at": "2026-05-25T13:39:03.219678+00:00",
-      "closed_at": null,
-      "exit_reason": null
-    },
-    {
-      "trade_id": "T000003",
-      "symbol": "GAPLA",
-      "name": "Federated States of Gapla",
-      "status": "持仓中",
-      "buy_price": 0.00040326280529689616,
-      "sell_price": null,
-      "current_price": 0.0004448602415860094,
-      "cost_usd": 79.6563,
-      "pnl_usd": 8.2167,
-      "pnl_pct": 10.3152,
-      "opened_at": "2026-05-25T16:05:26.778749+00:00",
       "closed_at": null,
       "exit_reason": null
     },
@@ -299,6 +284,21 @@
       "pnl_pct": -14.7268,
       "opened_at": "2026-05-25T13:39:02.694189+00:00",
       "closed_at": "2026-05-25T14:35:11.710713+00:00",
+      "exit_reason": "STOP_LOSS"
+    },
+    {
+      "trade_id": "T000003",
+      "symbol": "GAPLA",
+      "name": "Federated States of Gapla",
+      "status": "已平仓",
+      "buy_price": 0.00040326280529689616,
+      "sell_price": 0.00035232648515107787,
+      "current_price": null,
+      "cost_usd": 79.6563,
+      "pnl_usd": -10.0614,
+      "pnl_pct": -12.631,
+      "opened_at": "2026-05-25T16:05:26.778749+00:00",
+      "closed_at": "2026-05-25T22:36:38.526660+00:00",
       "exit_reason": "STOP_LOSS"
     }
   ],
@@ -497,11 +497,11 @@
     },
     {
       "round": 24,
-      "ts": "2026-05-24T20:11:07.720050+00:00",
-      "equity_usd": 1044.951,
-      "cash_usd": 387.8905,
-      "positions_value_usd": 657.0605,
-      "open_positions": 5
+      "ts": "2026-05-25T22:36:39.475759+00:00",
+      "equity_usd": 976.3156,
+      "cash_usd": 898.1571,
+      "positions_value_usd": 78.1585,
+      "open_positions": 1
     },
     {
       "round": 25,
@@ -690,14 +690,6 @@
   ],
   "round_activity": [
     {
-      "round": 2,
-      "ts": "2026-05-25T11:34:45.607825+00:00",
-      "signals": 23,
-      "candidates": 0,
-      "opened": 0,
-      "positions": 0
-    },
-    {
       "round": 3,
       "ts": "2026-05-25T12:04:53.587456+00:00",
       "signals": 23,
@@ -864,6 +856,14 @@
       "candidates": 0,
       "opened": 0,
       "positions": 2
+    },
+    {
+      "round": 24,
+      "ts": "2026-05-25T22:36:38.853770+00:00",
+      "signals": 21,
+      "candidates": 0,
+      "opened": 0,
+      "positions": 1
     }
   ],
   "recent_trades": [
@@ -946,41 +946,61 @@
       "realized_pnl_pct": null,
       "unrealized_pnl_pct": 0.0,
       "exit_reason": null
+    },
+    {
+      "ts": "2026-05-25T22:36:38.526772+00:00",
+      "type": "SELL",
+      "round": 23,
+      "trade_id": "T000003",
+      "symbol": "GAPLA",
+      "name": "Federated States of Gapla",
+      "address": "3y3X6Bk6zpZpaFJ1KYJ7b33HbFM7ip5TqQPYLWJhpump",
+      "buy_price": 0.00040326280529689616,
+      "sell_price": 0.00035232648515107787,
+      "entry_price": 0.00040326280529689616,
+      "last_price": 0.00035232648515107787,
+      "cost_usd": 79.6563,
+      "pnl_usd": -10.0614,
+      "pnl_pct": -12.631,
+      "realized_pnl_usd": -10.0614,
+      "realized_pnl_pct": -12.631,
+      "unrealized_pnl_pct": -12.631,
+      "exit_reason": "STOP_LOSS"
     }
   ],
   "risk": {
-    "cooldowns": 0,
-    "blacklist": 0,
+    "cooldowns": 1,
+    "blacklist": 1,
     "stop_loss_counts": 1
   },
   "strategy_analysis": {
     "strategy_version": "v4.1-whale-tuned",
-    "round": 23,
-    "equity_usd": 996.1507,
-    "total_return_pct": -0.3849,
-    "realized_pnl_usd": -11.78143335,
-    "closed_trades": 1,
-    "open_trades": 2,
+    "round": 24,
+    "equity_usd": 976.3156,
+    "total_return_pct": -2.3684,
+    "realized_pnl_usd": -21.84285755,
+    "closed_trades": 2,
+    "open_trades": 1,
     "overall_closed": {
-      "count": 1,
+      "count": 2,
       "win_rate": 0.0,
-      "avg_pnl_pct": -14.7268,
-      "total_pnl_usd": -11.7814
+      "avg_pnl_pct": -13.6789,
+      "total_pnl_usd": -21.8428
     },
     "by_wallet_type": {
       "Whale": {
         "count": 3,
         "win_rate": 0.0,
-        "avg_pnl_pct": -4.9089,
-        "total_pnl_usd": -11.7814
+        "avg_pnl_pct": -9.1193,
+        "total_pnl_usd": -21.8428
       }
     },
     "by_sold_ratio": {
       "low_sold<=50": {
         "count": 3,
         "win_rate": 0.0,
-        "avg_pnl_pct": -4.9089,
-        "total_pnl_usd": -11.7814
+        "avg_pnl_pct": -9.1193,
+        "total_pnl_usd": -21.8428
       },
       "mid_sold_51_75": {
         "count": 0,
@@ -999,8 +1019,8 @@
       "80+": {
         "count": 3,
         "win_rate": 0.0,
-        "avg_pnl_pct": -4.9089,
-        "total_pnl_usd": -11.7814
+        "avg_pnl_pct": -9.1193,
+        "total_pnl_usd": -21.8428
       },
       "<60": {
         "count": 0,
@@ -1029,6 +1049,17 @@
         "pnl_pct": -14.7268
       },
       {
+        "symbol": "GAPLA",
+        "status": "closed",
+        "exit_reason": "STOP_LOSS",
+        "score": 112.02,
+        "wallet_type": "Whale",
+        "sold_ratio_pct": 44.88,
+        "trigger_wallet_count": 6,
+        "pnl_usd": -10.0614,
+        "pnl_pct": -12.631
+      },
+      {
         "symbol": "SPCX",
         "status": "open",
         "exit_reason": null,
@@ -1036,17 +1067,6 @@
         "wallet_type": "Whale",
         "sold_ratio_pct": 40.29,
         "trigger_wallet_count": 4,
-        "pnl_usd": null,
-        "pnl_pct": null
-      },
-      {
-        "symbol": "GAPLA",
-        "status": "open",
-        "exit_reason": null,
-        "score": 112.02,
-        "wallet_type": "Whale",
-        "sold_ratio_pct": 44.88,
-        "trigger_wallet_count": 6,
         "pnl_usd": null,
         "pnl_pct": null
       }
@@ -1060,10 +1080,10 @@
     "scan_interval_seconds": 1800,
     "scan_interval_label": "30 分钟",
     "session_started_at": "2026-05-25T10:34:29.261062+00:00",
-    "last_tick_at": "2026-05-25T22:06:33.254966+00:00",
+    "last_tick_at": "2026-05-25T22:36:38.854000+00:00",
     "seconds_since_last_tick": 1,
-    "session_uptime_seconds": 41525,
-    "cumulative_online_seconds": 41514,
-    "tick_count": 27
+    "session_uptime_seconds": 43330,
+    "cumulative_online_seconds": 43320,
+    "tick_count": 28
   }
 }
