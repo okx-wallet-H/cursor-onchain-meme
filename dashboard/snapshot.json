@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-05-25T11:34:45.688558+00:00",
+  "generated_at": "2026-05-25T12:04:53.690648+00:00",
   "project": "meme-onchain-explorer",
   "chain": "solana",
-  "round": 2,
-  "scan_count": 2,
-  "last_round_at": "2026-05-25T11:34:44.921893+00:00",
+  "round": 3,
+  "scan_count": 3,
+  "last_round_at": "2026-05-25T12:04:52.954792+00:00",
   "next_round_in_seconds": 1799,
-  "updated_at": "2026-05-25T11:34:45.631399+00:00",
+  "updated_at": "2026-05-25T12:04:53.615358+00:00",
   "config": {
     "initial_cash_usd": 1000.0,
     "max_positions": 3,
@@ -66,11 +66,11 @@
     },
     {
       "round": 3,
-      "ts": "2026-05-24T09:20:11.568868+00:00",
-      "equity_usd": 1065.5391,
-      "cash_usd": 400.0,
-      "positions_value_usd": 665.5391,
-      "open_positions": 5
+      "ts": "2026-05-25T12:04:53.690135+00:00",
+      "equity_usd": 1000.0,
+      "cash_usd": 1000.0,
+      "positions_value_usd": 0.0,
+      "open_positions": 0
     },
     {
       "round": 4,
@@ -441,6 +441,14 @@
       "candidates": 0,
       "opened": 0,
       "positions": 0
+    },
+    {
+      "round": 3,
+      "ts": "2026-05-25T12:04:53.587456+00:00",
+      "signals": 23,
+      "candidates": 0,
+      "opened": 0,
+      "positions": 0
     }
   ],
   "recent_trades": [],
@@ -451,7 +459,7 @@
   },
   "strategy_analysis": {
     "strategy_version": "v4-whale-low-sold",
-    "round": 2,
+    "round": 3,
     "equity_usd": 1000.0,
     "total_return_pct": 0.0,
     "realized_pnl_usd": 0.0,
@@ -509,10 +517,10 @@
     "scan_interval_seconds": 1800,
     "scan_interval_label": "30 分钟",
     "session_started_at": "2026-05-25T10:34:29.261062+00:00",
-    "last_tick_at": "2026-05-25T11:34:45.607915+00:00",
+    "last_tick_at": "2026-05-25T12:04:53.587564+00:00",
     "seconds_since_last_tick": 0,
-    "session_uptime_seconds": 3616,
-    "cumulative_online_seconds": 3606,
-    "tick_count": 5
+    "session_uptime_seconds": 5424,
+    "cumulative_online_seconds": 5414,
+    "tick_count": 6
   }
 }
