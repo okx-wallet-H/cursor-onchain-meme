@@ -11,8 +11,11 @@ git clone https://github.com/okx-wallet-H/cursor-onchain-meme.git
 cd cursor-onchain-meme
 cp config/config.example.json config/config.json   # 首次本地配置
 ./scripts/install_scheduler.sh
-./scripts/install_dashboard_service.sh
+chmod +x scripts/publish_dashboard.sh
+# 稳定面板: https://okx-wallet-H.github.io/cursor-onchain-meme/
 ```
+
+首次若面板空白，执行 `./scripts/publish_dashboard.sh`；Pages 约 1–2 分钟生效。
 
 ## 首次推送（维护者）
 
@@ -35,10 +38,15 @@ onchainos signal list --chain solana --limit 3
 
 ## 本机服务（可选）
 
-克隆到新路径后**必须重装** launchd，路径会写入当前目录：
+克隆到新路径后**必须重装** 定时 tick（路径写入 launchd）：
 
 ```bash
 ./scripts/install_scheduler.sh
+```
+
+数据面板默认走 **GitHub Pages**（`publish_dashboard.sh` 随 tick 推送）。仅在本机调试时再装：
+
+```bash
 ./scripts/install_dashboard_service.sh
 ```
 

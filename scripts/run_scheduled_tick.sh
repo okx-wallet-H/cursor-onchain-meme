@@ -14,6 +14,9 @@ SCHEDULER_LOG="$ROOT/logs/scheduler.log"
 {
   echo "=== meme sim tick ${STAMP} UTC ==="
   python3 scripts/meme_sim_trader.py tick
+  if [[ -x "$ROOT/scripts/publish_dashboard.sh" ]]; then
+    "$ROOT/scripts/publish_dashboard.sh" || echo "WARN: dashboard publish failed (offline?)"
+  fi
   echo "=== done ==="
 } >>"$LOG" 2>&1
 

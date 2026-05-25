@@ -129,6 +129,7 @@
       <div class="sub" id="meta">Paper trading · Solana · 加载中…</div>
     </div>
     <div class="actions">
+      <a id="stableLink" href="https://okx-wallet-H.github.io/cursor-onchain-meme/" target="_blank" rel="noopener" style="color:var(--blue);font-size:0.85rem;text-decoration:none;margin-right:8px">稳定面板 ↗</a>
       <button type="button" id="refreshBtn">刷新</button>
       <label><input type="checkbox" id="autoRefresh" checked /> 自动刷新 (30s)</label>
     </div>
@@ -166,11 +167,17 @@
         </section>
       </div>
     </div>
-    <footer>数据来自 <code>dashboard/snapshot.json</code> 或 <code>data.js</code> · 每小时 tick 自动更新 · <span id="dataMode">—</span></footer>
+    <footer>数据源：<span id="dataSource">—</span> · 每小时 tick 推送到仓库 · <span id="dataMode">—</span></footer>
   </main>
 
   <script src="data.js"></script>
   <script>
+    const GITHUB_REPO = "okx-wallet-H/cursor-onchain-meme";
+    const GITHUB_BRANCH = "main";
+    const GITHUB_PAGES_URL = "https://okx-wallet-H.github.io/cursor-onchain-meme/";
+    const GITHUB_RAW_SNAPSHOT =
+      `https://raw.githubusercontent.com/${GITHUB_REPO}/${GITHUB_BRANCH}/dashboard/snapshot.json`;
+
     const $ = (sel) => document.querySelector(sel);
 
     function fmtUsd(n, digits = 2) {
@@ -343,18 +350,23 @@
       el.innerHTML = msg;
     }
 
-    function setDataMode(mode) {
+    function setDataMode(mode, sourceLabel) {
       const el = $("#dataMode");
-      if (mode === "live") {
-        el.textContent = "在线刷新";
+      const src = $("#dataSource");
+      if (sourceLabel) src.textContent = sourceLabel;
+      if (mode === "repo") {
+        el.textContent = "仓库同步（推荐）";
+        el.className = "status-online";
+      } else if (mode === "live") {
+        el.textContent = "本机服务";
         el.className = "status-online";
       } else {
-        el.textContent = "离线快照（刷新页面更新）";
+        el.textContent = "离线快照";
         el.className = "status-offline";
       }
     }
 
-    function renderAll(data, mode) {
+    function renderAll(data, mode, sourceLabel) {
       $("#loadError").hidden = true;
       const chain = (data.chain || "solana").toUpperCase();
       const nextMin = Math.ceil((data.next_round_in_seconds || 0) / 60);
@@ -366,30 +378,55 @@
       renderRounds(data);
       renderTrades(data);
       renderConfig(data);
-      setDataMode(mode);
+      setDataMode(mode, sourceLabel);
+    }
+
+    function snapshotSources() {
+      const bust = "?t=" + Date.now();
+      const onPages = location.hostname.endsWith("github.io");
+      const list = [];
+      if (onPages) {
+        list.push({ url: "snapshot.json" + bust, mode: "repo", label: "GitHub Pages（同页）" });
+      }
+      list.push({
+        url: GITHUB_RAW_SNAPSHOT + bust,
+        mode: "repo",
+        label: "GitHub 仓库 raw",
+      });
+      if (!onPages) {
+        list.push({ url: "snapshot.json" + bust, mode: "live", label: "本机 snapshot.json" });
+      }
+      return list;
+    }
+
+    async function fetchSnapshotEntry(entry) {
+      const res = await fetch(entry.url, { cache: "no-store" });
+      if (!res.ok) throw new Error(entry.label + " HTTP " + res.status);
+      return { data: await res.json(), mode: entry.mode, label: entry.label };
     }
 
     async function loadSnapshot() {
-      const url = "snapshot.json?t=" + Date.now();
-      try {
-        const res = await fetch(url);
-        if (!res.ok) throw new Error("HTTP " + res.status);
-        renderAll(await res.json(), "live");
-        return;
-      } catch (err) {
-        if (window.__SNAPSHOT__) {
-          renderAll(window.__SNAPSHOT__, "offline");
+      const errors = [];
+      for (const entry of snapshotSources()) {
+        try {
+          const { data, mode, label } = await fetchSnapshotEntry(entry);
+          renderAll(data, mode, label);
           return;
+        } catch (err) {
+          errors.push(err.message || String(err));
         }
-        showLoadError(
-          "无法加载数据。请执行：<br>" +
-          "<code>python3 scripts/meme_sim_trader.py dashboard</code><br>" +
-          "然后任选其一：<br>" +
-          "1) 安装常驻服务 <code>./scripts/install_dashboard_service.sh</code><br>" +
-          "2) 直接打开 <code>dashboard/index.html</code>（读取同目录 <code>data.js</code>）<br>" +
-          "<small>原因: " + err.message + "</small>"
-        );
       }
+      if (window.__SNAPSHOT__) {
+        renderAll(window.__SNAPSHOT__, "offline", "同目录 data.js");
+        return;
+      }
+      showLoadError(
+        "无法加载面板数据。推荐打开稳定地址：<br>" +
+        `<a href="${GITHUB_PAGES_URL}" target="_blank" rel="noopener">${GITHUB_PAGES_URL}</a><br><br>` +
+        "本机修复：<code>python3 scripts/meme_sim_trader.py dashboard</code><br>" +
+        "<code>./scripts/publish_dashboard.sh</code>（推送到仓库后 Pages 自动更新）<br>" +
+        "<small>" + errors.join(" · ") + "</small>"
+      );
     }
 
     $("#refreshBtn").addEventListener("click", loadSnapshot);

@@ -2,8 +2,7 @@
 data/state.json
 data/*.jsonl
 data/positions.csv
-dashboard/snapshot.json
-dashboard/data.js
+# dashboard/snapshot.json + data.js are committed for GitHub Pages (see scripts/publish_dashboard.sh)
 logs/
 reports/report_round_*.json
 reports/strategy_analysis.json

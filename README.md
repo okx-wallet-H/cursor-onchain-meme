@@ -27,24 +27,28 @@ python3 scripts/meme_sim_trader.py dashboard   # 生成 dashboard/snapshot.json
 
 ## 数据面板 (HTML)
 
-**推荐：安装常驻服务（登录自启、崩溃自动重启）**
+**推荐（稳定）**：用 GitHub 仓库同步，浏览器打开固定地址，不依赖本机 8765 服务。
+
+| 用途 | 地址 |
+|------|------|
+| **稳定面板（推荐）** | https://okx-wallet-H.github.io/cursor-onchain-meme/ |
+| 仓库内 JSON | https://raw.githubusercontent.com/okx-wallet-H/cursor-onchain-meme/main/dashboard/snapshot.json |
+
+每小时 `tick` 结束后会自动执行 `scripts/publish_dashboard.sh`，把 `dashboard/snapshot.json` 推到 `main`，GitHub Actions 再部署 Pages。
+
+手动刷新并推送：
 
 ```bash
-chmod +x scripts/install_dashboard_service.sh
-./scripts/install_dashboard_service.sh
-# 浏览器: http://127.0.0.1:8765/dashboard/
+chmod +x scripts/publish_dashboard.sh
+./scripts/publish_dashboard.sh
 ```
 
-**离线也能看**：每次 `tick` / `dashboard` 会生成 `dashboard/data.js`，可直接双击打开 `dashboard/index.html`（无需 HTTP 服务，刷新页面即可更新）。
+**本机备用**（可选）：`./scripts/install_dashboard_service.sh` → http://127.0.0.1:8765/dashboard/
 
-临时启动（不常驻）：
+**离线**：双击 `dashboard/index.html`（读同目录 `data.js`）。
 
-```bash
-./scripts/serve_dashboard.sh
-```
-
-- `dashboard/index.html`：面板页面
-- `dashboard/snapshot.json` + `dashboard/data.js`：在线/离线双数据源
+- `dashboard/index.html`：面板页面（优先从 GitHub raw / Pages 拉数据）
+- `dashboard/snapshot.json` + `dashboard/data.js`：提交到仓库，供 Pages 与离线使用
 
 核对仓位优先看 `data/positions.csv`，字段包括：trade_id、开平仓价、信号价、止盈止损价、仓位金额、浮盈浮亏、聪明钱地址数、触发钱包列表等。
 
