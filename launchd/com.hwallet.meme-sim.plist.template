@@ -12,7 +12,7 @@
   <key>WorkingDirectory</key>
   <string>__REPO_ROOT__</string>
   <key>StartInterval</key>
-  <integer>3600</integer>
+  <integer>__SCAN_INTERVAL__</integer>
   <key>RunAtLoad</key>
   <true/>
   <key>StandardOutPath</key>

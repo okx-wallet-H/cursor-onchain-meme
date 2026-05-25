@@ -10,7 +10,8 @@ DOMAIN="gui/${UID_NUM}"
 
 chmod +x "$ROOT/scripts/run_scheduled_tick.sh"
 mkdir -p "$ROOT/logs"
-sed "s|__REPO_ROOT__|${ROOT}|g" "$TEMPLATE" > "$PLIST_DST"
+INTERVAL="$(python3 -c "import json; print(int(json.load(open('${ROOT}/config/config.json')).get('scan_interval_seconds', 1800)))")"
+sed -e "s|__REPO_ROOT__|${ROOT}|g" -e "s|__SCAN_INTERVAL__|${INTERVAL}|g" "$TEMPLATE" > "$PLIST_DST"
 
 launchctl bootout "$DOMAIN" "$PLIST_DST" 2>/dev/null || true
 launchctl bootstrap "$DOMAIN" "$PLIST_DST"
@@ -19,5 +20,5 @@ launchctl kickstart -k "${DOMAIN}/${LABEL}"
 
 echo "Installed and started: ${LABEL}"
 echo "Repo root: ${ROOT}"
-echo "Interval: every 3600 seconds (1 hour)"
+echo "Interval: every ${INTERVAL} seconds ($(( INTERVAL / 60 )) min)"
 echo "Logs: ${ROOT}/logs/"

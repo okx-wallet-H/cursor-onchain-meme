@@ -119,6 +119,35 @@
     .empty { color: var(--muted); padding: 24px; text-align: center; }
     .status-online { color: var(--green); }
     .status-offline { color: var(--amber); }
+    .status-degraded { color: var(--amber); }
+    .status-paused { color: var(--muted); }
+    #runtimeBanner {
+      border-radius: 10px;
+      padding: 12px 14px;
+      margin-bottom: 16px;
+      font-size: 0.88rem;
+      line-height: 1.5;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 20px;
+      align-items: center;
+    }
+    #runtimeBanner.online {
+      background: rgba(61, 214, 140, 0.1);
+      border: 1px solid rgba(61, 214, 140, 0.35);
+      color: #b8f5d4;
+    }
+    #runtimeBanner.degraded {
+      background: rgba(245, 185, 66, 0.12);
+      border: 1px solid rgba(245, 185, 66, 0.4);
+      color: #ffe6a8;
+    }
+    #runtimeBanner.offline, #runtimeBanner.paused, #runtimeBanner.starting {
+      background: rgba(255, 107, 122, 0.12);
+      border: 1px solid rgba(255, 107, 122, 0.35);
+      color: #ffc9cf;
+    }
+    #runtimeBanner strong { font-weight: 650; }
     footer { text-align: center; color: var(--muted); font-size: 0.75rem; padding: 8px; }
   </style>
 </head>
@@ -137,6 +166,7 @@
 
   <main>
     <div id="loadError" class="banner" hidden></div>
+    <div id="runtimeBanner" class="online" hidden></div>
 
     <div class="grid" id="kpis"></div>
 
@@ -167,7 +197,7 @@
         </section>
       </div>
     </div>
-    <footer>数据源：<span id="dataSource">—</span> · 每小时 tick 推送到仓库 · <span id="dataMode">—</span></footer>
+    <footer>数据源：<span id="dataSource">—</span> · 每 30 分钟 tick 推送到仓库 · <span id="dataMode">—</span></footer>
   </main>
 
   <script src="data.js"></script>
@@ -211,17 +241,52 @@
       return a.length > 12 ? a.slice(0, 6) + "…" + a.slice(-4) : a;
     }
 
+    function fmtDuration(sec) {
+      if (sec == null || Number.isNaN(sec)) return "—";
+      const s = Math.max(0, Math.floor(sec));
+      const d = Math.floor(s / 86400);
+      const h = Math.floor((s % 86400) / 3600);
+      const m = Math.floor((s % 3600) / 60);
+      if (d > 0) return `${d}天 ${h}小时`;
+      if (h > 0) return `${h}小时 ${m}分`;
+      return `${m} 分钟`;
+    }
+
+    function renderRuntime(data) {
+      const r = data.runtime || {};
+      const el = $("#runtimeBanner");
+      const status = r.status || "starting";
+      el.className = status;
+      el.hidden = false;
+      const modeText = r.continuous_mode
+        ? "持续模式 · 定时 tick 正常"
+        : "非持续 · 定时任务可能已停或断线";
+      const since = r.seconds_since_last_tick != null
+        ? `距上次 tick ${fmtDuration(r.seconds_since_last_tick)}`
+        : "尚未 tick";
+      el.innerHTML = `
+        <span><strong>${r.status_label || "—"}</strong></span>
+        <span>${modeText}</span>
+        <span>在线时长 ${fmtDuration(r.cumulative_online_seconds)}</span>
+        <span>会话 ${fmtDuration(r.session_uptime_seconds)}</span>
+        <span>${since}</span>
+        <span>间隔 ${r.scan_interval_label || "—"} · tick ${r.tick_count ?? 0} 次</span>
+      `;
+    }
+
     function renderKpis(data) {
       const s = data.summary || {};
+      const r = data.runtime || {};
+      const intervalHint = r.scan_interval_label || ((data.config?.scan_interval_seconds || 1800) / 60) + " 分钟";
       const items = [
         { label: "总权益", value: fmtUsd(s.equity_usd), hint: "现金 + 持仓市值" },
         { label: "总盈亏", value: fmtUsd(s.total_pnl_usd), hint: fmtPct(s.total_pnl_pct), cls: pnlClass(s.total_pnl_usd) },
-        { label: "未实现", value: fmtUsd(s.unrealized_pnl_usd), hint: "浮盈浮亏", cls: pnlClass(s.unrealized_pnl_usd) },
-        { label: "已实现", value: fmtUsd(s.realized_pnl_usd), hint: "已平仓累计", cls: pnlClass(s.realized_pnl_usd) },
-        { label: "现金", value: fmtUsd(s.cash_usd), hint: "可用余额" },
-        { label: "持仓市值", value: fmtUsd(s.positions_value_usd), hint: (s.open_positions || 0) + " 个仓位" },
-        { label: "轮次", value: String(data.round || 0), hint: "每小时 +1 · 扫描 " + (data.scan_count || 0) + " 次" },
-        { label: "风控", value: (data.risk?.blacklist || 0) + " 黑 / " + (data.risk?.cooldowns || 0) + " 冷却", hint: "黑名单 / 冷却中" },
+        { label: "运行状态", value: r.status_label || "—", hint: r.continuous_mode ? "持续运行" : "非持续/断线", cls: r.status === "online" ? "pos" : "neg" },
+        { label: "在线时长", value: fmtDuration(r.cumulative_online_seconds), hint: "有效 tick 累计" },
+        { label: "现金", value: fmtUsd(s.cash_usd), hint: "本金 " + fmtUsd(s.initial_cash_usd || data.config?.initial_cash_usd || 1000, 0) },
+        { label: "持仓", value: String(s.open_positions || 0), hint: fmtUsd(s.positions_value_usd) + " 市值" },
+        { label: "轮次", value: String(data.round || 0), hint: `每 ${intervalHint} +1 · 扫描 ${data.scan_count || 0} 次` },
+        { label: "策略", value: data.config?.strategy_version || "—", hint: "Whale · sold≤50%" },
       ];
       $("#kpis").innerHTML = items.map((it) => `
         <div class="card">
@@ -369,9 +434,12 @@
     function renderAll(data, mode, sourceLabel) {
       $("#loadError").hidden = true;
       const chain = (data.chain || "solana").toUpperCase();
+      const r = data.runtime || {};
       const nextMin = Math.ceil((data.next_round_in_seconds || 0) / 60);
       const nextHint = nextMin > 0 ? ` · 下轮约 ${nextMin} 分钟` : "";
-      $("#meta").textContent = `${chain} · 第 ${data.round} 轮 · 扫描 ${data.scan_count || 0} 次${nextHint} · 更新 ${(data.generated_at || "").replace("T", " UTC ").slice(0, 22)}`;
+      const runHint = r.status_label ? ` · ${r.status_label}` : "";
+      $("#meta").textContent = `${chain} · ${data.config?.strategy_version || "—"} · 第 ${data.round} 轮${nextHint}${runHint} · 更新 ${(data.generated_at || "").replace("T", " UTC ").slice(0, 22)}`;
+      renderRuntime(data);
       renderKpis(data);
       renderChart(data.equity_curve || [], data.config?.initial_cash_usd || 1000);
       renderLedger(data);

@@ -53,6 +53,57 @@ def seconds_until_next_round(state, config):
     return max(0.0, remaining)
 
 
+def record_tick(state, config):
+    """Track scheduler heartbeats for dashboard online / continuous-mode display."""
+    now = datetime.now(timezone.utc)
+    interval = scan_interval_seconds(config)
+    prev_at = parse_iso(state.get("last_tick_at"))
+    if prev_at is not None:
+        gap = (now - prev_at).total_seconds()
+        if gap <= interval * 2.5:
+            state["cumulative_online_seconds"] = round(
+                float(state.get("cumulative_online_seconds", 0)) + gap, 1
+            )
+    state["last_tick_at"] = now.isoformat()
+    state["tick_count"] = int(state.get("tick_count", 0)) + 1
+
+
+def build_runtime_status(state, config):
+    now = datetime.now(timezone.utc)
+    interval = scan_interval_seconds(config)
+    sim_enabled = config.get("sim_enabled") is not False
+    last = parse_iso(state.get("last_tick_at"))
+    started = parse_iso(state.get("sim_session_started_at"))
+    since_tick = (now - last).total_seconds() if last else None
+    mins = max(1, int(interval / 60))
+
+    if not sim_enabled:
+        status, label, continuous = "paused", "已暂停（非持续）", False
+    elif since_tick is None:
+        status, label, continuous = "starting", "启动中", True
+    elif since_tick > interval * 2:
+        status, label, continuous = "offline", "断线 · 未持续运行", False
+    elif since_tick > interval * 1.5:
+        status, label, continuous = "degraded", "可能断线", False
+    else:
+        status, label, continuous = "online", "持续运行中", True
+
+    return {
+        "sim_enabled": sim_enabled,
+        "continuous_mode": continuous,
+        "status": status,
+        "status_label": label,
+        "scan_interval_seconds": int(interval),
+        "scan_interval_label": f"{mins} 分钟",
+        "session_started_at": state.get("sim_session_started_at"),
+        "last_tick_at": state.get("last_tick_at"),
+        "seconds_since_last_tick": round(since_tick) if since_tick is not None else None,
+        "session_uptime_seconds": round((now - started).total_seconds()) if started else 0,
+        "cumulative_online_seconds": round(float(state.get("cumulative_online_seconds", 0))),
+        "tick_count": int(state.get("tick_count", 0)),
+    }
+
+
 def advance_round_if_due(state, config, force=False):
     """Round = one signal-scan cycle per scan_interval (default 1h). Manual ticks within the window do not bump round."""
     if force:
@@ -281,6 +332,7 @@ def export_dashboard_snapshot(state, config, report=None):
             "stop_loss_counts": len(state.get("stop_loss_counts", {})),
         },
         "strategy_analysis": save_analysis(state, config),
+        "runtime": build_runtime_status(state, config),
     }
     save_json(DASHBOARD_SNAPSHOT_PATH, payload)
     DASHBOARD_DATA_JS_PATH.parent.mkdir(parents=True, exist_ok=True)
@@ -314,9 +366,14 @@ def run_onchainos(args):
 
 
 def init_state(config):
+    ts = now_iso()
     return {
-        "created_at": now_iso(),
-        "updated_at": now_iso(),
+        "created_at": ts,
+        "updated_at": ts,
+        "sim_session_started_at": ts,
+        "last_tick_at": None,
+        "tick_count": 0,
+        "cumulative_online_seconds": 0.0,
         "round": 0,
         "scan_count": 0,
         "last_round_at": None,
@@ -331,6 +388,17 @@ def init_state(config):
         "last_equity_usd": float(config["initial_cash_usd"]),
         "notes": [],
     }
+
+
+def reset_sim_data(config):
+    """Clear positions, logs, and restore initial cash for a fresh session."""
+    state = init_state(config)
+    for path in (TRADE_LOG_PATH, OBS_LOG_PATH, POSITION_SNAPSHOTS_PATH):
+        path.parent.mkdir(parents=True, exist_ok=True)
+        path.write_text("")
+    save_json(STATE_PATH, state)
+    export_positions_csv(state, config)
+    return state
 
 
 def next_trade_id(state):
@@ -442,6 +510,10 @@ def load_state(config):
     state.setdefault("trade_seq", 0)
     state.setdefault("scan_count", 0)
     state.setdefault("closed_positions", [])
+    state.setdefault("tick_count", 0)
+    state.setdefault("cumulative_online_seconds", 0.0)
+    if not state.get("sim_session_started_at"):
+        state["sim_session_started_at"] = state.get("created_at") or now_iso()
     if not state.get("last_round_at"):
         state["last_round_at"] = state.get("updated_at") or state.get("created_at")
     for address, pos in list(state.get("positions", {}).items()):
@@ -539,8 +611,8 @@ def score_signal(signal):
     score += 18 if wallet_type == "3" else 10 if wallet_type == "1" else 4
     score += min(amount_usd / 100.0, 15)
     score += max(0.0, 20 - sold_ratio / 5)
-    if sold_ratio > 65:
-        score -= (sold_ratio - 65) * 0.8
+    if sold_ratio > 50:
+        score -= (sold_ratio - 50) * 1.2
     score += 8 if token["holders"] >= 500 else 4 if token["holders"] >= 150 else 0
     score -= max(0.0, token["top10_holder_pct"] - 20) * 0.8
     return round(score, 2)
@@ -865,6 +937,23 @@ def cmd_init(args):
     print(f"initialized {STATE_PATH}")
 
 
+def cmd_reset(args):
+    config = load_json(CONFIG_PATH, {})
+    if STATE_PATH.exists() and not args.force:
+        print(f"Refusing reset without --force (would wipe {STATE_PATH} and trade logs)")
+        return
+    state = reset_sim_data(config)
+    export_dashboard_snapshot(state, config)
+    print(json.dumps({
+        "reset": True,
+        "strategy_version": config.get("strategy_version"),
+        "cash_usd": state["cash_usd"],
+        "equity_usd": state["cash_usd"],
+        "open_positions": 0,
+        "runtime": build_runtime_status(state, config),
+    }, indent=2, ensure_ascii=False))
+
+
 def cmd_scan(args):
     config = load_json(CONFIG_PATH, {})
     state = load_state(config)
@@ -889,8 +978,22 @@ def cmd_check(_args):
 def cmd_tick(args):
     config = load_json(CONFIG_PATH, {})
     state = load_state(config)
+    if config.get("sim_enabled") is False:
+        closed = check_positions(state, config)
+        report = write_report(state, config)
+        save_state(state, config)
+        print(json.dumps({
+            "paused": True,
+            "message": "sim_enabled=false: no new scans; open positions still checked for TP/SL",
+            "closed": len(closed),
+            "round": state["round"],
+            "summary": report["summary"],
+            "runtime": build_runtime_status(state, config),
+        }, indent=2, ensure_ascii=False))
+        return
     closed = check_positions(state, config)
     result = run_scan_cycle(state, config, force_round=getattr(args, "force_round", False))
+    record_tick(state, config)
     report = write_report(state, config)
     save_state(state, config)
     print(json.dumps({
@@ -935,6 +1038,9 @@ def main():
     p = sub.add_parser("init")
     p.add_argument("--force", action="store_true")
     p.set_defaults(func=cmd_init)
+    p = sub.add_parser("reset")
+    p.add_argument("--force", action="store_true", help="clear state, positions, and trade logs")
+    p.set_defaults(func=cmd_reset)
     p = sub.add_parser("scan")
     p.add_argument("--force-round", action="store_true", help="start a new round even if scan interval has not elapsed")
     p.set_defaults(func=cmd_scan)

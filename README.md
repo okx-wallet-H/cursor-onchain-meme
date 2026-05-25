@@ -8,7 +8,7 @@
 
 ## 目标
 
-- 每小时扫描一次 Solana meme 信号
+- 每 **30 分钟**扫描一次 Solana meme 信号（`scan_interval_seconds: 1800`）
 - 组合聪明钱/鲸鱼买入信号、持有人、集中度、卖出比例等字段
 - 模拟买入，不触碰真实 swap / approve / broadcast
 - 自动检查止盈止损
@@ -34,7 +34,14 @@ python3 scripts/meme_sim_trader.py dashboard   # 生成 dashboard/snapshot.json
 | **稳定面板（推荐）** | https://okx-wallet-H.github.io/cursor-onchain-meme/ |
 | 仓库内 JSON | https://raw.githubusercontent.com/okx-wallet-H/cursor-onchain-meme/main/dashboard/snapshot.json |
 
-每小时 `tick` 结束后会自动执行 `scripts/publish_dashboard.sh`，把 `dashboard/snapshot.json` 推到 `main`，GitHub Actions 再部署 Pages。
+每 30 分钟 `tick` 结束后会自动执行 `scripts/publish_dashboard.sh`，把 `dashboard/snapshot.json` 推到 `main`，GitHub Actions 再部署 Pages。面板展示**在线时长**与**是否持续运行**（断线会标红）。
+
+重置模拟盘：
+
+```bash
+./scripts/reset_sim.sh
+./scripts/install_scheduler.sh
+```
 
 手动刷新并推送：
 
@@ -56,6 +63,13 @@ chmod +x scripts/publish_dashboard.sh
 
 ```bash
 python3 scripts/meme_sim_trader.py loop
+```
+
+暂停 / 恢复自动模拟：
+
+```bash
+./scripts/pause_sim.sh    # 停 launchd + sim_enabled=false
+./scripts/resume_sim.sh   # 恢复定时 tick
 ```
 
 ## 目录
