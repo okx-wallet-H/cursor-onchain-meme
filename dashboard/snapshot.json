@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-05-25T11:04:42.482325+00:00",
+  "generated_at": "2026-05-25T11:34:45.688558+00:00",
   "project": "meme-onchain-explorer",
   "chain": "solana",
-  "round": 1,
-  "scan_count": 1,
-  "last_round_at": "2026-05-25T10:49:00.374072+00:00",
-  "next_round_in_seconds": 858,
-  "updated_at": "2026-05-25T11:04:42.422492+00:00",
+  "round": 2,
+  "scan_count": 2,
+  "last_round_at": "2026-05-25T11:34:44.921893+00:00",
+  "next_round_in_seconds": 1799,
+  "updated_at": "2026-05-25T11:34:45.631399+00:00",
   "config": {
     "initial_cash_usd": 1000.0,
     "max_positions": 3,
@@ -58,11 +58,11 @@
     },
     {
       "round": 2,
-      "ts": "2026-05-24T09:06:52.234451+00:00",
-      "equity_usd": 1020.8626,
-      "cash_usd": 400.0,
-      "positions_value_usd": 620.8626,
-      "open_positions": 5
+      "ts": "2026-05-25T11:34:45.688262+00:00",
+      "equity_usd": 1000.0,
+      "cash_usd": 1000.0,
+      "positions_value_usd": 0.0,
+      "open_positions": 0
     },
     {
       "round": 3,
@@ -433,6 +433,14 @@
       "candidates": 0,
       "opened": 0,
       "positions": 0
+    },
+    {
+      "round": 2,
+      "ts": "2026-05-25T11:34:45.607825+00:00",
+      "signals": 23,
+      "candidates": 0,
+      "opened": 0,
+      "positions": 0
     }
   ],
   "recent_trades": [],
@@ -443,7 +451,7 @@
   },
   "strategy_analysis": {
     "strategy_version": "v4-whale-low-sold",
-    "round": 1,
+    "round": 2,
     "equity_usd": 1000.0,
     "total_return_pct": 0.0,
     "realized_pnl_usd": 0.0,
@@ -501,10 +509,10 @@
     "scan_interval_seconds": 1800,
     "scan_interval_label": "30 分钟",
     "session_started_at": "2026-05-25T10:34:29.261062+00:00",
-    "last_tick_at": "2026-05-25T11:04:42.404872+00:00",
+    "last_tick_at": "2026-05-25T11:34:45.607915+00:00",
     "seconds_since_last_tick": 0,
-    "session_uptime_seconds": 1813,
-    "cumulative_online_seconds": 1803,
-    "tick_count": 4
+    "session_uptime_seconds": 3616,
+    "cumulative_online_seconds": 3606,
+    "tick_count": 5
   }
 }
