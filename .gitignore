@@ -1,0 +1,22 @@
+# Local runtime data (keep structure via .gitkeep if needed)
+data/state.json
+data/*.jsonl
+data/positions.csv
+dashboard/snapshot.json
+dashboard/data.js
+logs/
+reports/report_round_*.json
+reports/strategy_analysis.json
+config/strategy_recommendation.json
+
+# Not part of this project
+h-agent-mcp/
+.cursor/
+
+# OS / Python
+.DS_Store
+__pycache__/
+*.pyc
+.venv/
+.env
+.env.*
