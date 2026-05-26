@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-05-26T15:39:18.749961+00:00",
+  "generated_at": "2026-05-26T20:39:29.686897+00:00",
   "project": "meme-onchain-explorer",
   "chain": "solana",
-  "round": 58,
-  "scan_count": 58,
-  "last_round_at": "2026-05-26T15:39:17.693262+00:00",
-  "next_round_in_seconds": 1799,
-  "updated_at": "2026-05-26T15:39:18.365216+00:00",
+  "round": 59,
+  "scan_count": 59,
+  "last_round_at": "2026-05-26T20:39:27.265656+00:00",
+  "next_round_in_seconds": 1798,
+  "updated_at": "2026-05-26T20:39:29.085759+00:00",
   "config": {
     "initial_cash_usd": 1000.0,
     "max_positions": 3,
@@ -18,23 +18,23 @@
     "strategy_version": "v4.1-whale-tuned"
   },
   "summary": {
-    "cash_usd": 859.28639265,
-    "positions_value_usd": 82.42008349647357,
-    "equity_usd": 941.7064761464736,
+    "cash_usd": 784.44187392,
+    "positions_value_usd": 151.78513638807445,
+    "equity_usd": 936.2270103080745,
     "realized_pnl_usd": -60.71360736,
-    "open_positions": 1,
+    "open_positions": 2,
     "initial_cash_usd": 1000.0,
-    "total_pnl_usd": -58.2935,
-    "total_pnl_pct": -5.8294,
-    "unrealized_pnl_usd": 2.4201
+    "total_pnl_usd": -63.773,
+    "total_pnl_pct": -6.3773,
+    "unrealized_pnl_usd": -3.0594
   },
   "reconciliation": {
     "initial_cash_usd": 1000.0,
-    "cash_usd": 859.28639265,
-    "positions_value_usd": 82.42008349647357,
-    "equity_usd": 941.7064761464736,
+    "cash_usd": 784.44187392,
+    "positions_value_usd": 151.78513638807445,
+    "equity_usd": 936.2270103080745,
     "realized_pnl_usd": -60.71360736,
-    "unrealized_pnl_usd": 2.4201
+    "unrealized_pnl_usd": -3.0594
   },
   "open_positions": [
     {
@@ -50,14 +50,14 @@
       "entry_price": 0.0003516335462391845,
       "signal_price": 0.00047271186011608356,
       "execution_price": 0.0003516335462391845,
-      "last_price": 0.0003622708280149335,
+      "last_price": 0.00033523903398997406,
       "take_profit_price": 0.000474705287,
       "stop_loss_price": 0.000309437521,
       "units": 227509.57880902,
       "cost_usd": 80.0,
-      "market_value_usd": 82.4201,
-      "unrealized_pnl_usd": 2.4201,
-      "unrealized_pnl_pct": 3.0251,
+      "market_value_usd": 76.2701,
+      "unrealized_pnl_usd": -3.7299,
+      "unrealized_pnl_pct": -4.6624,
       "max_pnl_pct": 27.8445,
       "min_pnl_pct": -11.0924,
       "score": 88.28,
@@ -104,6 +104,75 @@
         "signal_timestamp_ms": "1779318958937",
         "signal_cursor": "1779318958937!@#158677",
         "score": 88.28
+      }
+    },
+    {
+      "trade_id": "T000006",
+      "status": "OPEN",
+      "address": "2nTRq9Df7CSocXM6dknx8yrmdCzQke62u7JftWrepump",
+      "symbol": "FERRIS",
+      "name": "Ferris",
+      "opened_at": "2026-05-26T20:39:28.436498+00:00",
+      "closed_at": null,
+      "entry_round": 59,
+      "exit_round": null,
+      "entry_price": 0.000327505963171313,
+      "signal_price": 0.000286415897362149,
+      "execution_price": 0.000327505963171313,
+      "last_price": 0.00033044006369608187,
+      "take_profit_price": 0.00044213305,
+      "stop_loss_price": 0.000288205248,
+      "units": 228528.72051897,
+      "cost_usd": 74.8445,
+      "market_value_usd": 75.515,
+      "unrealized_pnl_usd": 0.6705,
+      "unrealized_pnl_pct": 0.8959,
+      "max_pnl_pct": 0.0,
+      "min_pnl_pct": 0.0,
+      "score": 89.57,
+      "wallet_type_label": "Whale",
+      "trigger_wallet_count": 4,
+      "trigger_wallets": [
+        "7pbAy2dW1TDs91uwdBoni6bZMrygu3KuWa98ra1fzzi8",
+        "2P9oeLuf4FhT3ao81KUxygRHoH4YwW8Bn5KAcrGeCq1Z",
+        "8VuiuTHjXvYFheBGsKaS6mVvT5ph1xdr2xNro3dLAvsp",
+        "5qx7yV4Cwg67iEDSuszwMHYrQDJRnSCDF5DS6ZPAFvnV"
+      ],
+      "signal_amount_usd": 2554.1998,
+      "sold_ratio_pct": 37.17,
+      "holders": 367.0,
+      "market_cap_usd": 327505.9513,
+      "top10_holder_pct": 10.2726,
+      "cash_before_buy": 859.2864,
+      "cash_after_buy": 784.4419,
+      "equity_at_entry": 935.5565,
+      "exit_reason": null,
+      "realized_pnl_usd": null,
+      "realized_pnl_pct": null,
+      "held_rounds": null,
+      "signal_snapshot": {
+        "chain": "solana",
+        "token_address": "2nTRq9Df7CSocXM6dknx8yrmdCzQke62u7JftWrepump",
+        "symbol": "FERRIS",
+        "name": "Ferris",
+        "holders": 367.0,
+        "market_cap_usd": 327505.9513,
+        "top10_holder_pct": 10.2726,
+        "wallet_type": "3",
+        "wallet_type_label": "Whale",
+        "trigger_wallet_count": 4,
+        "trigger_wallets": [
+          "7pbAy2dW1TDs91uwdBoni6bZMrygu3KuWa98ra1fzzi8",
+          "2P9oeLuf4FhT3ao81KUxygRHoH4YwW8Bn5KAcrGeCq1Z",
+          "8VuiuTHjXvYFheBGsKaS6mVvT5ph1xdr2xNro3dLAvsp",
+          "5qx7yV4Cwg67iEDSuszwMHYrQDJRnSCDF5DS6ZPAFvnV"
+        ],
+        "signal_amount_usd": 2554.1998,
+        "signal_price": 0.000286415897362149,
+        "sold_ratio_pct": 37.17,
+        "signal_timestamp_ms": "1779821994453",
+        "signal_cursor": "1779821994453!@#160622",
+        "score": 89.57
       }
     }
   ],
@@ -401,11 +470,26 @@
       "status": "持仓中",
       "buy_price": 0.0003516335462391845,
       "sell_price": null,
-      "current_price": 0.0003622708280149335,
+      "current_price": 0.00033523903398997406,
       "cost_usd": 80.0,
-      "pnl_usd": 2.4201,
-      "pnl_pct": 3.0251,
+      "pnl_usd": -3.7299,
+      "pnl_pct": -4.6624,
       "opened_at": "2026-05-25T13:39:03.219678+00:00",
+      "closed_at": null,
+      "exit_reason": null
+    },
+    {
+      "trade_id": "T000006",
+      "symbol": "FERRIS",
+      "name": "Ferris",
+      "status": "持仓中",
+      "buy_price": 0.000327505963171313,
+      "sell_price": null,
+      "current_price": 0.00033044006369608187,
+      "cost_usd": 74.8445,
+      "pnl_usd": 0.6705,
+      "pnl_pct": 0.8959,
+      "opened_at": "2026-05-26T20:39:28.436498+00:00",
       "closed_at": null,
       "exit_reason": null
     },
@@ -942,17 +1026,17 @@
       "cash_usd": 859.2864,
       "positions_value_usd": 82.4201,
       "open_positions": 1
+    },
+    {
+      "round": 59,
+      "ts": "2026-05-26T20:39:29.684248+00:00",
+      "equity_usd": 936.227,
+      "cash_usd": 784.4419,
+      "positions_value_usd": 151.7851,
+      "open_positions": 2
     }
   ],
   "round_activity": [
-    {
-      "round": 37,
-      "ts": "2026-05-26T05:07:39.404259+00:00",
-      "signals": 22,
-      "candidates": 0,
-      "opened": 0,
-      "positions": 1
-    },
     {
       "round": 38,
       "ts": "2026-05-26T05:37:44.208837+00:00",
@@ -1120,6 +1204,14 @@
       "candidates": 0,
       "opened": 0,
       "positions": 1
+    },
+    {
+      "round": 59,
+      "ts": "2026-05-26T20:39:28.437400+00:00",
+      "signals": 25,
+      "candidates": 1,
+      "opened": 1,
+      "positions": 2
     }
   ],
   "recent_trades": [
@@ -1302,6 +1394,26 @@
       "realized_pnl_pct": -19.151,
       "unrealized_pnl_pct": -19.151,
       "exit_reason": "STOP_LOSS"
+    },
+    {
+      "ts": "2026-05-26T20:39:28.436569+00:00",
+      "type": "BUY",
+      "round": 59,
+      "trade_id": "T000006",
+      "symbol": "FERRIS",
+      "name": "Ferris",
+      "address": "2nTRq9Df7CSocXM6dknx8yrmdCzQke62u7JftWrepump",
+      "buy_price": 0.000327505963171313,
+      "sell_price": null,
+      "entry_price": 0.000327505963171313,
+      "last_price": 0.000327505963171313,
+      "cost_usd": 74.8445,
+      "pnl_usd": null,
+      "pnl_pct": 0.0,
+      "realized_pnl_usd": null,
+      "realized_pnl_pct": null,
+      "unrealized_pnl_pct": 0.0,
+      "exit_reason": null
     }
   ],
   "risk": {
@@ -1311,12 +1423,12 @@
   },
   "strategy_analysis": {
     "strategy_version": "v4.1-whale-tuned",
-    "round": 58,
-    "equity_usd": 941.7065,
-    "total_return_pct": -5.8294,
+    "round": 59,
+    "equity_usd": 936.227,
+    "total_return_pct": -6.3773,
     "realized_pnl_usd": -60.71360736,
     "closed_trades": 4,
-    "open_trades": 1,
+    "open_trades": 2,
     "overall_closed": {
       "count": 4,
       "win_rate": 0.0,
@@ -1325,17 +1437,17 @@
     },
     "by_wallet_type": {
       "Whale": {
-        "count": 5,
+        "count": 6,
         "win_rate": 0.0,
-        "avg_pnl_pct": -15.5322,
+        "avg_pnl_pct": -12.9435,
         "total_pnl_usd": -60.7136
       }
     },
     "by_sold_ratio": {
       "low_sold<=50": {
-        "count": 5,
+        "count": 6,
         "win_rate": 0.0,
-        "avg_pnl_pct": -15.5322,
+        "avg_pnl_pct": -12.9435,
         "total_pnl_usd": -60.7136
       },
       "mid_sold_51_75": {
@@ -1353,9 +1465,9 @@
     },
     "by_score_bucket": {
       "80+": {
-        "count": 5,
+        "count": 6,
         "win_rate": 0.0,
-        "avg_pnl_pct": -15.5322,
+        "avg_pnl_pct": -12.9435,
         "total_pnl_usd": -60.7136
       },
       "<60": {
@@ -1427,6 +1539,17 @@
         "trigger_wallet_count": 4,
         "pnl_usd": null,
         "pnl_pct": null
+      },
+      {
+        "symbol": "FERRIS",
+        "status": "open",
+        "exit_reason": null,
+        "score": 89.57,
+        "wallet_type": "Whale",
+        "sold_ratio_pct": 37.17,
+        "trigger_wallet_count": 4,
+        "pnl_usd": null,
+        "pnl_pct": null
       }
     ]
   },
@@ -1438,10 +1561,10 @@
     "scan_interval_seconds": 1800,
     "scan_interval_label": "30 分钟",
     "session_started_at": "2026-05-25T10:34:29.261062+00:00",
-    "last_tick_at": "2026-05-26T15:39:18.045641+00:00",
+    "last_tick_at": "2026-05-26T20:39:28.437766+00:00",
     "seconds_since_last_tick": 1,
-    "session_uptime_seconds": 104690,
+    "session_uptime_seconds": 122700,
     "cumulative_online_seconds": 104679,
-    "tick_count": 62
+    "tick_count": 63
   }
 }
