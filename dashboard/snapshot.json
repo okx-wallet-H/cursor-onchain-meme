@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-05-25T23:36:49.128079+00:00",
+  "generated_at": "2026-05-26T00:06:53.802410+00:00",
   "project": "meme-onchain-explorer",
   "chain": "solana",
-  "round": 26,
-  "scan_count": 26,
-  "last_round_at": "2026-05-25T23:36:47.121317+00:00",
-  "next_round_in_seconds": 1798,
-  "updated_at": "2026-05-25T23:36:48.607533+00:00",
+  "round": 27,
+  "scan_count": 27,
+  "last_round_at": "2026-05-26T00:06:52.804966+00:00",
+  "next_round_in_seconds": 1799,
+  "updated_at": "2026-05-26T00:06:53.456683+00:00",
   "config": {
     "initial_cash_usd": 1000.0,
     "max_positions": 3,
@@ -18,23 +18,23 @@
     "strategy_version": "v4.1-whale-tuned"
   },
   "summary": {
-    "cash_usd": 820.16349531,
-    "positions_value_usd": 154.75709395304494,
-    "equity_usd": 974.920589263045,
-    "realized_pnl_usd": -21.84285755,
-    "open_positions": 2,
+    "cash_usd": 873.86046554,
+    "positions_value_usd": 74.4595561227998,
+    "equity_usd": 948.3200216627997,
+    "realized_pnl_usd": -46.13953446,
+    "open_positions": 1,
     "initial_cash_usd": 1000.0,
-    "total_pnl_usd": -25.0794,
-    "total_pnl_pct": -2.5079,
-    "unrealized_pnl_usd": -3.2366
+    "total_pnl_usd": -51.68,
+    "total_pnl_pct": -5.168,
+    "unrealized_pnl_usd": -5.5404
   },
   "reconciliation": {
     "initial_cash_usd": 1000.0,
-    "cash_usd": 820.16349531,
-    "positions_value_usd": 154.75709395304494,
-    "equity_usd": 974.920589263045,
-    "realized_pnl_usd": -21.84285755,
-    "unrealized_pnl_usd": -3.2366
+    "cash_usd": 873.86046554,
+    "positions_value_usd": 74.4595561227998,
+    "equity_usd": 948.3200216627997,
+    "realized_pnl_usd": -46.13953446,
+    "unrealized_pnl_usd": -5.5404
   },
   "open_positions": [
     {
@@ -50,16 +50,16 @@
       "entry_price": 0.0003516335462391845,
       "signal_price": 0.00047271186011608356,
       "execution_price": 0.0003516335462391845,
-      "last_price": 0.000337407537800928,
+      "last_price": 0.0003272809721356959,
       "take_profit_price": 0.000474705287,
       "stop_loss_price": 0.000309437521,
       "units": 227509.57880902,
       "cost_usd": 80.0,
-      "market_value_usd": 76.7634,
-      "unrealized_pnl_usd": -3.2366,
-      "unrealized_pnl_pct": -4.0457,
+      "market_value_usd": 74.4596,
+      "unrealized_pnl_usd": -5.5404,
+      "unrealized_pnl_pct": -6.9256,
       "max_pnl_pct": 13.1551,
-      "min_pnl_pct": -4.0457,
+      "min_pnl_pct": -6.9256,
       "score": 88.28,
       "wallet_type_label": "Whale",
       "trigger_wallet_count": 4,
@@ -104,75 +104,6 @@
         "signal_timestamp_ms": "1779318958937",
         "signal_cursor": "1779318958937!@#158677",
         "score": 88.28
-      }
-    },
-    {
-      "trade_id": "T000004",
-      "status": "OPEN",
-      "address": "HWuhNE4Q14Yp68eX5mwhA6bjCAzn2kfThvso3nyspump",
-      "symbol": "again",
-      "name": "again",
-      "opened_at": "2026-05-25T23:36:48.024582+00:00",
-      "closed_at": null,
-      "entry_round": 26,
-      "exit_round": null,
-      "entry_price": 0.0001665440263987262,
-      "signal_price": 0.00013804859186756344,
-      "execution_price": 0.0001665440263987262,
-      "last_price": 0.0001665440263987262,
-      "take_profit_price": 0.000224834436,
-      "stop_loss_price": 0.000146558743,
-      "units": 468306.48224056,
-      "cost_usd": 77.9936,
-      "market_value_usd": 77.9936,
-      "unrealized_pnl_usd": 0.0,
-      "unrealized_pnl_pct": 0.0,
-      "max_pnl_pct": 0.0,
-      "min_pnl_pct": 0.0,
-      "score": 97.0,
-      "wallet_type_label": "Whale",
-      "trigger_wallet_count": 4,
-      "trigger_wallets": [
-        "9x2FKx31Zpe1HDEaEntehZFEywmkFxcRujadRZEjMrPg",
-        "49XA1awsqMJuueDhk98yd13PX3pNBPMfZFUAUZvLTKAm",
-        "DENzuuxpY5Q18rJwZcjVUUSQn3ScsYLm9z4GnJqnkX1M",
-        "8eqN4D9RrSWTwFJgvoHHrSo8AgA7AcWSqxDQfeuHv86w"
-      ],
-      "signal_amount_usd": 4804.7011,
-      "sold_ratio_pct": 0.0,
-      "holders": 345.0,
-      "market_cap_usd": 166544.0163,
-      "top10_holder_pct": 17.9917,
-      "cash_before_buy": 898.1571,
-      "cash_after_buy": 820.1635,
-      "equity_at_entry": 974.9206,
-      "exit_reason": null,
-      "realized_pnl_usd": null,
-      "realized_pnl_pct": null,
-      "held_rounds": null,
-      "signal_snapshot": {
-        "chain": "solana",
-        "token_address": "HWuhNE4Q14Yp68eX5mwhA6bjCAzn2kfThvso3nyspump",
-        "symbol": "again",
-        "name": "again",
-        "holders": 345.0,
-        "market_cap_usd": 166544.0163,
-        "top10_holder_pct": 17.9917,
-        "wallet_type": "3",
-        "wallet_type_label": "Whale",
-        "trigger_wallet_count": 4,
-        "trigger_wallets": [
-          "9x2FKx31Zpe1HDEaEntehZFEywmkFxcRujadRZEjMrPg",
-          "49XA1awsqMJuueDhk98yd13PX3pNBPMfZFUAUZvLTKAm",
-          "DENzuuxpY5Q18rJwZcjVUUSQn3ScsYLm9z4GnJqnkX1M",
-          "8eqN4D9RrSWTwFJgvoHHrSo8AgA7AcWSqxDQfeuHv86w"
-        ],
-        "signal_amount_usd": 4804.7011,
-        "signal_price": 0.00013804859186756344,
-        "sold_ratio_pct": 0.0,
-        "signal_timestamp_ms": "1779751993594",
-        "signal_cursor": "1779751993594!@#160349",
-        "score": 97.0
       }
     }
   ],
@@ -322,6 +253,75 @@
         "signal_cursor": "1779689578260!@#160060",
         "score": 112.02
       }
+    },
+    {
+      "trade_id": "T000004",
+      "status": "CLOSED",
+      "address": "HWuhNE4Q14Yp68eX5mwhA6bjCAzn2kfThvso3nyspump",
+      "symbol": "again",
+      "name": "again",
+      "opened_at": "2026-05-25T23:36:48.024582+00:00",
+      "closed_at": "2026-05-26T00:06:52.803736+00:00",
+      "entry_round": 26,
+      "exit_round": 26,
+      "entry_price": 0.0001665440263987262,
+      "signal_price": 0.00013804859186756344,
+      "execution_price": 0.0001665440263987262,
+      "last_price": 0.00011466202640224399,
+      "take_profit_price": 0.000224834436,
+      "stop_loss_price": 0.000146558743,
+      "units": 468306.48224056,
+      "cost_usd": 77.9936,
+      "market_value_usd": 53.697,
+      "unrealized_pnl_usd": 0.0,
+      "unrealized_pnl_pct": -31.1521,
+      "max_pnl_pct": 0.0,
+      "min_pnl_pct": -31.1521,
+      "score": 97.0,
+      "wallet_type_label": "Whale",
+      "trigger_wallet_count": 4,
+      "trigger_wallets": [
+        "9x2FKx31Zpe1HDEaEntehZFEywmkFxcRujadRZEjMrPg",
+        "49XA1awsqMJuueDhk98yd13PX3pNBPMfZFUAUZvLTKAm",
+        "DENzuuxpY5Q18rJwZcjVUUSQn3ScsYLm9z4GnJqnkX1M",
+        "8eqN4D9RrSWTwFJgvoHHrSo8AgA7AcWSqxDQfeuHv86w"
+      ],
+      "signal_amount_usd": 4804.7011,
+      "sold_ratio_pct": 0.0,
+      "holders": 345.0,
+      "market_cap_usd": 166544.0163,
+      "top10_holder_pct": 17.9917,
+      "cash_before_buy": 898.1571,
+      "cash_after_buy": 820.1635,
+      "equity_at_entry": 974.9206,
+      "exit_reason": "STOP_LOSS",
+      "realized_pnl_usd": -24.2967,
+      "realized_pnl_pct": -31.1521,
+      "held_rounds": 0,
+      "signal_snapshot": {
+        "chain": "solana",
+        "token_address": "HWuhNE4Q14Yp68eX5mwhA6bjCAzn2kfThvso3nyspump",
+        "symbol": "again",
+        "name": "again",
+        "holders": 345.0,
+        "market_cap_usd": 166544.0163,
+        "top10_holder_pct": 17.9917,
+        "wallet_type": "3",
+        "wallet_type_label": "Whale",
+        "trigger_wallet_count": 4,
+        "trigger_wallets": [
+          "9x2FKx31Zpe1HDEaEntehZFEywmkFxcRujadRZEjMrPg",
+          "49XA1awsqMJuueDhk98yd13PX3pNBPMfZFUAUZvLTKAm",
+          "DENzuuxpY5Q18rJwZcjVUUSQn3ScsYLm9z4GnJqnkX1M",
+          "8eqN4D9RrSWTwFJgvoHHrSo8AgA7AcWSqxDQfeuHv86w"
+        ],
+        "signal_amount_usd": 4804.7011,
+        "signal_price": 0.00013804859186756344,
+        "sold_ratio_pct": 0.0,
+        "signal_timestamp_ms": "1779751993594",
+        "signal_cursor": "1779751993594!@#160349",
+        "score": 97.0
+      }
     }
   ],
   "position_ledger": [
@@ -332,26 +332,11 @@
       "status": "持仓中",
       "buy_price": 0.0003516335462391845,
       "sell_price": null,
-      "current_price": 0.000337407537800928,
+      "current_price": 0.0003272809721356959,
       "cost_usd": 80.0,
-      "pnl_usd": -3.2366,
-      "pnl_pct": -4.0457,
+      "pnl_usd": -5.5404,
+      "pnl_pct": -6.9256,
       "opened_at": "2026-05-25T13:39:03.219678+00:00",
-      "closed_at": null,
-      "exit_reason": null
-    },
-    {
-      "trade_id": "T000004",
-      "symbol": "again",
-      "name": "again",
-      "status": "持仓中",
-      "buy_price": 0.0001665440263987262,
-      "sell_price": null,
-      "current_price": 0.0001665440263987262,
-      "cost_usd": 77.9936,
-      "pnl_usd": 0.0,
-      "pnl_pct": 0.0,
-      "opened_at": "2026-05-25T23:36:48.024582+00:00",
       "closed_at": null,
       "exit_reason": null
     },
@@ -383,6 +368,21 @@
       "pnl_pct": -12.631,
       "opened_at": "2026-05-25T16:05:26.778749+00:00",
       "closed_at": "2026-05-25T22:36:38.526660+00:00",
+      "exit_reason": "STOP_LOSS"
+    },
+    {
+      "trade_id": "T000004",
+      "symbol": "again",
+      "name": "again",
+      "status": "已平仓",
+      "buy_price": 0.0001665440263987262,
+      "sell_price": 0.00011466202640224399,
+      "current_price": null,
+      "cost_usd": 77.9936,
+      "pnl_usd": -24.2967,
+      "pnl_pct": -31.1521,
+      "opened_at": "2026-05-25T23:36:48.024582+00:00",
+      "closed_at": "2026-05-26T00:06:52.803736+00:00",
       "exit_reason": "STOP_LOSS"
     }
   ],
@@ -605,11 +605,11 @@
     },
     {
       "round": 27,
-      "ts": "2026-05-24T22:03:59.307655+00:00",
-      "equity_usd": 1053.6613,
-      "cash_usd": 386.0983,
-      "positions_value_usd": 667.563,
-      "open_positions": 5
+      "ts": "2026-05-26T00:06:53.799291+00:00",
+      "equity_usd": 948.32,
+      "cash_usd": 873.8605,
+      "positions_value_usd": 74.4596,
+      "open_positions": 1
     },
     {
       "round": 28,
@@ -773,14 +773,6 @@
     }
   ],
   "round_activity": [
-    {
-      "round": 5,
-      "ts": "2026-05-25T13:04:59.863812+00:00",
-      "signals": 23,
-      "candidates": 0,
-      "opened": 0,
-      "positions": 0
-    },
     {
       "round": 6,
       "ts": "2026-05-25T13:35:03.166200+00:00",
@@ -948,6 +940,14 @@
       "candidates": 1,
       "opened": 1,
       "positions": 2
+    },
+    {
+      "round": 27,
+      "ts": "2026-05-26T00:06:53.162029+00:00",
+      "signals": 21,
+      "candidates": 0,
+      "opened": 0,
+      "positions": 1
     }
   ],
   "recent_trades": [
@@ -1070,41 +1070,61 @@
       "realized_pnl_pct": null,
       "unrealized_pnl_pct": 0.0,
       "exit_reason": null
+    },
+    {
+      "ts": "2026-05-26T00:06:52.803831+00:00",
+      "type": "SELL",
+      "round": 26,
+      "trade_id": "T000004",
+      "symbol": "again",
+      "name": "again",
+      "address": "HWuhNE4Q14Yp68eX5mwhA6bjCAzn2kfThvso3nyspump",
+      "buy_price": 0.0001665440263987262,
+      "sell_price": 0.00011466202640224399,
+      "entry_price": 0.0001665440263987262,
+      "last_price": 0.00011466202640224399,
+      "cost_usd": 77.9936,
+      "pnl_usd": -24.2967,
+      "pnl_pct": -31.1521,
+      "realized_pnl_usd": -24.2967,
+      "realized_pnl_pct": -31.1521,
+      "unrealized_pnl_pct": -31.1521,
+      "exit_reason": "STOP_LOSS"
     }
   ],
   "risk": {
     "cooldowns": 1,
     "blacklist": 1,
-    "stop_loss_counts": 1
+    "stop_loss_counts": 2
   },
   "strategy_analysis": {
     "strategy_version": "v4.1-whale-tuned",
-    "round": 26,
-    "equity_usd": 974.9206,
-    "total_return_pct": -2.5079,
-    "realized_pnl_usd": -21.84285755,
-    "closed_trades": 2,
-    "open_trades": 2,
+    "round": 27,
+    "equity_usd": 948.32,
+    "total_return_pct": -5.168,
+    "realized_pnl_usd": -46.13953446,
+    "closed_trades": 3,
+    "open_trades": 1,
     "overall_closed": {
-      "count": 2,
+      "count": 3,
       "win_rate": 0.0,
-      "avg_pnl_pct": -13.6789,
-      "total_pnl_usd": -21.8428
+      "avg_pnl_pct": -19.5033,
+      "total_pnl_usd": -46.1395
     },
     "by_wallet_type": {
       "Whale": {
         "count": 4,
         "win_rate": 0.0,
-        "avg_pnl_pct": -6.8395,
-        "total_pnl_usd": -21.8428
+        "avg_pnl_pct": -14.6275,
+        "total_pnl_usd": -46.1395
       }
     },
     "by_sold_ratio": {
       "low_sold<=50": {
         "count": 4,
         "win_rate": 0.0,
-        "avg_pnl_pct": -6.8395,
-        "total_pnl_usd": -21.8428
+        "avg_pnl_pct": -14.6275,
+        "total_pnl_usd": -46.1395
       },
       "mid_sold_51_75": {
         "count": 0,
@@ -1123,8 +1143,8 @@
       "80+": {
         "count": 4,
         "win_rate": 0.0,
-        "avg_pnl_pct": -6.8395,
-        "total_pnl_usd": -21.8428
+        "avg_pnl_pct": -14.6275,
+        "total_pnl_usd": -46.1395
       },
       "<60": {
         "count": 0,
@@ -1164,23 +1184,23 @@
         "pnl_pct": -12.631
       },
       {
+        "symbol": "again",
+        "status": "closed",
+        "exit_reason": "STOP_LOSS",
+        "score": 97.0,
+        "wallet_type": "Whale",
+        "sold_ratio_pct": 0.0,
+        "trigger_wallet_count": 4,
+        "pnl_usd": -24.2967,
+        "pnl_pct": -31.1521
+      },
+      {
         "symbol": "SPCX",
         "status": "open",
         "exit_reason": null,
         "score": 88.28,
         "wallet_type": "Whale",
         "sold_ratio_pct": 40.29,
-        "trigger_wallet_count": 4,
-        "pnl_usd": null,
-        "pnl_pct": null
-      },
-      {
-        "symbol": "again",
-        "status": "open",
-        "exit_reason": null,
-        "score": 97.0,
-        "wallet_type": "Whale",
-        "sold_ratio_pct": 0.0,
         "trigger_wallet_count": 4,
         "pnl_usd": null,
         "pnl_pct": null
@@ -1195,10 +1215,10 @@
     "scan_interval_seconds": 1800,
     "scan_interval_label": "30 分钟",
     "session_started_at": "2026-05-25T10:34:29.261062+00:00",
-    "last_tick_at": "2026-05-25T23:36:48.025867+00:00",
+    "last_tick_at": "2026-05-26T00:06:53.162293+00:00",
     "seconds_since_last_tick": 1,
-    "session_uptime_seconds": 46940,
-    "cumulative_online_seconds": 46929,
-    "tick_count": 30
+    "session_uptime_seconds": 48745,
+    "cumulative_online_seconds": 48734,
+    "tick_count": 31
   }
 }
