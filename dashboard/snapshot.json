@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-05-27T19:46:44.943134+00:00",
+  "generated_at": "2026-05-27T20:16:49.294168+00:00",
   "project": "meme-onchain-explorer",
   "chain": "solana",
-  "round": 105,
-  "scan_count": 105,
-  "last_round_at": "2026-05-27T19:46:44.028945+00:00",
+  "round": 106,
+  "scan_count": 106,
+  "last_round_at": "2026-05-27T20:16:48.353365+00:00",
   "next_round_in_seconds": 1799,
-  "updated_at": "2026-05-27T19:46:44.648132+00:00",
+  "updated_at": "2026-05-27T20:16:48.987688+00:00",
   "config": {
     "initial_cash_usd": 1000.0,
     "max_positions": 3,
@@ -19,22 +19,22 @@
   },
   "summary": {
     "cash_usd": 775.50449813,
-    "positions_value_usd": 65.64141991834363,
-    "equity_usd": 841.1459180483437,
+    "positions_value_usd": 67.14146460571462,
+    "equity_usd": 842.6459627357146,
     "realized_pnl_usd": -151.85389484,
     "open_positions": 1,
     "initial_cash_usd": 1000.0,
-    "total_pnl_usd": -158.8541,
-    "total_pnl_pct": -15.8854,
-    "unrealized_pnl_usd": -7.0002
+    "total_pnl_usd": -157.354,
+    "total_pnl_pct": -15.7354,
+    "unrealized_pnl_usd": -5.5001
   },
   "reconciliation": {
     "initial_cash_usd": 1000.0,
     "cash_usd": 775.50449813,
-    "positions_value_usd": 65.64141991834363,
-    "equity_usd": 841.1459180483437,
+    "positions_value_usd": 67.14146460571462,
+    "equity_usd": 842.6459627357146,
     "realized_pnl_usd": -151.85389484,
-    "unrealized_pnl_usd": -7.0002
+    "unrealized_pnl_usd": -5.5001
   },
   "open_positions": [
     {
@@ -50,14 +50,14 @@
       "entry_price": 0.00029382953459486784,
       "signal_price": 0.00047271186011608356,
       "execution_price": 0.00029382953459486784,
-      "last_price": 0.000265514333329072,
+      "last_price": 0.0002715818950245164,
       "take_profit_price": 0.000396669872,
       "stop_loss_price": 0.00025856999,
       "units": 247223.63985145,
       "cost_usd": 72.6416,
-      "market_value_usd": 65.6414,
-      "unrealized_pnl_usd": -7.0002,
-      "unrealized_pnl_pct": -9.6366,
+      "market_value_usd": 67.1415,
+      "unrealized_pnl_usd": -5.5001,
+      "unrealized_pnl_pct": -7.5716,
       "max_pnl_pct": 10.9534,
       "min_pnl_pct": -9.6366,
       "score": 87.62,
@@ -608,10 +608,10 @@
       "status": "持仓中",
       "buy_price": 0.00029382953459486784,
       "sell_price": null,
-      "current_price": 0.000265514333329072,
+      "current_price": 0.0002715818950245164,
       "cost_usd": 72.6416,
-      "pnl_usd": -7.0002,
-      "pnl_pct": -9.6366,
+      "pnl_usd": -5.5001,
+      "pnl_pct": -7.5716,
       "opened_at": "2026-05-27T00:40:02.353568+00:00",
       "closed_at": null,
       "exit_reason": null
@@ -1570,6 +1570,14 @@
       "cash_usd": 775.5045,
       "positions_value_usd": 65.6414,
       "open_positions": 1
+    },
+    {
+      "round": 106,
+      "ts": "2026-05-27T20:16:49.287626+00:00",
+      "equity_usd": 842.646,
+      "cash_usd": 775.5045,
+      "positions_value_usd": 67.1415,
+      "open_positions": 1
     }
   ],
   "round_activity": [
@@ -1760,6 +1768,14 @@
     {
       "round": 105,
       "ts": "2026-05-27T19:46:44.333356+00:00",
+      "signals": 18,
+      "candidates": 0,
+      "opened": 0,
+      "positions": 1
+    },
+    {
+      "round": 106,
+      "ts": "2026-05-27T20:16:48.676932+00:00",
       "signals": 18,
       "candidates": 0,
       "opened": 0,
@@ -2075,9 +2091,9 @@
   },
   "strategy_analysis": {
     "strategy_version": "v4.1-whale-tuned",
-    "round": 105,
-    "equity_usd": 841.1459,
-    "total_return_pct": -15.8854,
+    "round": 106,
+    "equity_usd": 842.646,
+    "total_return_pct": -15.7354,
     "realized_pnl_usd": -151.85389484,
     "closed_trades": 7,
     "open_trades": 1,
@@ -2235,10 +2251,10 @@
     "scan_interval_seconds": 1800,
     "scan_interval_label": "30 分钟",
     "session_started_at": "2026-05-25T10:34:29.261062+00:00",
-    "last_tick_at": "2026-05-27T19:46:44.333489+00:00",
+    "last_tick_at": "2026-05-27T20:16:48.677062+00:00",
     "seconds_since_last_tick": 1,
-    "session_uptime_seconds": 205936,
-    "cumulative_online_seconds": 187915,
-    "tick_count": 109
+    "session_uptime_seconds": 207740,
+    "cumulative_online_seconds": 189719,
+    "tick_count": 110
   }
 }
