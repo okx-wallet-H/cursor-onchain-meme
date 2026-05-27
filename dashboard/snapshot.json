@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-05-27T17:16:12.470987+00:00",
+  "generated_at": "2026-05-27T17:46:17.931157+00:00",
   "project": "meme-onchain-explorer",
   "chain": "solana",
-  "round": 100,
-  "scan_count": 100,
-  "last_round_at": "2026-05-27T17:16:11.437913+00:00",
-  "next_round_in_seconds": 1799,
-  "updated_at": "2026-05-27T17:16:12.103634+00:00",
+  "round": 101,
+  "scan_count": 101,
+  "last_round_at": "2026-05-27T17:46:15.905077+00:00",
+  "next_round_in_seconds": 1798,
+  "updated_at": "2026-05-27T17:46:17.351481+00:00",
   "config": {
     "initial_cash_usd": 1000.0,
     "max_positions": 3,
@@ -18,23 +18,23 @@
     "strategy_version": "v4.1-whale-tuned"
   },
   "summary": {
-    "cash_usd": 835.37848094,
-    "positions_value_usd": 68.53218839938563,
-    "equity_usd": 903.9106693393857,
+    "cash_usd": 762.89385112,
+    "positions_value_usd": 143.16402159577714,
+    "equity_usd": 906.0578727157772,
     "realized_pnl_usd": -91.97991203,
-    "open_positions": 1,
+    "open_positions": 2,
     "initial_cash_usd": 1000.0,
-    "total_pnl_usd": -96.0893,
-    "total_pnl_pct": -9.6089,
-    "unrealized_pnl_usd": -4.1094
+    "total_pnl_usd": -93.9421,
+    "total_pnl_pct": -9.3942,
+    "unrealized_pnl_usd": -1.9622
   },
   "reconciliation": {
     "initial_cash_usd": 1000.0,
-    "cash_usd": 835.37848094,
-    "positions_value_usd": 68.53218839938563,
-    "equity_usd": 903.9106693393857,
+    "cash_usd": 762.89385112,
+    "positions_value_usd": 143.16402159577714,
+    "equity_usd": 906.0578727157772,
     "realized_pnl_usd": -91.97991203,
-    "unrealized_pnl_usd": -4.1094
+    "unrealized_pnl_usd": -1.9622
   },
   "open_positions": [
     {
@@ -50,14 +50,14 @@
       "entry_price": 0.00029382953459486784,
       "signal_price": 0.00047271186011608356,
       "execution_price": 0.00029382953459486784,
-      "last_price": 0.00027720726238221195,
+      "last_price": 0.00028589252961724155,
       "take_profit_price": 0.000396669872,
       "stop_loss_price": 0.00025856999,
       "units": 247223.63985145,
       "cost_usd": 72.6416,
-      "market_value_usd": 68.5322,
-      "unrealized_pnl_usd": -4.1094,
-      "unrealized_pnl_pct": -5.6571,
+      "market_value_usd": 70.6794,
+      "unrealized_pnl_usd": -1.9622,
+      "unrealized_pnl_pct": -2.7012,
       "max_pnl_pct": 10.9534,
       "min_pnl_pct": -6.6813,
       "score": 87.62,
@@ -104,6 +104,75 @@
         "signal_timestamp_ms": "1779318958937",
         "signal_cursor": "1779318958937!@#158677",
         "score": 87.62
+      }
+    },
+    {
+      "trade_id": "T000008",
+      "status": "OPEN",
+      "address": "AYVVgwNviTni4wnMSYbERveJDhBfZjs8cG2DmtmocBdL",
+      "symbol": "420.69",
+      "name": "Jackpot Coin",
+      "opened_at": "2026-05-27T17:46:16.745990+00:00",
+      "closed_at": null,
+      "entry_round": 101,
+      "exit_round": null,
+      "entry_price": 5.78033044046803e-05,
+      "signal_price": 6.903042441750827e-05,
+      "execution_price": 5.78033044046803e-05,
+      "last_price": 5.78033044046803e-05,
+      "take_profit_price": 7.8034461e-05,
+      "stop_loss_price": 5.0866908e-05,
+      "units": 1253987.64939113,
+      "cost_usd": 72.4846,
+      "market_value_usd": 72.4846,
+      "unrealized_pnl_usd": 0.0,
+      "unrealized_pnl_pct": 0.0,
+      "max_pnl_pct": 0.0,
+      "min_pnl_pct": 0.0,
+      "score": 96.64,
+      "wallet_type_label": "Whale",
+      "trigger_wallet_count": 4,
+      "trigger_wallets": [
+        "AQdBYZNy3BZ1vouGUjA1w9Ay7aq7kH5UQSuh4LQWKotY",
+        "6wDiQRvnCVxA5qeBVzHBv6xhWApemxRFCHN3PwRCb67",
+        "4MNiUt5kptveg8HN2nmcmRzoVRThBFXoAtfFrbSdWvJR",
+        "4iD83DYUbfcLx1A6V1D5uHbpZdQaZnYYXHywq6NNG4rs"
+      ],
+      "signal_amount_usd": 1860.2675,
+      "sold_ratio_pct": 21.8,
+      "holders": 668.0,
+      "market_cap_usd": 58502.2236,
+      "top10_holder_pct": 18.1581,
+      "cash_before_buy": 835.3785,
+      "cash_after_buy": 762.8939,
+      "equity_at_entry": 906.0579,
+      "exit_reason": null,
+      "realized_pnl_usd": null,
+      "realized_pnl_pct": null,
+      "held_rounds": null,
+      "signal_snapshot": {
+        "chain": "solana",
+        "token_address": "AYVVgwNviTni4wnMSYbERveJDhBfZjs8cG2DmtmocBdL",
+        "symbol": "420.69",
+        "name": "Jackpot Coin",
+        "holders": 668.0,
+        "market_cap_usd": 58502.2236,
+        "top10_holder_pct": 18.1581,
+        "wallet_type": "3",
+        "wallet_type_label": "Whale",
+        "trigger_wallet_count": 4,
+        "trigger_wallets": [
+          "AQdBYZNy3BZ1vouGUjA1w9Ay7aq7kH5UQSuh4LQWKotY",
+          "6wDiQRvnCVxA5qeBVzHBv6xhWApemxRFCHN3PwRCb67",
+          "4MNiUt5kptveg8HN2nmcmRzoVRThBFXoAtfFrbSdWvJR",
+          "4iD83DYUbfcLx1A6V1D5uHbpZdQaZnYYXHywq6NNG4rs"
+        ],
+        "signal_amount_usd": 1860.2675,
+        "signal_price": 6.903042441750827e-05,
+        "sold_ratio_pct": 21.8,
+        "signal_timestamp_ms": "1779903520346",
+        "signal_cursor": "1779903520346!@#160914",
+        "score": 96.64
       }
     }
   ],
@@ -539,11 +608,26 @@
       "status": "持仓中",
       "buy_price": 0.00029382953459486784,
       "sell_price": null,
-      "current_price": 0.00027720726238221195,
+      "current_price": 0.00028589252961724155,
       "cost_usd": 72.6416,
-      "pnl_usd": -4.1094,
-      "pnl_pct": -5.6571,
+      "pnl_usd": -1.9622,
+      "pnl_pct": -2.7012,
       "opened_at": "2026-05-27T00:40:02.353568+00:00",
+      "closed_at": null,
+      "exit_reason": null
+    },
+    {
+      "trade_id": "T000008",
+      "symbol": "420.69",
+      "name": "Jackpot Coin",
+      "status": "持仓中",
+      "buy_price": 5.78033044046803e-05,
+      "sell_price": null,
+      "current_price": 5.78033044046803e-05,
+      "cost_usd": 72.4846,
+      "pnl_usd": 0.0,
+      "pnl_pct": 0.0,
+      "opened_at": "2026-05-27T17:46:16.745990+00:00",
       "closed_at": null,
       "exit_reason": null
     },
@@ -1446,17 +1530,17 @@
       "cash_usd": 835.3785,
       "positions_value_usd": 68.5322,
       "open_positions": 1
+    },
+    {
+      "round": 101,
+      "ts": "2026-05-27T17:46:17.929201+00:00",
+      "equity_usd": 906.0579,
+      "cash_usd": 762.8939,
+      "positions_value_usd": 143.164,
+      "open_positions": 2
     }
   ],
   "round_activity": [
-    {
-      "round": 77,
-      "ts": "2026-05-27T05:40:51.104937+00:00",
-      "signals": 20,
-      "candidates": 0,
-      "opened": 0,
-      "positions": 1
-    },
     {
       "round": 78,
       "ts": "2026-05-27T06:10:55.574630+00:00",
@@ -1640,6 +1724,14 @@
       "candidates": 0,
       "opened": 0,
       "positions": 1
+    },
+    {
+      "round": 101,
+      "ts": "2026-05-27T17:46:16.746788+00:00",
+      "signals": 21,
+      "candidates": 1,
+      "opened": 1,
+      "positions": 2
     }
   ],
   "recent_trades": [
@@ -1902,6 +1994,26 @@
       "realized_pnl_pct": null,
       "unrealized_pnl_pct": 0.0,
       "exit_reason": null
+    },
+    {
+      "ts": "2026-05-27T17:46:16.746081+00:00",
+      "type": "BUY",
+      "round": 101,
+      "trade_id": "T000008",
+      "symbol": "420.69",
+      "name": "Jackpot Coin",
+      "address": "AYVVgwNviTni4wnMSYbERveJDhBfZjs8cG2DmtmocBdL",
+      "buy_price": 5.78033044046803e-05,
+      "sell_price": null,
+      "entry_price": 5.78033044046803e-05,
+      "last_price": 5.78033044046803e-05,
+      "cost_usd": 72.4846,
+      "pnl_usd": null,
+      "pnl_pct": 0.0,
+      "realized_pnl_usd": null,
+      "realized_pnl_pct": null,
+      "unrealized_pnl_pct": 0.0,
+      "exit_reason": null
     }
   ],
   "risk": {
@@ -1911,12 +2023,12 @@
   },
   "strategy_analysis": {
     "strategy_version": "v4.1-whale-tuned",
-    "round": 100,
-    "equity_usd": 903.9107,
-    "total_return_pct": -9.6089,
+    "round": 101,
+    "equity_usd": 906.0579,
+    "total_return_pct": -9.3942,
     "realized_pnl_usd": -91.97991203,
     "closed_trades": 6,
-    "open_trades": 1,
+    "open_trades": 2,
     "overall_closed": {
       "count": 6,
       "win_rate": 0.0,
@@ -1925,17 +2037,17 @@
     },
     "by_wallet_type": {
       "Whale": {
-        "count": 7,
+        "count": 8,
         "win_rate": 0.0,
-        "avg_pnl_pct": -16.9304,
+        "avg_pnl_pct": -14.8141,
         "total_pnl_usd": -91.9799
       }
     },
     "by_sold_ratio": {
       "low_sold<=50": {
-        "count": 7,
+        "count": 8,
         "win_rate": 0.0,
-        "avg_pnl_pct": -16.9304,
+        "avg_pnl_pct": -14.8141,
         "total_pnl_usd": -91.9799
       },
       "mid_sold_51_75": {
@@ -1953,9 +2065,9 @@
     },
     "by_score_bucket": {
       "80+": {
-        "count": 7,
+        "count": 8,
         "win_rate": 0.0,
-        "avg_pnl_pct": -16.9304,
+        "avg_pnl_pct": -14.8141,
         "total_pnl_usd": -91.9799
       },
       "<60": {
@@ -2049,6 +2161,17 @@
         "trigger_wallet_count": 4,
         "pnl_usd": null,
         "pnl_pct": null
+      },
+      {
+        "symbol": "420.69",
+        "status": "open",
+        "exit_reason": null,
+        "score": 96.64,
+        "wallet_type": "Whale",
+        "sold_ratio_pct": 21.8,
+        "trigger_wallet_count": 4,
+        "pnl_usd": null,
+        "pnl_pct": null
       }
     ]
   },
@@ -2060,10 +2183,10 @@
     "scan_interval_seconds": 1800,
     "scan_interval_label": "30 分钟",
     "session_started_at": "2026-05-25T10:34:29.261062+00:00",
-    "last_tick_at": "2026-05-27T17:16:11.764189+00:00",
+    "last_tick_at": "2026-05-27T17:46:16.746944+00:00",
     "seconds_since_last_tick": 1,
-    "session_uptime_seconds": 196903,
-    "cumulative_online_seconds": 178882,
-    "tick_count": 104
+    "session_uptime_seconds": 198709,
+    "cumulative_online_seconds": 180687,
+    "tick_count": 105
   }
 }
