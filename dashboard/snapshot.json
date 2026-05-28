@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-05-28T07:19:21.647723+00:00",
+  "generated_at": "2026-05-28T07:49:24.648374+00:00",
   "project": "meme-onchain-explorer",
   "chain": "solana",
-  "round": 128,
-  "scan_count": 128,
-  "last_round_at": "2026-05-28T07:19:20.190244+00:00",
+  "round": 129,
+  "scan_count": 129,
+  "last_round_at": "2026-05-28T07:49:24.139489+00:00",
   "next_round_in_seconds": 1799,
-  "updated_at": "2026-05-28T07:19:21.348695+00:00",
+  "updated_at": "2026-05-28T07:49:24.568700+00:00",
   "config": {
     "initial_cash_usd": 1000.0,
     "max_positions": 3,
@@ -18,95 +18,25 @@
     "strategy_version": "v4.1-whale-tuned"
   },
   "summary": {
-    "cash_usd": 775.50449813,
-    "positions_value_usd": 65.60353516659778,
-    "equity_usd": 841.1080332965978,
-    "realized_pnl_usd": -151.85389484,
-    "open_positions": 1,
+    "cash_usd": 839.34107797,
+    "positions_value_usd": 0.0,
+    "equity_usd": 839.34107797,
+    "realized_pnl_usd": -160.65892204,
+    "open_positions": 0,
     "initial_cash_usd": 1000.0,
-    "total_pnl_usd": -158.892,
-    "total_pnl_pct": -15.8892,
-    "unrealized_pnl_usd": -7.0381
+    "total_pnl_usd": -160.6589,
+    "total_pnl_pct": -16.0659,
+    "unrealized_pnl_usd": 0
   },
   "reconciliation": {
     "initial_cash_usd": 1000.0,
-    "cash_usd": 775.50449813,
-    "positions_value_usd": 65.60353516659778,
-    "equity_usd": 841.1080332965978,
-    "realized_pnl_usd": -151.85389484,
-    "unrealized_pnl_usd": -7.0381
+    "cash_usd": 839.34107797,
+    "positions_value_usd": 0.0,
+    "equity_usd": 839.34107797,
+    "realized_pnl_usd": -160.65892204,
+    "unrealized_pnl_usd": 0
   },
-  "open_positions": [
-    {
-      "trade_id": "T000007",
-      "status": "OPEN",
-      "address": "26YRpwvWhTSBSAkQbhNP6AXBNrJe8uRxibAn7ZXXpump",
-      "symbol": "SPCX",
-      "name": "SpaceExplorationTechnologiesCorp",
-      "opened_at": "2026-05-27T00:40:02.353568+00:00",
-      "closed_at": null,
-      "entry_round": 67,
-      "exit_round": null,
-      "entry_price": 0.00029382953459486784,
-      "signal_price": 0.00047271186011608356,
-      "execution_price": 0.00029382953459486784,
-      "last_price": 0.000265361092515335,
-      "take_profit_price": 0.000396669872,
-      "stop_loss_price": 0.00025856999,
-      "units": 247223.63985145,
-      "cost_usd": 72.6416,
-      "market_value_usd": 65.6035,
-      "unrealized_pnl_usd": -7.0381,
-      "unrealized_pnl_pct": -9.6888,
-      "max_pnl_pct": 10.9534,
-      "min_pnl_pct": -10.8756,
-      "score": 87.62,
-      "wallet_type_label": "Whale",
-      "trigger_wallet_count": 4,
-      "trigger_wallets": [
-        "3w65BActyt4hPQvqk1tbXb3k7JNRT31LW7gmGJ4F2iK9",
-        "2qqPMKvMQbkyDq1kB2k1bpJWjKv1M2BF8NBYhtSmRwXV",
-        "EXUzBTmHcYYwoHXjVi4zRBrj92iAcbnDRnsjs5SZ5PoC",
-        "AKfjA7dEpb8783fVkgzKdAQKUEucQixnqXaAEFFwvbaM"
-      ],
-      "signal_amount_usd": 4219.7821,
-      "sold_ratio_pct": 43.34,
-      "holders": 1098.0,
-      "market_cap_usd": 292132.4579,
-      "top10_holder_pct": 25.8933,
-      "cash_before_buy": 908.0201,
-      "cash_after_buy": 835.3785,
-      "equity_at_entry": 908.0201,
-      "exit_reason": null,
-      "realized_pnl_usd": null,
-      "realized_pnl_pct": null,
-      "held_rounds": null,
-      "signal_snapshot": {
-        "chain": "solana",
-        "token_address": "26YRpwvWhTSBSAkQbhNP6AXBNrJe8uRxibAn7ZXXpump",
-        "symbol": "SPCX",
-        "name": "SpaceExplorationTechnologiesCorp",
-        "holders": 1098.0,
-        "market_cap_usd": 292132.4579,
-        "top10_holder_pct": 25.8933,
-        "wallet_type": "3",
-        "wallet_type_label": "Whale",
-        "trigger_wallet_count": 4,
-        "trigger_wallets": [
-          "3w65BActyt4hPQvqk1tbXb3k7JNRT31LW7gmGJ4F2iK9",
-          "2qqPMKvMQbkyDq1kB2k1bpJWjKv1M2BF8NBYhtSmRwXV",
-          "EXUzBTmHcYYwoHXjVi4zRBrj92iAcbnDRnsjs5SZ5PoC",
-          "AKfjA7dEpb8783fVkgzKdAQKUEucQixnqXaAEFFwvbaM"
-        ],
-        "signal_amount_usd": 4219.7821,
-        "signal_price": 0.00047271186011608356,
-        "sold_ratio_pct": 43.34,
-        "signal_timestamp_ms": "1779318958937",
-        "signal_cursor": "1779318958937!@#158677",
-        "score": 87.62
-      }
-    }
-  ],
+  "open_positions": [],
   "closed_positions": [
     {
       "trade_id": "T000001",
@@ -598,24 +528,78 @@
         "signal_cursor": "1779903520346!@#160914",
         "score": 96.64
       }
+    },
+    {
+      "trade_id": "T000007",
+      "status": "CLOSED",
+      "address": "26YRpwvWhTSBSAkQbhNP6AXBNrJe8uRxibAn7ZXXpump",
+      "symbol": "SPCX",
+      "name": "SpaceExplorationTechnologiesCorp",
+      "opened_at": "2026-05-27T00:40:02.353568+00:00",
+      "closed_at": "2026-05-28T07:49:24.137998+00:00",
+      "entry_round": 67,
+      "exit_round": 128,
+      "entry_price": 0.00029382953459486784,
+      "signal_price": 0.00047271186011608356,
+      "execution_price": 0.00029382953459486784,
+      "last_price": 0.0002582138984643576,
+      "take_profit_price": 0.000396669872,
+      "stop_loss_price": 0.00025856999,
+      "units": 247223.63985145,
+      "cost_usd": 72.6416,
+      "market_value_usd": 63.8366,
+      "unrealized_pnl_usd": 0.0,
+      "unrealized_pnl_pct": -12.1212,
+      "max_pnl_pct": 10.9534,
+      "min_pnl_pct": -12.1212,
+      "score": 87.62,
+      "wallet_type_label": "Whale",
+      "trigger_wallet_count": 4,
+      "trigger_wallets": [
+        "3w65BActyt4hPQvqk1tbXb3k7JNRT31LW7gmGJ4F2iK9",
+        "2qqPMKvMQbkyDq1kB2k1bpJWjKv1M2BF8NBYhtSmRwXV",
+        "EXUzBTmHcYYwoHXjVi4zRBrj92iAcbnDRnsjs5SZ5PoC",
+        "AKfjA7dEpb8783fVkgzKdAQKUEucQixnqXaAEFFwvbaM"
+      ],
+      "signal_amount_usd": 4219.7821,
+      "sold_ratio_pct": 43.34,
+      "holders": 1098.0,
+      "market_cap_usd": 292132.4579,
+      "top10_holder_pct": 25.8933,
+      "cash_before_buy": 908.0201,
+      "cash_after_buy": 835.3785,
+      "equity_at_entry": 908.0201,
+      "exit_reason": "STOP_LOSS",
+      "realized_pnl_usd": -8.805,
+      "realized_pnl_pct": -12.1212,
+      "held_rounds": 61,
+      "signal_snapshot": {
+        "chain": "solana",
+        "token_address": "26YRpwvWhTSBSAkQbhNP6AXBNrJe8uRxibAn7ZXXpump",
+        "symbol": "SPCX",
+        "name": "SpaceExplorationTechnologiesCorp",
+        "holders": 1098.0,
+        "market_cap_usd": 292132.4579,
+        "top10_holder_pct": 25.8933,
+        "wallet_type": "3",
+        "wallet_type_label": "Whale",
+        "trigger_wallet_count": 4,
+        "trigger_wallets": [
+          "3w65BActyt4hPQvqk1tbXb3k7JNRT31LW7gmGJ4F2iK9",
+          "2qqPMKvMQbkyDq1kB2k1bpJWjKv1M2BF8NBYhtSmRwXV",
+          "EXUzBTmHcYYwoHXjVi4zRBrj92iAcbnDRnsjs5SZ5PoC",
+          "AKfjA7dEpb8783fVkgzKdAQKUEucQixnqXaAEFFwvbaM"
+        ],
+        "signal_amount_usd": 4219.7821,
+        "signal_price": 0.00047271186011608356,
+        "sold_ratio_pct": 43.34,
+        "signal_timestamp_ms": "1779318958937",
+        "signal_cursor": "1779318958937!@#158677",
+        "score": 87.62
+      }
     }
   ],
   "position_ledger": [
-    {
-      "trade_id": "T000007",
-      "symbol": "SPCX",
-      "name": "SpaceExplorationTechnologiesCorp",
-      "status": "持仓中",
-      "buy_price": 0.00029382953459486784,
-      "sell_price": null,
-      "current_price": 0.000265361092515335,
-      "cost_usd": 72.6416,
-      "pnl_usd": -7.0381,
-      "pnl_pct": -9.6888,
-      "opened_at": "2026-05-27T00:40:02.353568+00:00",
-      "closed_at": null,
-      "exit_reason": null
-    },
     {
       "trade_id": "T000001",
       "symbol": "GAPLA",
@@ -704,6 +688,21 @@
       "pnl_pct": -27.4549,
       "opened_at": "2026-05-26T20:39:28.436498+00:00",
       "closed_at": "2026-05-26T21:09:34.339664+00:00",
+      "exit_reason": "STOP_LOSS"
+    },
+    {
+      "trade_id": "T000007",
+      "symbol": "SPCX",
+      "name": "SpaceExplorationTechnologiesCorp",
+      "status": "已平仓",
+      "buy_price": 0.00029382953459486784,
+      "sell_price": 0.0002582138984643576,
+      "current_price": null,
+      "cost_usd": 72.6416,
+      "pnl_usd": -8.805,
+      "pnl_pct": -12.1212,
+      "opened_at": "2026-05-27T00:40:02.353568+00:00",
+      "closed_at": "2026-05-28T07:49:24.137998+00:00",
       "exit_reason": "STOP_LOSS"
     },
     {
@@ -1754,17 +1753,17 @@
       "cash_usd": 775.5045,
       "positions_value_usd": 65.6035,
       "open_positions": 1
+    },
+    {
+      "round": 129,
+      "ts": "2026-05-28T07:49:24.647593+00:00",
+      "equity_usd": 839.3411,
+      "cash_usd": 839.3411,
+      "positions_value_usd": 0.0,
+      "open_positions": 0
     }
   ],
   "round_activity": [
-    {
-      "round": 100,
-      "ts": "2026-05-27T17:16:11.763939+00:00",
-      "signals": 19,
-      "candidates": 0,
-      "opened": 0,
-      "positions": 1
-    },
     {
       "round": 101,
       "ts": "2026-05-27T17:46:16.746788+00:00",
@@ -1988,6 +1987,14 @@
       "candidates": 0,
       "opened": 0,
       "positions": 1
+    },
+    {
+      "round": 129,
+      "ts": "2026-05-28T07:49:24.483497+00:00",
+      "signals": 15,
+      "candidates": 0,
+      "opened": 0,
+      "positions": 0
     }
   ],
   "recent_trades": [
@@ -2290,41 +2297,61 @@
       "realized_pnl_pct": -82.6023,
       "unrealized_pnl_pct": -82.6023,
       "exit_reason": "STOP_LOSS"
+    },
+    {
+      "ts": "2026-05-28T07:49:24.138047+00:00",
+      "type": "SELL",
+      "round": 128,
+      "trade_id": "T000007",
+      "symbol": "SPCX",
+      "name": "SpaceExplorationTechnologiesCorp",
+      "address": "26YRpwvWhTSBSAkQbhNP6AXBNrJe8uRxibAn7ZXXpump",
+      "buy_price": 0.00029382953459486784,
+      "sell_price": 0.0002582138984643576,
+      "entry_price": 0.00029382953459486784,
+      "last_price": 0.0002582138984643576,
+      "cost_usd": 72.6416,
+      "pnl_usd": -8.805,
+      "pnl_pct": -12.1212,
+      "realized_pnl_usd": -8.805,
+      "realized_pnl_pct": -12.1212,
+      "unrealized_pnl_pct": -12.1212,
+      "exit_reason": "STOP_LOSS"
     }
   ],
   "risk": {
-    "cooldowns": 0,
-    "blacklist": 2,
+    "cooldowns": 1,
+    "blacklist": 3,
     "stop_loss_counts": 5
   },
   "strategy_analysis": {
     "strategy_version": "v4.1-whale-tuned",
-    "round": 128,
-    "equity_usd": 841.108,
-    "total_return_pct": -15.8892,
-    "realized_pnl_usd": -151.85389484,
-    "closed_trades": 7,
-    "open_trades": 1,
+    "round": 129,
+    "equity_usd": 839.3411,
+    "total_return_pct": -16.0659,
+    "realized_pnl_usd": -160.65892204,
+    "closed_trades": 8,
+    "open_trades": 0,
     "overall_closed": {
-      "count": 7,
+      "count": 8,
       "win_rate": 0.0,
-      "avg_pnl_pct": -28.7308,
-      "total_pnl_usd": -151.8539
+      "avg_pnl_pct": -26.6546,
+      "total_pnl_usd": -160.6589
     },
     "by_wallet_type": {
       "Whale": {
         "count": 8,
         "win_rate": 0.0,
-        "avg_pnl_pct": -25.1394,
-        "total_pnl_usd": -151.8539
+        "avg_pnl_pct": -26.6546,
+        "total_pnl_usd": -160.6589
       }
     },
     "by_sold_ratio": {
       "low_sold<=50": {
         "count": 8,
         "win_rate": 0.0,
-        "avg_pnl_pct": -25.1394,
-        "total_pnl_usd": -151.8539
+        "avg_pnl_pct": -26.6546,
+        "total_pnl_usd": -160.6589
       },
       "mid_sold_51_75": {
         "count": 0,
@@ -2343,8 +2370,8 @@
       "80+": {
         "count": 8,
         "win_rate": 0.0,
-        "avg_pnl_pct": -25.1394,
-        "total_pnl_usd": -151.8539
+        "avg_pnl_pct": -26.6546,
+        "total_pnl_usd": -160.6589
       },
       "<60": {
         "count": 0,
@@ -2440,14 +2467,14 @@
       },
       {
         "symbol": "SPCX",
-        "status": "open",
-        "exit_reason": null,
+        "status": "closed",
+        "exit_reason": "STOP_LOSS",
         "score": 87.62,
         "wallet_type": "Whale",
         "sold_ratio_pct": 43.34,
         "trigger_wallet_count": 4,
-        "pnl_usd": null,
-        "pnl_pct": null
+        "pnl_usd": -8.805,
+        "pnl_pct": -12.1212
       }
     ]
   },
@@ -2459,10 +2486,10 @@
     "scan_interval_seconds": 1800,
     "scan_interval_label": "30 分钟",
     "session_started_at": "2026-05-25T10:34:29.261062+00:00",
-    "last_tick_at": "2026-05-28T07:19:21.023787+00:00",
-    "seconds_since_last_tick": 1,
-    "session_uptime_seconds": 247492,
-    "cumulative_online_seconds": 229472,
-    "tick_count": 132
+    "last_tick_at": "2026-05-28T07:49:24.483589+00:00",
+    "seconds_since_last_tick": 0,
+    "session_uptime_seconds": 249295,
+    "cumulative_online_seconds": 231275,
+    "tick_count": 133
   }
 }
