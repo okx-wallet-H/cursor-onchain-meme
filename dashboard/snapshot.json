@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-05-28T07:49:24.648374+00:00",
+  "generated_at": "2026-05-28T08:19:27.180009+00:00",
   "project": "meme-onchain-explorer",
   "chain": "solana",
-  "round": 129,
-  "scan_count": 129,
-  "last_round_at": "2026-05-28T07:49:24.139489+00:00",
+  "round": 130,
+  "scan_count": 130,
+  "last_round_at": "2026-05-28T08:19:26.328843+00:00",
   "next_round_in_seconds": 1799,
-  "updated_at": "2026-05-28T07:49:24.568700+00:00",
+  "updated_at": "2026-05-28T08:19:27.121810+00:00",
   "config": {
     "initial_cash_usd": 1000.0,
     "max_positions": 3,
@@ -1761,6 +1761,14 @@
       "cash_usd": 839.3411,
       "positions_value_usd": 0.0,
       "open_positions": 0
+    },
+    {
+      "round": 130,
+      "ts": "2026-05-28T08:19:27.179060+00:00",
+      "equity_usd": 839.3411,
+      "cash_usd": 839.3411,
+      "positions_value_usd": 0.0,
+      "open_positions": 0
     }
   ],
   "round_activity": [
@@ -1991,6 +1999,14 @@
     {
       "round": 129,
       "ts": "2026-05-28T07:49:24.483497+00:00",
+      "signals": 15,
+      "candidates": 0,
+      "opened": 0,
+      "positions": 0
+    },
+    {
+      "round": 130,
+      "ts": "2026-05-28T08:19:27.009684+00:00",
       "signals": 15,
       "candidates": 0,
       "opened": 0,
@@ -2326,7 +2342,7 @@
   },
   "strategy_analysis": {
     "strategy_version": "v4.1-whale-tuned",
-    "round": 129,
+    "round": 130,
     "equity_usd": 839.3411,
     "total_return_pct": -16.0659,
     "realized_pnl_usd": -160.65892204,
@@ -2486,10 +2502,10 @@
     "scan_interval_seconds": 1800,
     "scan_interval_label": "30 分钟",
     "session_started_at": "2026-05-25T10:34:29.261062+00:00",
-    "last_tick_at": "2026-05-28T07:49:24.483589+00:00",
+    "last_tick_at": "2026-05-28T08:19:27.009823+00:00",
     "seconds_since_last_tick": 0,
-    "session_uptime_seconds": 249295,
-    "cumulative_online_seconds": 231275,
-    "tick_count": 133
+    "session_uptime_seconds": 251098,
+    "cumulative_online_seconds": 233078,
+    "tick_count": 134
   }
 }
