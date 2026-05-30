@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-05-30T08:53:04.259650+00:00",
+  "generated_at": "2026-05-30T09:23:07.160324+00:00",
   "project": "meme-onchain-explorer",
   "chain": "solana",
-  "round": 207,
-  "scan_count": 207,
-  "last_round_at": "2026-05-30T08:53:03.203615+00:00",
-  "next_round_in_seconds": 1799,
-  "updated_at": "2026-05-30T08:53:03.916336+00:00",
+  "round": 208,
+  "scan_count": 208,
+  "last_round_at": "2026-05-30T09:23:06.684521+00:00",
+  "next_round_in_seconds": 1800,
+  "updated_at": "2026-05-30T09:23:07.110214+00:00",
   "config": {
     "initial_cash_usd": 1000.0,
     "max_positions": 3,
@@ -18,95 +18,25 @@
     "strategy_version": "v4.1-whale-tuned"
   },
   "summary": {
-    "cash_usd": 748.53281755,
-    "positions_value_usd": 59.78968112718043,
-    "equity_usd": 808.3224986771804,
-    "realized_pnl_usd": -186.37737224,
-    "open_positions": 1,
+    "cash_usd": 791.19156164,
+    "positions_value_usd": 0.0,
+    "equity_usd": 791.19156164,
+    "realized_pnl_usd": -208.80843837,
+    "open_positions": 0,
     "initial_cash_usd": 1000.0,
-    "total_pnl_usd": -191.6775,
-    "total_pnl_pct": -19.1678,
-    "unrealized_pnl_usd": -5.3001
+    "total_pnl_usd": -208.8084,
+    "total_pnl_pct": -20.8808,
+    "unrealized_pnl_usd": 0
   },
   "reconciliation": {
     "initial_cash_usd": 1000.0,
-    "cash_usd": 748.53281755,
-    "positions_value_usd": 59.78968112718043,
-    "equity_usd": 808.3224986771804,
-    "realized_pnl_usd": -186.37737224,
-    "unrealized_pnl_usd": -5.3001
+    "cash_usd": 791.19156164,
+    "positions_value_usd": 0.0,
+    "equity_usd": 791.19156164,
+    "realized_pnl_usd": -208.80843837,
+    "unrealized_pnl_usd": 0
   },
-  "open_positions": [
-    {
-      "trade_id": "T000010",
-      "status": "OPEN",
-      "address": "Bnfar2PwsvnU24oqgbrk5XUgaBFyXQsofUJ58bkGmoon",
-      "symbol": "PACKS",
-      "name": "Moonshot Packs",
-      "opened_at": "2026-05-30T06:52:48.970404+00:00",
-      "closed_at": null,
-      "entry_round": 203,
-      "exit_round": null,
-      "entry_price": 6.383893148024607e-05,
-      "signal_price": 0.00016697579627011046,
-      "execution_price": 6.383893148024607e-05,
-      "last_price": 5.864065886363876e-05,
-      "take_profit_price": 8.6182557e-05,
-      "stop_loss_price": 5.617826e-05,
-      "units": 1019594.29320557,
-      "cost_usd": 65.0898,
-      "market_value_usd": 59.7897,
-      "unrealized_pnl_usd": -5.3001,
-      "unrealized_pnl_pct": -8.1428,
-      "max_pnl_pct": 7.2993,
-      "min_pnl_pct": -8.8629,
-      "score": 100.65,
-      "wallet_type_label": "Whale",
-      "trigger_wallet_count": 4,
-      "trigger_wallets": [
-        "CBsf87H3UdW84QRsA8JiYvCskNjWAXcSSsPFoscgizPF",
-        "DNfuF1L62WWyW3pNakVkyGGFzVVhj4Yr52jSmdTyeBHm",
-        "HYqMCUf24LCh2Q6BCvzTzePJ1tzMWUVCTjiJ86JYjEBv",
-        "5n593DWQkpfFgA69mS1MFWJDRZDCLcAuEsQYryqxi22Z"
-      ],
-      "signal_amount_usd": 4539.0967,
-      "sold_ratio_pct": 1.77,
-      "holders": 986.0,
-      "market_cap_usd": 63838.7242,
-      "top10_holder_pct": 11.8877,
-      "cash_before_buy": 813.6226,
-      "cash_after_buy": 748.5328,
-      "equity_at_entry": 813.6226,
-      "exit_reason": null,
-      "realized_pnl_usd": null,
-      "realized_pnl_pct": null,
-      "held_rounds": null,
-      "signal_snapshot": {
-        "chain": "solana",
-        "token_address": "Bnfar2PwsvnU24oqgbrk5XUgaBFyXQsofUJ58bkGmoon",
-        "symbol": "PACKS",
-        "name": "Moonshot Packs",
-        "holders": 986.0,
-        "market_cap_usd": 63838.7242,
-        "top10_holder_pct": 11.8877,
-        "wallet_type": "3",
-        "wallet_type_label": "Whale",
-        "trigger_wallet_count": 4,
-        "trigger_wallets": [
-          "CBsf87H3UdW84QRsA8JiYvCskNjWAXcSSsPFoscgizPF",
-          "DNfuF1L62WWyW3pNakVkyGGFzVVhj4Yr52jSmdTyeBHm",
-          "HYqMCUf24LCh2Q6BCvzTzePJ1tzMWUVCTjiJ86JYjEBv",
-          "5n593DWQkpfFgA69mS1MFWJDRZDCLcAuEsQYryqxi22Z"
-        ],
-        "signal_amount_usd": 4539.0967,
-        "signal_price": 0.00016697579627011046,
-        "sold_ratio_pct": 1.77,
-        "signal_timestamp_ms": "1780112118802",
-        "signal_cursor": "1780112118802!@#161560",
-        "score": 100.65
-      }
-    }
-  ],
+  "open_positions": [],
   "closed_positions": [
     {
       "trade_id": "T000001",
@@ -736,24 +666,78 @@
         "signal_cursor": "1780112118802!@#161560",
         "score": 101.0
       }
+    },
+    {
+      "trade_id": "T000010",
+      "status": "CLOSED",
+      "address": "Bnfar2PwsvnU24oqgbrk5XUgaBFyXQsofUJ58bkGmoon",
+      "symbol": "PACKS",
+      "name": "Moonshot Packs",
+      "opened_at": "2026-05-30T06:52:48.970404+00:00",
+      "closed_at": "2026-05-30T09:23:06.683484+00:00",
+      "entry_round": 203,
+      "exit_round": 207,
+      "entry_price": 6.383893148024607e-05,
+      "signal_price": 0.00016697579627011046,
+      "execution_price": 6.383893148024607e-05,
+      "last_price": 4.183893964271906e-05,
+      "take_profit_price": 8.6182557e-05,
+      "stop_loss_price": 5.617826e-05,
+      "units": 1019594.29320557,
+      "cost_usd": 65.0898,
+      "market_value_usd": 42.6587,
+      "unrealized_pnl_usd": 0.0,
+      "unrealized_pnl_pct": -34.4617,
+      "max_pnl_pct": 7.2993,
+      "min_pnl_pct": -34.4617,
+      "score": 100.65,
+      "wallet_type_label": "Whale",
+      "trigger_wallet_count": 4,
+      "trigger_wallets": [
+        "CBsf87H3UdW84QRsA8JiYvCskNjWAXcSSsPFoscgizPF",
+        "DNfuF1L62WWyW3pNakVkyGGFzVVhj4Yr52jSmdTyeBHm",
+        "HYqMCUf24LCh2Q6BCvzTzePJ1tzMWUVCTjiJ86JYjEBv",
+        "5n593DWQkpfFgA69mS1MFWJDRZDCLcAuEsQYryqxi22Z"
+      ],
+      "signal_amount_usd": 4539.0967,
+      "sold_ratio_pct": 1.77,
+      "holders": 986.0,
+      "market_cap_usd": 63838.7242,
+      "top10_holder_pct": 11.8877,
+      "cash_before_buy": 813.6226,
+      "cash_after_buy": 748.5328,
+      "equity_at_entry": 813.6226,
+      "exit_reason": "STOP_LOSS",
+      "realized_pnl_usd": -22.4311,
+      "realized_pnl_pct": -34.4617,
+      "held_rounds": 4,
+      "signal_snapshot": {
+        "chain": "solana",
+        "token_address": "Bnfar2PwsvnU24oqgbrk5XUgaBFyXQsofUJ58bkGmoon",
+        "symbol": "PACKS",
+        "name": "Moonshot Packs",
+        "holders": 986.0,
+        "market_cap_usd": 63838.7242,
+        "top10_holder_pct": 11.8877,
+        "wallet_type": "3",
+        "wallet_type_label": "Whale",
+        "trigger_wallet_count": 4,
+        "trigger_wallets": [
+          "CBsf87H3UdW84QRsA8JiYvCskNjWAXcSSsPFoscgizPF",
+          "DNfuF1L62WWyW3pNakVkyGGFzVVhj4Yr52jSmdTyeBHm",
+          "HYqMCUf24LCh2Q6BCvzTzePJ1tzMWUVCTjiJ86JYjEBv",
+          "5n593DWQkpfFgA69mS1MFWJDRZDCLcAuEsQYryqxi22Z"
+        ],
+        "signal_amount_usd": 4539.0967,
+        "signal_price": 0.00016697579627011046,
+        "sold_ratio_pct": 1.77,
+        "signal_timestamp_ms": "1780112118802",
+        "signal_cursor": "1780112118802!@#161560",
+        "score": 100.65
+      }
     }
   ],
   "position_ledger": [
-    {
-      "trade_id": "T000010",
-      "symbol": "PACKS",
-      "name": "Moonshot Packs",
-      "status": "持仓中",
-      "buy_price": 6.383893148024607e-05,
-      "sell_price": null,
-      "current_price": 5.864065886363876e-05,
-      "cost_usd": 65.0898,
-      "pnl_usd": -5.3001,
-      "pnl_pct": -8.1428,
-      "opened_at": "2026-05-30T06:52:48.970404+00:00",
-      "closed_at": null,
-      "exit_reason": null
-    },
     {
       "trade_id": "T000001",
       "symbol": "GAPLA",
@@ -887,6 +871,21 @@
       "pnl_pct": -38.3015,
       "opened_at": "2026-05-30T03:52:22.639167+00:00",
       "closed_at": "2026-05-30T05:22:33.484023+00:00",
+      "exit_reason": "STOP_LOSS"
+    },
+    {
+      "trade_id": "T000010",
+      "symbol": "PACKS",
+      "name": "Moonshot Packs",
+      "status": "已平仓",
+      "buy_price": 6.383893148024607e-05,
+      "sell_price": 4.183893964271906e-05,
+      "current_price": null,
+      "cost_usd": 65.0898,
+      "pnl_usd": -22.4311,
+      "pnl_pct": -34.4617,
+      "opened_at": "2026-05-30T06:52:48.970404+00:00",
+      "closed_at": "2026-05-30T09:23:06.683484+00:00",
       "exit_reason": "STOP_LOSS"
     }
   ],
@@ -2554,17 +2553,17 @@
       "cash_usd": 748.5328,
       "positions_value_usd": 59.7897,
       "open_positions": 1
+    },
+    {
+      "round": 208,
+      "ts": "2026-05-30T09:23:07.159385+00:00",
+      "equity_usd": 791.1916,
+      "cash_usd": 791.1916,
+      "positions_value_usd": 0.0,
+      "open_positions": 0
     }
   ],
   "round_activity": [
-    {
-      "round": 178,
-      "ts": "2026-05-29T18:21:37.678651+00:00",
-      "signals": 14,
-      "candidates": 0,
-      "opened": 0,
-      "positions": 0
-    },
     {
       "round": 179,
       "ts": "2026-05-29T18:51:40.044056+00:00",
@@ -2796,6 +2795,14 @@
       "candidates": 0,
       "opened": 0,
       "positions": 1
+    },
+    {
+      "round": 208,
+      "ts": "2026-05-30T09:23:07.008329+00:00",
+      "signals": 13,
+      "candidates": 0,
+      "opened": 0,
+      "positions": 0
     }
   ],
   "recent_trades": [
@@ -3178,41 +3185,61 @@
       "realized_pnl_pct": null,
       "unrealized_pnl_pct": 0.0,
       "exit_reason": null
+    },
+    {
+      "ts": "2026-05-30T09:23:06.683525+00:00",
+      "type": "SELL",
+      "round": 207,
+      "trade_id": "T000010",
+      "symbol": "PACKS",
+      "name": "Moonshot Packs",
+      "address": "Bnfar2PwsvnU24oqgbrk5XUgaBFyXQsofUJ58bkGmoon",
+      "buy_price": 6.383893148024607e-05,
+      "sell_price": 4.183893964271906e-05,
+      "entry_price": 6.383893148024607e-05,
+      "last_price": 4.183893964271906e-05,
+      "cost_usd": 65.0898,
+      "pnl_usd": -22.4311,
+      "pnl_pct": -34.4617,
+      "realized_pnl_usd": -22.4311,
+      "realized_pnl_pct": -34.4617,
+      "unrealized_pnl_pct": -34.4617,
+      "exit_reason": "STOP_LOSS"
     }
   ],
   "risk": {
-    "cooldowns": 0,
-    "blacklist": 3,
+    "cooldowns": 1,
+    "blacklist": 4,
     "stop_loss_counts": 6
   },
   "strategy_analysis": {
     "strategy_version": "v4.1-whale-tuned",
-    "round": 207,
-    "equity_usd": 808.3225,
-    "total_return_pct": -19.1678,
-    "realized_pnl_usd": -186.37737224,
-    "closed_trades": 9,
-    "open_trades": 1,
+    "round": 208,
+    "equity_usd": 791.1916,
+    "total_return_pct": -20.8808,
+    "realized_pnl_usd": -208.80843837,
+    "closed_trades": 10,
+    "open_trades": 0,
     "overall_closed": {
-      "count": 9,
+      "count": 10,
       "win_rate": 0.0,
-      "avg_pnl_pct": -27.9487,
-      "total_pnl_usd": -186.3774
+      "avg_pnl_pct": -28.6,
+      "total_pnl_usd": -208.8085
     },
     "by_wallet_type": {
       "Whale": {
         "count": 10,
         "win_rate": 0.0,
-        "avg_pnl_pct": -25.1538,
-        "total_pnl_usd": -186.3774
+        "avg_pnl_pct": -28.6,
+        "total_pnl_usd": -208.8085
       }
     },
     "by_sold_ratio": {
       "low_sold<=50": {
         "count": 10,
         "win_rate": 0.0,
-        "avg_pnl_pct": -25.1538,
-        "total_pnl_usd": -186.3774
+        "avg_pnl_pct": -28.6,
+        "total_pnl_usd": -208.8085
       },
       "mid_sold_51_75": {
         "count": 0,
@@ -3231,8 +3258,8 @@
       "80+": {
         "count": 10,
         "win_rate": 0.0,
-        "avg_pnl_pct": -25.1538,
-        "total_pnl_usd": -186.3774
+        "avg_pnl_pct": -28.6,
+        "total_pnl_usd": -208.8085
       },
       "<60": {
         "count": 0,
@@ -3350,14 +3377,14 @@
       },
       {
         "symbol": "PACKS",
-        "status": "open",
-        "exit_reason": null,
+        "status": "closed",
+        "exit_reason": "STOP_LOSS",
         "score": 100.65,
         "wallet_type": "Whale",
         "sold_ratio_pct": 1.77,
         "trigger_wallet_count": 4,
-        "pnl_usd": null,
-        "pnl_pct": null
+        "pnl_usd": -22.4311,
+        "pnl_pct": -34.4617
       }
     ]
   },
@@ -3369,10 +3396,10 @@
     "scan_interval_seconds": 1800,
     "scan_interval_label": "30 分钟",
     "session_started_at": "2026-05-25T10:34:29.261062+00:00",
-    "last_tick_at": "2026-05-30T08:53:03.534143+00:00",
-    "seconds_since_last_tick": 1,
-    "session_uptime_seconds": 425915,
-    "cumulative_online_seconds": 370071,
-    "tick_count": 211
+    "last_tick_at": "2026-05-30T09:23:07.008560+00:00",
+    "seconds_since_last_tick": 0,
+    "session_uptime_seconds": 427718,
+    "cumulative_online_seconds": 371875,
+    "tick_count": 212
   }
 }
