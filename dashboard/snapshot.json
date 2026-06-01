@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-06-01T09:59:25.766914+00:00",
+  "generated_at": "2026-06-01T10:29:29.698151+00:00",
   "project": "meme-onchain-explorer",
   "chain": "solana",
-  "round": 305,
-  "scan_count": 305,
-  "last_round_at": "2026-06-01T09:59:24.685310+00:00",
+  "round": 306,
+  "scan_count": 306,
+  "last_round_at": "2026-06-01T10:29:29.198007+00:00",
   "next_round_in_seconds": 1799,
-  "updated_at": "2026-06-01T09:59:25.442125+00:00",
+  "updated_at": "2026-06-01T10:29:29.652887+00:00",
   "config": {
     "initial_cash_usd": 1000.0,
     "max_positions": 3,
@@ -18,103 +18,25 @@
     "strategy_version": "v4.1-whale-tuned"
   },
   "summary": {
-    "cash_usd": 772.36530003,
-    "positions_value_usd": 67.51844317462411,
-    "equity_usd": 839.8837432046241,
-    "realized_pnl_usd": -160.47249998,
-    "open_positions": 1,
+    "cash_usd": 830.6668998,
+    "positions_value_usd": 0.0,
+    "equity_usd": 830.6668998,
+    "realized_pnl_usd": -169.33310021,
+    "open_positions": 0,
     "initial_cash_usd": 1000.0,
-    "total_pnl_usd": -160.1163,
-    "total_pnl_pct": -16.0116,
-    "unrealized_pnl_usd": 0.3562
+    "total_pnl_usd": -169.3331,
+    "total_pnl_pct": -16.9333,
+    "unrealized_pnl_usd": 0
   },
   "reconciliation": {
     "initial_cash_usd": 1000.0,
-    "cash_usd": 772.36530003,
-    "positions_value_usd": 67.51844317462411,
-    "equity_usd": 839.8837432046241,
-    "realized_pnl_usd": -160.47249998,
-    "unrealized_pnl_usd": 0.3562
+    "cash_usd": 830.6668998,
+    "positions_value_usd": 0.0,
+    "equity_usd": 830.6668998,
+    "realized_pnl_usd": -169.33310021,
+    "unrealized_pnl_usd": 0
   },
-  "open_positions": [
-    {
-      "trade_id": "T000013",
-      "status": "OPEN",
-      "address": "EcWhpWQYhjEExPBmdS8RwVnsivmoZeLMQbEPpFQcViRL",
-      "symbol": "DAI",
-      "name": "DAI - The World Cup Token",
-      "opened_at": "2026-06-01T07:29:01.099573+00:00",
-      "closed_at": null,
-      "entry_round": 300,
-      "exit_round": null,
-      "entry_price": 0.000491742267114952,
-      "signal_price": 0.00025829824335596967,
-      "execution_price": 0.000491742267114952,
-      "last_price": 0.0004943505769253431,
-      "take_profit_price": 0.000663852061,
-      "stop_loss_price": 0.000432733195,
-      "units": 136580.08370206,
-      "cost_usd": 67.1622,
-      "market_value_usd": 67.5184,
-      "unrealized_pnl_usd": 0.3562,
-      "unrealized_pnl_pct": 0.5304,
-      "max_pnl_pct": 3.6156,
-      "min_pnl_pct": -1.6173,
-      "score": 135.42,
-      "wallet_type_label": "Whale",
-      "trigger_wallet_count": 8,
-      "trigger_wallets": [
-        "HqVJEkbMb2PPkBsnjxXUUrLRtACj7CTFaxyk85Jno1pi",
-        "7pbAy2dW1TDs91uwdBoni6bZMrygu3KuWa98ra1fzzi8",
-        "4KDCJ6nVbtwSTcjMitWM3GRCBsVQpTFGKZhcvtXdt9gn",
-        "BDQwhTvvjW1wQvhQ6JQYXdUxncrUxz7GzX4hEhYTfp9n",
-        "2P9oeLuf4FhT3ao81KUxygRHoH4YwW8Bn5KAcrGeCq1Z",
-        "7vHN2qzsCKm4H46FmA23EVKTSUceMYQZut6tLXuJyHHU",
-        "HbvSea9oSax4x5iKPfBJt187eem2wvxcke2gLqyb96Fs",
-        "DYtENvddf6yaTxnFnviZBa5UjXqy41xbY9CsW3bQujm2"
-      ],
-      "signal_amount_usd": 3137.1829,
-      "sold_ratio_pct": 27.89,
-      "holders": 731.0,
-      "market_cap_usd": 491742.2523,
-      "top10_holder_pct": 8.7352,
-      "cash_before_buy": 839.5275,
-      "cash_after_buy": 772.3653,
-      "equity_at_entry": 839.5275,
-      "exit_reason": null,
-      "realized_pnl_usd": null,
-      "realized_pnl_pct": null,
-      "held_rounds": null,
-      "signal_snapshot": {
-        "chain": "solana",
-        "token_address": "EcWhpWQYhjEExPBmdS8RwVnsivmoZeLMQbEPpFQcViRL",
-        "symbol": "DAI",
-        "name": "DAI - The World Cup Token",
-        "holders": 731.0,
-        "market_cap_usd": 491742.2523,
-        "top10_holder_pct": 8.7352,
-        "wallet_type": "3",
-        "wallet_type_label": "Whale",
-        "trigger_wallet_count": 8,
-        "trigger_wallets": [
-          "HqVJEkbMb2PPkBsnjxXUUrLRtACj7CTFaxyk85Jno1pi",
-          "7pbAy2dW1TDs91uwdBoni6bZMrygu3KuWa98ra1fzzi8",
-          "4KDCJ6nVbtwSTcjMitWM3GRCBsVQpTFGKZhcvtXdt9gn",
-          "BDQwhTvvjW1wQvhQ6JQYXdUxncrUxz7GzX4hEhYTfp9n",
-          "2P9oeLuf4FhT3ao81KUxygRHoH4YwW8Bn5KAcrGeCq1Z",
-          "7vHN2qzsCKm4H46FmA23EVKTSUceMYQZut6tLXuJyHHU",
-          "HbvSea9oSax4x5iKPfBJt187eem2wvxcke2gLqyb96Fs",
-          "DYtENvddf6yaTxnFnviZBa5UjXqy41xbY9CsW3bQujm2"
-        ],
-        "signal_amount_usd": 3137.1829,
-        "signal_price": 0.00025829824335596967,
-        "sold_ratio_pct": 27.89,
-        "signal_timestamp_ms": "1780268237102",
-        "signal_cursor": "1780268237102!@#161975",
-        "score": 135.42
-      }
-    }
-  ],
+  "open_positions": [],
   "closed_positions": [
     {
       "trade_id": "T000001",
@@ -967,24 +889,86 @@
         "signal_cursor": "1780268237102!@#161975",
         "score": 135.42
       }
+    },
+    {
+      "trade_id": "T000013",
+      "status": "CLOSED",
+      "address": "EcWhpWQYhjEExPBmdS8RwVnsivmoZeLMQbEPpFQcViRL",
+      "symbol": "DAI",
+      "name": "DAI - The World Cup Token",
+      "opened_at": "2026-06-01T07:29:01.099573+00:00",
+      "closed_at": "2026-06-01T10:29:29.196960+00:00",
+      "entry_round": 300,
+      "exit_round": 305,
+      "entry_price": 0.000491742267114952,
+      "signal_price": 0.00025829824335596967,
+      "execution_price": 0.000491742267114952,
+      "last_price": 0.0004268675065328288,
+      "take_profit_price": 0.000663852061,
+      "stop_loss_price": 0.000432733195,
+      "units": 136580.08370206,
+      "cost_usd": 67.1622,
+      "market_value_usd": 58.3016,
+      "unrealized_pnl_usd": 0.0,
+      "unrealized_pnl_pct": -13.1928,
+      "max_pnl_pct": 3.6156,
+      "min_pnl_pct": -13.1928,
+      "score": 135.42,
+      "wallet_type_label": "Whale",
+      "trigger_wallet_count": 8,
+      "trigger_wallets": [
+        "HqVJEkbMb2PPkBsnjxXUUrLRtACj7CTFaxyk85Jno1pi",
+        "7pbAy2dW1TDs91uwdBoni6bZMrygu3KuWa98ra1fzzi8",
+        "4KDCJ6nVbtwSTcjMitWM3GRCBsVQpTFGKZhcvtXdt9gn",
+        "BDQwhTvvjW1wQvhQ6JQYXdUxncrUxz7GzX4hEhYTfp9n",
+        "2P9oeLuf4FhT3ao81KUxygRHoH4YwW8Bn5KAcrGeCq1Z",
+        "7vHN2qzsCKm4H46FmA23EVKTSUceMYQZut6tLXuJyHHU",
+        "HbvSea9oSax4x5iKPfBJt187eem2wvxcke2gLqyb96Fs",
+        "DYtENvddf6yaTxnFnviZBa5UjXqy41xbY9CsW3bQujm2"
+      ],
+      "signal_amount_usd": 3137.1829,
+      "sold_ratio_pct": 27.89,
+      "holders": 731.0,
+      "market_cap_usd": 491742.2523,
+      "top10_holder_pct": 8.7352,
+      "cash_before_buy": 839.5275,
+      "cash_after_buy": 772.3653,
+      "equity_at_entry": 839.5275,
+      "exit_reason": "STOP_LOSS",
+      "realized_pnl_usd": -8.8606,
+      "realized_pnl_pct": -13.1928,
+      "held_rounds": 5,
+      "signal_snapshot": {
+        "chain": "solana",
+        "token_address": "EcWhpWQYhjEExPBmdS8RwVnsivmoZeLMQbEPpFQcViRL",
+        "symbol": "DAI",
+        "name": "DAI - The World Cup Token",
+        "holders": 731.0,
+        "market_cap_usd": 491742.2523,
+        "top10_holder_pct": 8.7352,
+        "wallet_type": "3",
+        "wallet_type_label": "Whale",
+        "trigger_wallet_count": 8,
+        "trigger_wallets": [
+          "HqVJEkbMb2PPkBsnjxXUUrLRtACj7CTFaxyk85Jno1pi",
+          "7pbAy2dW1TDs91uwdBoni6bZMrygu3KuWa98ra1fzzi8",
+          "4KDCJ6nVbtwSTcjMitWM3GRCBsVQpTFGKZhcvtXdt9gn",
+          "BDQwhTvvjW1wQvhQ6JQYXdUxncrUxz7GzX4hEhYTfp9n",
+          "2P9oeLuf4FhT3ao81KUxygRHoH4YwW8Bn5KAcrGeCq1Z",
+          "7vHN2qzsCKm4H46FmA23EVKTSUceMYQZut6tLXuJyHHU",
+          "HbvSea9oSax4x5iKPfBJt187eem2wvxcke2gLqyb96Fs",
+          "DYtENvddf6yaTxnFnviZBa5UjXqy41xbY9CsW3bQujm2"
+        ],
+        "signal_amount_usd": 3137.1829,
+        "signal_price": 0.00025829824335596967,
+        "sold_ratio_pct": 27.89,
+        "signal_timestamp_ms": "1780268237102",
+        "signal_cursor": "1780268237102!@#161975",
+        "score": 135.42
+      }
     }
   ],
   "position_ledger": [
-    {
-      "trade_id": "T000013",
-      "symbol": "DAI",
-      "name": "DAI - The World Cup Token",
-      "status": "持仓中",
-      "buy_price": 0.000491742267114952,
-      "sell_price": null,
-      "current_price": 0.0004943505769253431,
-      "cost_usd": 67.1622,
-      "pnl_usd": 0.3562,
-      "pnl_pct": 0.5304,
-      "opened_at": "2026-06-01T07:29:01.099573+00:00",
-      "closed_at": null,
-      "exit_reason": null
-    },
     {
       "trade_id": "T000001",
       "symbol": "GAPLA",
@@ -1164,6 +1148,21 @@
       "opened_at": "2026-06-01T02:58:16.702625+00:00",
       "closed_at": "2026-06-01T05:58:43.824912+00:00",
       "exit_reason": "TAKE_PROFIT"
+    },
+    {
+      "trade_id": "T000013",
+      "symbol": "DAI",
+      "name": "DAI - The World Cup Token",
+      "status": "已平仓",
+      "buy_price": 0.000491742267114952,
+      "sell_price": 0.0004268675065328288,
+      "current_price": null,
+      "cost_usd": 67.1622,
+      "pnl_usd": -8.8606,
+      "pnl_pct": -13.1928,
+      "opened_at": "2026-06-01T07:29:01.099573+00:00",
+      "closed_at": "2026-06-01T10:29:29.196960+00:00",
+      "exit_reason": "STOP_LOSS"
     }
   ],
   "equity_curve": [
@@ -3614,17 +3613,17 @@
       "cash_usd": 772.3653,
       "positions_value_usd": 67.5184,
       "open_positions": 1
+    },
+    {
+      "round": 306,
+      "ts": "2026-06-01T10:29:29.697340+00:00",
+      "equity_usd": 830.6669,
+      "cash_usd": 830.6669,
+      "positions_value_usd": 0.0,
+      "open_positions": 0
     }
   ],
   "round_activity": [
-    {
-      "round": 276,
-      "ts": "2026-05-31T19:27:17.940616+00:00",
-      "signals": 11,
-      "candidates": 0,
-      "opened": 0,
-      "positions": 0
-    },
     {
       "round": 277,
       "ts": "2026-05-31T19:57:21.690694+00:00",
@@ -3856,6 +3855,14 @@
       "candidates": 0,
       "opened": 0,
       "positions": 1
+    },
+    {
+      "round": 306,
+      "ts": "2026-06-01T10:29:29.529849+00:00",
+      "signals": 11,
+      "candidates": 0,
+      "opened": 0,
+      "positions": 0
     }
   ],
   "recent_trades": [
@@ -4358,41 +4365,61 @@
       "realized_pnl_pct": null,
       "unrealized_pnl_pct": 0.0,
       "exit_reason": null
+    },
+    {
+      "ts": "2026-06-01T10:29:29.197056+00:00",
+      "type": "SELL",
+      "round": 305,
+      "trade_id": "T000013",
+      "symbol": "DAI",
+      "name": "DAI - The World Cup Token",
+      "address": "EcWhpWQYhjEExPBmdS8RwVnsivmoZeLMQbEPpFQcViRL",
+      "buy_price": 0.000491742267114952,
+      "sell_price": 0.0004268675065328288,
+      "entry_price": 0.000491742267114952,
+      "last_price": 0.0004268675065328288,
+      "cost_usd": 67.1622,
+      "pnl_usd": -8.8606,
+      "pnl_pct": -13.1928,
+      "realized_pnl_usd": -8.8606,
+      "realized_pnl_pct": -13.1928,
+      "unrealized_pnl_pct": -13.1928,
+      "exit_reason": "STOP_LOSS"
     }
   ],
   "risk": {
-    "cooldowns": 0,
+    "cooldowns": 1,
     "blacklist": 4,
-    "stop_loss_counts": 6
+    "stop_loss_counts": 7
   },
   "strategy_analysis": {
     "strategy_version": "v4.1-whale-tuned",
-    "round": 305,
-    "equity_usd": 839.8837,
-    "total_return_pct": -16.0116,
-    "realized_pnl_usd": -160.47249998,
-    "closed_trades": 12,
-    "open_trades": 1,
+    "round": 306,
+    "equity_usd": 830.6669,
+    "total_return_pct": -16.9333,
+    "realized_pnl_usd": -169.33310021,
+    "closed_trades": 13,
+    "open_trades": 0,
     "overall_closed": {
-      "count": 12,
-      "win_rate": 0.1667,
-      "avg_pnl_pct": -17.5636,
-      "total_pnl_usd": -160.4726
+      "count": 13,
+      "win_rate": 0.1538,
+      "avg_pnl_pct": -17.2274,
+      "total_pnl_usd": -169.3332
     },
     "by_wallet_type": {
       "Whale": {
         "count": 13,
         "win_rate": 0.1538,
-        "avg_pnl_pct": -16.2126,
-        "total_pnl_usd": -160.4726
+        "avg_pnl_pct": -17.2274,
+        "total_pnl_usd": -169.3332
       }
     },
     "by_sold_ratio": {
       "low_sold<=50": {
         "count": 13,
         "win_rate": 0.1538,
-        "avg_pnl_pct": -16.2126,
-        "total_pnl_usd": -160.4726
+        "avg_pnl_pct": -17.2274,
+        "total_pnl_usd": -169.3332
       },
       "mid_sold_51_75": {
         "count": 0,
@@ -4411,8 +4438,8 @@
       "80+": {
         "count": 13,
         "win_rate": 0.1538,
-        "avg_pnl_pct": -16.2126,
-        "total_pnl_usd": -160.4726
+        "avg_pnl_pct": -17.2274,
+        "total_pnl_usd": -169.3332
       },
       "<60": {
         "count": 0,
@@ -4530,14 +4557,14 @@
       },
       {
         "symbol": "DAI",
-        "status": "open",
-        "exit_reason": null,
+        "status": "closed",
+        "exit_reason": "STOP_LOSS",
         "score": 135.42,
         "wallet_type": "Whale",
         "sold_ratio_pct": 27.89,
         "trigger_wallet_count": 8,
-        "pnl_usd": null,
-        "pnl_pct": null
+        "pnl_usd": -8.8606,
+        "pnl_pct": -13.1928
       }
     ]
   },
@@ -4549,10 +4576,10 @@
     "scan_interval_seconds": 1800,
     "scan_interval_label": "30 分钟",
     "session_started_at": "2026-05-25T10:34:29.261062+00:00",
-    "last_tick_at": "2026-06-01T09:59:25.009604+00:00",
-    "seconds_since_last_tick": 1,
-    "session_uptime_seconds": 602697,
-    "cumulative_online_seconds": 546853,
-    "tick_count": 309
+    "last_tick_at": "2026-06-01T10:29:29.529976+00:00",
+    "seconds_since_last_tick": 0,
+    "session_uptime_seconds": 604500,
+    "cumulative_online_seconds": 548657,
+    "tick_count": 310
   }
 }
