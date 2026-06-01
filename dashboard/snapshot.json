@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-06-01T19:00:22.715903+00:00",
+  "generated_at": "2026-06-01T19:30:26.350013+00:00",
   "project": "meme-onchain-explorer",
   "chain": "solana",
-  "round": 323,
-  "scan_count": 323,
-  "last_round_at": "2026-06-01T19:00:21.804597+00:00",
-  "next_round_in_seconds": 1799,
-  "updated_at": "2026-06-01T19:00:22.672127+00:00",
+  "round": 324,
+  "scan_count": 324,
+  "last_round_at": "2026-06-01T19:30:24.226299+00:00",
+  "next_round_in_seconds": 1798,
+  "updated_at": "2026-06-01T19:30:25.998844+00:00",
   "config": {
     "initial_cash_usd": 1000.0,
     "max_positions": 3,
@@ -18,25 +18,95 @@
     "strategy_version": "v4.1-whale-tuned"
   },
   "summary": {
-    "cash_usd": 820.23390748,
-    "positions_value_usd": 0.0,
-    "equity_usd": 820.23390748,
+    "cash_usd": 754.61519488,
+    "positions_value_usd": 65.43035468950107,
+    "equity_usd": 820.0455495695011,
     "realized_pnl_usd": -179.76609254,
-    "open_positions": 0,
+    "open_positions": 1,
     "initial_cash_usd": 1000.0,
-    "total_pnl_usd": -179.7661,
-    "total_pnl_pct": -17.9766,
-    "unrealized_pnl_usd": 0
+    "total_pnl_usd": -179.9545,
+    "total_pnl_pct": -17.9954,
+    "unrealized_pnl_usd": -0.1884
   },
   "reconciliation": {
     "initial_cash_usd": 1000.0,
-    "cash_usd": 820.23390748,
-    "positions_value_usd": 0.0,
-    "equity_usd": 820.23390748,
+    "cash_usd": 754.61519488,
+    "positions_value_usd": 65.43035468950107,
+    "equity_usd": 820.0455495695011,
     "realized_pnl_usd": -179.76609254,
-    "unrealized_pnl_usd": 0
+    "unrealized_pnl_usd": -0.1884
   },
-  "open_positions": [],
+  "open_positions": [
+    {
+      "trade_id": "T000015",
+      "status": "OPEN",
+      "address": "ACuZX4asxyqcRd6BTgGBKXJjViUP3kZQuDUQawBapump",
+      "symbol": "RETARD",
+      "name": "Retard Coin",
+      "opened_at": "2026-06-01T19:30:25.549808+00:00",
+      "closed_at": null,
+      "entry_round": 324,
+      "exit_round": null,
+      "entry_price": 0.0007394110671129912,
+      "signal_price": 0.0004181227681346207,
+      "execution_price": 0.0007394110671129912,
+      "last_price": 0.00073728859446909,
+      "take_profit_price": 0.000998204941,
+      "stop_loss_price": 0.000650681739,
+      "units": 88744.56377101,
+      "cost_usd": 65.6187,
+      "market_value_usd": 65.4304,
+      "unrealized_pnl_usd": -0.1884,
+      "unrealized_pnl_pct": -0.287,
+      "max_pnl_pct": 0.0,
+      "min_pnl_pct": 0.0,
+      "score": 96.99,
+      "wallet_type_label": "Whale",
+      "trigger_wallet_count": 4,
+      "trigger_wallets": [
+        "2WbqdrxRN6uZwFPNsNufQVoVneUU5kNTuXgbEoULEJ9k",
+        "7QsRjSy9hiWYnEwSaWKjDcV4Zik1VJSCYt89amPsL6gB",
+        "3aHoAn7BFYEaNSu4PY8pPY8NZUFUW7BnE83F5FLiaEhh",
+        "2Dcq1qxEwtHbM9bkwLgx3cCJKVTgY4HhtTTY81RRoAb7"
+      ],
+      "signal_amount_usd": 4035.6608,
+      "sold_ratio_pct": 20.07,
+      "holders": 1274.0,
+      "market_cap_usd": 739411.0533,
+      "top10_holder_pct": 11.1349,
+      "cash_before_buy": 820.2339,
+      "cash_after_buy": 754.6152,
+      "equity_at_entry": 820.2339,
+      "exit_reason": null,
+      "realized_pnl_usd": null,
+      "realized_pnl_pct": null,
+      "held_rounds": null,
+      "signal_snapshot": {
+        "chain": "solana",
+        "token_address": "ACuZX4asxyqcRd6BTgGBKXJjViUP3kZQuDUQawBapump",
+        "symbol": "RETARD",
+        "name": "Retard Coin",
+        "holders": 1274.0,
+        "market_cap_usd": 739411.0533,
+        "top10_holder_pct": 11.1349,
+        "wallet_type": "3",
+        "wallet_type_label": "Whale",
+        "trigger_wallet_count": 4,
+        "trigger_wallets": [
+          "2WbqdrxRN6uZwFPNsNufQVoVneUU5kNTuXgbEoULEJ9k",
+          "7QsRjSy9hiWYnEwSaWKjDcV4Zik1VJSCYt89amPsL6gB",
+          "3aHoAn7BFYEaNSu4PY8pPY8NZUFUW7BnE83F5FLiaEhh",
+          "2Dcq1qxEwtHbM9bkwLgx3cCJKVTgY4HhtTTY81RRoAb7"
+        ],
+        "signal_amount_usd": 4035.6608,
+        "signal_price": 0.0004181227681346207,
+        "sold_ratio_pct": 20.07,
+        "signal_timestamp_ms": "1780340482663",
+        "signal_cursor": "1780340482663!@#162290",
+        "score": 96.99
+      }
+    }
+  ],
   "closed_positions": [
     {
       "trade_id": "T000001",
@@ -1046,6 +1116,21 @@
     }
   ],
   "position_ledger": [
+    {
+      "trade_id": "T000015",
+      "symbol": "RETARD",
+      "name": "Retard Coin",
+      "status": "持仓中",
+      "buy_price": 0.0007394110671129912,
+      "sell_price": null,
+      "current_price": 0.00073728859446909,
+      "cost_usd": 65.6187,
+      "pnl_usd": -0.1884,
+      "pnl_pct": -0.287,
+      "opened_at": "2026-06-01T19:30:25.549808+00:00",
+      "closed_at": null,
+      "exit_reason": null
+    },
     {
       "trade_id": "T000001",
       "symbol": "GAPLA",
@@ -3849,17 +3934,17 @@
       "cash_usd": 820.2339,
       "positions_value_usd": 0.0,
       "open_positions": 0
+    },
+    {
+      "round": 324,
+      "ts": "2026-06-01T19:30:26.344243+00:00",
+      "equity_usd": 820.0455,
+      "cash_usd": 754.6152,
+      "positions_value_usd": 65.4304,
+      "open_positions": 1
     }
   ],
   "round_activity": [
-    {
-      "round": 294,
-      "ts": "2026-06-01T04:28:30.554845+00:00",
-      "signals": 12,
-      "candidates": 0,
-      "opened": 0,
-      "positions": 1
-    },
     {
       "round": 295,
       "ts": "2026-06-01T04:58:35.221647+00:00",
@@ -4091,6 +4176,14 @@
       "candidates": 0,
       "opened": 0,
       "positions": 0
+    },
+    {
+      "round": 324,
+      "ts": "2026-06-01T19:30:25.550892+00:00",
+      "signals": 11,
+      "candidates": 1,
+      "opened": 1,
+      "positions": 1
     }
   ],
   "recent_trades": [
@@ -4653,6 +4746,26 @@
       "realized_pnl_pct": -15.6997,
       "unrealized_pnl_pct": -15.6997,
       "exit_reason": "STOP_LOSS"
+    },
+    {
+      "ts": "2026-06-01T19:30:25.549981+00:00",
+      "type": "BUY",
+      "round": 324,
+      "trade_id": "T000015",
+      "symbol": "RETARD",
+      "name": "Retard Coin",
+      "address": "ACuZX4asxyqcRd6BTgGBKXJjViUP3kZQuDUQawBapump",
+      "buy_price": 0.0007394110671129912,
+      "sell_price": null,
+      "entry_price": 0.0007394110671129912,
+      "last_price": 0.0007394110671129912,
+      "cost_usd": 65.6187,
+      "pnl_usd": null,
+      "pnl_pct": 0.0,
+      "realized_pnl_usd": null,
+      "realized_pnl_pct": null,
+      "unrealized_pnl_pct": 0.0,
+      "exit_reason": null
     }
   ],
   "risk": {
@@ -4662,12 +4775,12 @@
   },
   "strategy_analysis": {
     "strategy_version": "v4.1-whale-tuned",
-    "round": 323,
-    "equity_usd": 820.2339,
-    "total_return_pct": -17.9766,
+    "round": 324,
+    "equity_usd": 820.0455,
+    "total_return_pct": -17.9954,
     "realized_pnl_usd": -179.76609254,
     "closed_trades": 14,
-    "open_trades": 0,
+    "open_trades": 1,
     "overall_closed": {
       "count": 14,
       "win_rate": 0.1429,
@@ -4676,17 +4789,17 @@
     },
     "by_wallet_type": {
       "Whale": {
-        "count": 14,
-        "win_rate": 0.1429,
-        "avg_pnl_pct": -17.1183,
+        "count": 15,
+        "win_rate": 0.1333,
+        "avg_pnl_pct": -15.9771,
         "total_pnl_usd": -179.7662
       }
     },
     "by_sold_ratio": {
       "low_sold<=50": {
-        "count": 14,
-        "win_rate": 0.1429,
-        "avg_pnl_pct": -17.1183,
+        "count": 15,
+        "win_rate": 0.1333,
+        "avg_pnl_pct": -15.9771,
         "total_pnl_usd": -179.7662
       },
       "mid_sold_51_75": {
@@ -4704,9 +4817,9 @@
     },
     "by_score_bucket": {
       "80+": {
-        "count": 14,
-        "win_rate": 0.1429,
-        "avg_pnl_pct": -17.1183,
+        "count": 15,
+        "win_rate": 0.1333,
+        "avg_pnl_pct": -15.9771,
         "total_pnl_usd": -179.7662
       },
       "<60": {
@@ -4724,17 +4837,6 @@
     },
     "recommendations": [],
     "recent_trades": [
-      {
-        "symbol": "FERRIS",
-        "status": "closed",
-        "exit_reason": "STOP_LOSS",
-        "score": 89.57,
-        "wallet_type": "Whale",
-        "sold_ratio_pct": 37.17,
-        "trigger_wallet_count": 4,
-        "pnl_usd": -20.5485,
-        "pnl_pct": -27.4549
-      },
       {
         "symbol": "SPCX",
         "status": "closed",
@@ -4833,6 +4935,17 @@
         "trigger_wallet_count": 8,
         "pnl_usd": -10.433,
         "pnl_pct": -15.6997
+      },
+      {
+        "symbol": "RETARD",
+        "status": "open",
+        "exit_reason": null,
+        "score": 96.99,
+        "wallet_type": "Whale",
+        "sold_ratio_pct": 20.07,
+        "trigger_wallet_count": 4,
+        "pnl_usd": null,
+        "pnl_pct": null
       }
     ]
   },
@@ -4844,10 +4957,10 @@
     "scan_interval_seconds": 1800,
     "scan_interval_label": "30 分钟",
     "session_started_at": "2026-05-25T10:34:29.261062+00:00",
-    "last_tick_at": "2026-06-01T19:00:22.510082+00:00",
-    "seconds_since_last_tick": 0,
-    "session_uptime_seconds": 635153,
-    "cumulative_online_seconds": 579310,
-    "tick_count": 327
+    "last_tick_at": "2026-06-01T19:30:25.551161+00:00",
+    "seconds_since_last_tick": 1,
+    "session_uptime_seconds": 636957,
+    "cumulative_online_seconds": 581113,
+    "tick_count": 328
   }
 }
