@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-06-02T05:20:21.869845+00:00",
+  "generated_at": "2026-06-02T05:30:43.530739+00:00",
   "project": "meme-onchain-explorer",
   "chain": "solana",
   "round": 343,
   "scan_count": 343,
   "last_round_at": "2026-06-02T05:07:39.894896+00:00",
-  "next_round_in_seconds": 1038,
-  "updated_at": "2026-06-02T05:20:21.677299+00:00",
+  "next_round_in_seconds": 416,
+  "updated_at": "2026-06-02T05:30:43.406615+00:00",
   "config": {
     "initial_cash_usd": 1000.0,
     "max_positions": 3,
@@ -4088,7 +4088,7 @@
     },
     {
       "round": 343,
-      "ts": "2026-06-02T05:20:21.867213+00:00",
+      "ts": "2026-06-02T05:30:43.528903+00:00",
       "equity_usd": 806.8594,
       "cash_usd": 806.8594,
       "positions_value_usd": 0.0,
@@ -5128,10 +5128,10 @@
     "scan_interval_seconds": 1800,
     "scan_interval_label": "30 分钟",
     "session_started_at": "2026-05-25T10:34:29.261062+00:00",
-    "last_tick_at": "2026-06-02T05:20:15.723087+00:00",
-    "seconds_since_last_tick": 6,
-    "session_uptime_seconds": 672353,
-    "cumulative_online_seconds": 616503,
-    "tick_count": 348
+    "last_tick_at": "2026-06-02T05:30:41.475193+00:00",
+    "seconds_since_last_tick": 2,
+    "session_uptime_seconds": 672974,
+    "cumulative_online_seconds": 617129,
+    "tick_count": 349
   }
 }
