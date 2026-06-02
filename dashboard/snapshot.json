@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-06-02T19:32:20.983002+00:00",
+  "generated_at": "2026-06-02T20:02:24.350578+00:00",
   "project": "meme-onchain-explorer",
   "chain": "solana",
-  "round": 371,
-  "scan_count": 371,
-  "last_round_at": "2026-06-02T19:32:20.059759+00:00",
-  "next_round_in_seconds": 1799,
-  "updated_at": "2026-06-02T19:32:20.939817+00:00",
+  "round": 372,
+  "scan_count": 372,
+  "last_round_at": "2026-06-02T20:02:22.228343+00:00",
+  "next_round_in_seconds": 1798,
+  "updated_at": "2026-06-02T20:02:23.996994+00:00",
   "config": {
     "initial_cash_usd": 1000.0,
     "max_positions": 3,
@@ -18,25 +18,99 @@
     "strategy_version": "v4.1-whale-tuned"
   },
   "summary": {
-    "cash_usd": 792.85813067,
-    "positions_value_usd": 0.0,
-    "equity_usd": 792.85813067,
+    "cash_usd": 729.42948022,
+    "positions_value_usd": 63.42865045360001,
+    "equity_usd": 792.8581306735999,
     "realized_pnl_usd": -207.14186934,
-    "open_positions": 0,
+    "open_positions": 1,
     "initial_cash_usd": 1000.0,
     "total_pnl_usd": -207.1419,
     "total_pnl_pct": -20.7142,
-    "unrealized_pnl_usd": 0
+    "unrealized_pnl_usd": 0.0
   },
   "reconciliation": {
     "initial_cash_usd": 1000.0,
-    "cash_usd": 792.85813067,
-    "positions_value_usd": 0.0,
-    "equity_usd": 792.85813067,
+    "cash_usd": 729.42948022,
+    "positions_value_usd": 63.42865045360001,
+    "equity_usd": 792.8581306735999,
     "realized_pnl_usd": -207.14186934,
-    "unrealized_pnl_usd": 0
+    "unrealized_pnl_usd": 0.0
   },
-  "open_positions": [],
+  "open_positions": [
+    {
+      "trade_id": "T000017",
+      "status": "OPEN",
+      "address": "C3qvzih5Kir3xDeAcayEJWawGhiobVRrHuPLQT79pump",
+      "symbol": "ONEPIECESTR",
+      "name": "OnePieceStrategy",
+      "opened_at": "2026-06-02T20:02:23.570368+00:00",
+      "closed_at": null,
+      "entry_round": 372,
+      "exit_round": null,
+      "entry_price": 5.0716514814817126e-05,
+      "signal_price": 6.537019827135665e-05,
+      "execution_price": 5.0716514814817126e-05,
+      "last_price": 5.0716514814817126e-05,
+      "take_profit_price": 6.8467295e-05,
+      "stop_loss_price": 4.4630533e-05,
+      "units": 1250650.81236751,
+      "cost_usd": 63.4287,
+      "market_value_usd": 63.4287,
+      "unrealized_pnl_usd": 0.0,
+      "unrealized_pnl_pct": 0.0,
+      "max_pnl_pct": 0.0,
+      "min_pnl_pct": 0.0,
+      "score": 111.26,
+      "wallet_type_label": "Whale",
+      "trigger_wallet_count": 6,
+      "trigger_wallets": [
+        "5k2dgddrz9HQQ8hUZU1kVjJu2NaszNpYUc1GK1FfdTiL",
+        "CMyH7m8zpcEGMBp66LLGRqLoi8x5ZuHDNUjNLjzhvM3D",
+        "9nP8diLFigo1wmWxg2R1k4JEHnmw6MtUvmeDudVfwpE6",
+        "2g8aywLfRYmCM9NZkizZxcmGy9WmifRVpoFphsJeVKc9",
+        "Bt29b745JKvhZKnULsmkTouYgyebVco6WFhCaAsPMBMc",
+        "ADMgRMWAwa7du95e8mhSfjA1uJzXV7fBXTrmFziDG48b"
+      ],
+      "signal_amount_usd": 4439.8922,
+      "sold_ratio_pct": 48.71,
+      "holders": 590.0,
+      "market_cap_usd": 50425.2108,
+      "top10_holder_pct": 19.3366,
+      "cash_before_buy": 792.8581,
+      "cash_after_buy": 729.4295,
+      "equity_at_entry": 792.8581,
+      "exit_reason": null,
+      "realized_pnl_usd": null,
+      "realized_pnl_pct": null,
+      "held_rounds": null,
+      "signal_snapshot": {
+        "chain": "solana",
+        "token_address": "C3qvzih5Kir3xDeAcayEJWawGhiobVRrHuPLQT79pump",
+        "symbol": "ONEPIECESTR",
+        "name": "OnePieceStrategy",
+        "holders": 590.0,
+        "market_cap_usd": 50425.2108,
+        "top10_holder_pct": 19.3366,
+        "wallet_type": "3",
+        "wallet_type_label": "Whale",
+        "trigger_wallet_count": 6,
+        "trigger_wallets": [
+          "5k2dgddrz9HQQ8hUZU1kVjJu2NaszNpYUc1GK1FfdTiL",
+          "CMyH7m8zpcEGMBp66LLGRqLoi8x5ZuHDNUjNLjzhvM3D",
+          "9nP8diLFigo1wmWxg2R1k4JEHnmw6MtUvmeDudVfwpE6",
+          "2g8aywLfRYmCM9NZkizZxcmGy9WmifRVpoFphsJeVKc9",
+          "Bt29b745JKvhZKnULsmkTouYgyebVco6WFhCaAsPMBMc",
+          "ADMgRMWAwa7du95e8mhSfjA1uJzXV7fBXTrmFziDG48b"
+        ],
+        "signal_amount_usd": 4439.8922,
+        "signal_price": 6.537019827135665e-05,
+        "sold_ratio_pct": 48.71,
+        "signal_timestamp_ms": "1780357066893",
+        "signal_cursor": "1780357066893!@#162384",
+        "score": 111.26
+      }
+    }
+  ],
   "closed_positions": [
     {
       "trade_id": "T000001",
@@ -1188,6 +1262,21 @@
     }
   ],
   "position_ledger": [
+    {
+      "trade_id": "T000017",
+      "symbol": "ONEPIECESTR",
+      "name": "OnePieceStrategy",
+      "status": "持仓中",
+      "buy_price": 5.0716514814817126e-05,
+      "sell_price": null,
+      "current_price": 5.0716514814817126e-05,
+      "cost_usd": 63.4287,
+      "pnl_usd": 0.0,
+      "pnl_pct": 0.0,
+      "opened_at": "2026-06-02T20:02:23.570368+00:00",
+      "closed_at": null,
+      "exit_reason": null
+    },
     {
       "trade_id": "T000001",
       "symbol": "GAPLA",
@@ -4405,17 +4494,17 @@
       "cash_usd": 792.8581,
       "positions_value_usd": 0.0,
       "open_positions": 0
+    },
+    {
+      "round": 372,
+      "ts": "2026-06-02T20:02:24.346683+00:00",
+      "equity_usd": 792.8581,
+      "cash_usd": 729.4295,
+      "positions_value_usd": 63.4287,
+      "open_positions": 1
     }
   ],
   "round_activity": [
-    {
-      "round": 342,
-      "ts": "2026-06-02T04:31:13.405056+00:00",
-      "signals": 12,
-      "candidates": 0,
-      "opened": 0,
-      "positions": 0
-    },
     {
       "round": 343,
       "ts": "2026-06-02T05:07:40.602326+00:00",
@@ -4647,6 +4736,14 @@
       "candidates": 0,
       "opened": 0,
       "positions": 0
+    },
+    {
+      "round": 372,
+      "ts": "2026-06-02T20:02:23.571333+00:00",
+      "signals": 9,
+      "candidates": 1,
+      "opened": 1,
+      "positions": 1
     }
   ],
   "recent_trades": [
@@ -5289,21 +5386,41 @@
       "realized_pnl_pct": -21.6911,
       "unrealized_pnl_pct": -21.6911,
       "exit_reason": "STOP_LOSS"
+    },
+    {
+      "ts": "2026-06-02T20:02:23.570463+00:00",
+      "type": "BUY",
+      "round": 372,
+      "trade_id": "T000017",
+      "symbol": "ONEPIECESTR",
+      "name": "OnePieceStrategy",
+      "address": "C3qvzih5Kir3xDeAcayEJWawGhiobVRrHuPLQT79pump",
+      "buy_price": 5.0716514814817126e-05,
+      "sell_price": null,
+      "entry_price": 5.0716514814817126e-05,
+      "last_price": 5.0716514814817126e-05,
+      "cost_usd": 63.4287,
+      "pnl_usd": null,
+      "pnl_pct": 0.0,
+      "realized_pnl_usd": null,
+      "realized_pnl_pct": null,
+      "unrealized_pnl_pct": 0.0,
+      "exit_reason": null
     }
   ],
   "risk": {
-    "cooldowns": 1,
+    "cooldowns": 0,
     "blacklist": 5,
     "stop_loss_counts": 9
   },
   "strategy_analysis": {
     "strategy_version": "v4.1-whale-tuned",
-    "round": 371,
+    "round": 372,
     "equity_usd": 792.8581,
     "total_return_pct": -20.7142,
     "realized_pnl_usd": -207.14186934,
     "closed_trades": 16,
-    "open_trades": 0,
+    "open_trades": 1,
     "overall_closed": {
       "count": 16,
       "win_rate": 0.125,
@@ -5312,17 +5429,17 @@
     },
     "by_wallet_type": {
       "Whale": {
-        "count": 16,
-        "win_rate": 0.125,
-        "avg_pnl_pct": -17.6081,
+        "count": 17,
+        "win_rate": 0.1176,
+        "avg_pnl_pct": -16.5723,
         "total_pnl_usd": -207.142
       }
     },
     "by_sold_ratio": {
       "low_sold<=50": {
-        "count": 16,
-        "win_rate": 0.125,
-        "avg_pnl_pct": -17.6081,
+        "count": 17,
+        "win_rate": 0.1176,
+        "avg_pnl_pct": -16.5723,
         "total_pnl_usd": -207.142
       },
       "mid_sold_51_75": {
@@ -5340,9 +5457,9 @@
     },
     "by_score_bucket": {
       "80+": {
-        "count": 16,
-        "win_rate": 0.125,
-        "avg_pnl_pct": -17.6081,
+        "count": 17,
+        "win_rate": 0.1176,
+        "avg_pnl_pct": -16.5723,
         "total_pnl_usd": -207.142
       },
       "<60": {
@@ -5360,17 +5477,6 @@
     },
     "recommendations": [],
     "recent_trades": [
-      {
-        "symbol": "420.69",
-        "status": "closed",
-        "exit_reason": "STOP_LOSS",
-        "score": 96.64,
-        "wallet_type": "Whale",
-        "sold_ratio_pct": 21.8,
-        "trigger_wallet_count": 4,
-        "pnl_usd": -59.874,
-        "pnl_pct": -82.6023
-      },
       {
         "symbol": "SPCX",
         "status": "closed",
@@ -5469,6 +5575,17 @@
         "trigger_wallet_count": 6,
         "pnl_usd": -14.0013,
         "pnl_pct": -21.6911
+      },
+      {
+        "symbol": "ONEPIECESTR",
+        "status": "open",
+        "exit_reason": null,
+        "score": 111.26,
+        "wallet_type": "Whale",
+        "sold_ratio_pct": 48.71,
+        "trigger_wallet_count": 6,
+        "pnl_usd": null,
+        "pnl_pct": null
       }
     ]
   },
@@ -5480,10 +5597,10 @@
     "scan_interval_seconds": 1800,
     "scan_interval_label": "30 分钟",
     "session_started_at": "2026-05-25T10:34:29.261062+00:00",
-    "last_tick_at": "2026-06-02T19:32:20.781893+00:00",
-    "seconds_since_last_tick": 0,
-    "session_uptime_seconds": 723472,
-    "cumulative_online_seconds": 667628,
-    "tick_count": 377
+    "last_tick_at": "2026-06-02T20:02:23.571613+00:00",
+    "seconds_since_last_tick": 1,
+    "session_uptime_seconds": 725275,
+    "cumulative_online_seconds": 669431,
+    "tick_count": 378
   }
 }
