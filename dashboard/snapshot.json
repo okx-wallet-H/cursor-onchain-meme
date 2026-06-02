@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-06-02T23:02:40.663859+00:00",
+  "generated_at": "2026-06-02T23:32:44.201280+00:00",
   "project": "meme-onchain-explorer",
   "chain": "solana",
-  "round": 378,
-  "scan_count": 378,
-  "last_round_at": "2026-06-02T23:02:39.697856+00:00",
-  "next_round_in_seconds": 1799,
-  "updated_at": "2026-06-02T23:02:40.614587+00:00",
+  "round": 379,
+  "scan_count": 379,
+  "last_round_at": "2026-06-02T23:32:42.154778+00:00",
+  "next_round_in_seconds": 1798,
+  "updated_at": "2026-06-02T23:32:43.872520+00:00",
   "config": {
     "initial_cash_usd": 1000.0,
     "max_positions": 3,
@@ -18,25 +18,95 @@
     "strategy_version": "v4.1-whale-tuned"
   },
   "summary": {
-    "cash_usd": 848.6780561,
-    "positions_value_usd": 0.0,
-    "equity_usd": 848.6780561,
+    "cash_usd": 780.78381161,
+    "positions_value_usd": 67.894244488,
+    "equity_usd": 848.6780560980001,
     "realized_pnl_usd": -151.32194392,
-    "open_positions": 0,
+    "open_positions": 1,
     "initial_cash_usd": 1000.0,
     "total_pnl_usd": -151.3219,
     "total_pnl_pct": -15.1322,
-    "unrealized_pnl_usd": 0
+    "unrealized_pnl_usd": 0.0
   },
   "reconciliation": {
     "initial_cash_usd": 1000.0,
-    "cash_usd": 848.6780561,
-    "positions_value_usd": 0.0,
-    "equity_usd": 848.6780561,
+    "cash_usd": 780.78381161,
+    "positions_value_usd": 67.894244488,
+    "equity_usd": 848.6780560980001,
     "realized_pnl_usd": -151.32194392,
-    "unrealized_pnl_usd": 0
+    "unrealized_pnl_usd": 0.0
   },
-  "open_positions": [],
+  "open_positions": [
+    {
+      "trade_id": "T000019",
+      "status": "OPEN",
+      "address": "2VkpEcZ7zUVWZ8RUPuhKjaARw2vPUnhV2dcmco7spump",
+      "symbol": "Willow",
+      "name": "One Wish Willow",
+      "opened_at": "2026-06-02T23:32:43.426172+00:00",
+      "closed_at": null,
+      "entry_round": 379,
+      "exit_round": null,
+      "entry_price": 0.00014593371693695276,
+      "signal_price": 5.593371368677891e-05,
+      "execution_price": 0.00014593371693695276,
+      "last_price": 0.00014593371693695276,
+      "take_profit_price": 0.000197010518,
+      "stop_loss_price": 0.000128421671,
+      "units": 465240.28794067,
+      "cost_usd": 67.8942,
+      "market_value_usd": 67.8942,
+      "unrealized_pnl_usd": 0.0,
+      "unrealized_pnl_pct": 0.0,
+      "max_pnl_pct": 0.0,
+      "min_pnl_pct": 0.0,
+      "score": 94.76,
+      "wallet_type_label": "Whale",
+      "trigger_wallet_count": 4,
+      "trigger_wallets": [
+        "4AoHp73iVMQ2ApS34uuQot452CkDe8Kthqupj6VkG4dg",
+        "9nP8diLFigo1wmWxg2R1k4JEHnmw6MtUvmeDudVfwpE6",
+        "BPD1LpGUnWoQbZuoqWtEVZKcC8uFLf6Uh91qhq5nF3Fi",
+        "AyrN8xP1rTPnLTnkkeBB7BTTjJ2X61eJdhmi9j6ikQFZ"
+      ],
+      "signal_amount_usd": 1310.9292,
+      "sold_ratio_pct": 20.95,
+      "holders": 734.0,
+      "market_cap_usd": 145933.7005,
+      "top10_holder_pct": 20.203,
+      "cash_before_buy": 848.6781,
+      "cash_after_buy": 780.7838,
+      "equity_at_entry": 848.6781,
+      "exit_reason": null,
+      "realized_pnl_usd": null,
+      "realized_pnl_pct": null,
+      "held_rounds": null,
+      "signal_snapshot": {
+        "chain": "solana",
+        "token_address": "2VkpEcZ7zUVWZ8RUPuhKjaARw2vPUnhV2dcmco7spump",
+        "symbol": "Willow",
+        "name": "One Wish Willow",
+        "holders": 734.0,
+        "market_cap_usd": 145933.7005,
+        "top10_holder_pct": 20.203,
+        "wallet_type": "3",
+        "wallet_type_label": "Whale",
+        "trigger_wallet_count": 4,
+        "trigger_wallets": [
+          "4AoHp73iVMQ2ApS34uuQot452CkDe8Kthqupj6VkG4dg",
+          "9nP8diLFigo1wmWxg2R1k4JEHnmw6MtUvmeDudVfwpE6",
+          "BPD1LpGUnWoQbZuoqWtEVZKcC8uFLf6Uh91qhq5nF3Fi",
+          "AyrN8xP1rTPnLTnkkeBB7BTTjJ2X61eJdhmi9j6ikQFZ"
+        ],
+        "signal_amount_usd": 1310.9292,
+        "signal_price": 5.593371368677891e-05,
+        "sold_ratio_pct": 20.95,
+        "signal_timestamp_ms": "1780431910216",
+        "signal_cursor": "1780431910216!@#162612",
+        "score": 94.76
+      }
+    }
+  ],
   "closed_positions": [
     {
       "trade_id": "T000001",
@@ -1330,6 +1400,21 @@
     }
   ],
   "position_ledger": [
+    {
+      "trade_id": "T000019",
+      "symbol": "Willow",
+      "name": "One Wish Willow",
+      "status": "持仓中",
+      "buy_price": 0.00014593371693695276,
+      "sell_price": null,
+      "current_price": 0.00014593371693695276,
+      "cost_usd": 67.8942,
+      "pnl_usd": 0.0,
+      "pnl_pct": 0.0,
+      "opened_at": "2026-06-02T23:32:43.426172+00:00",
+      "closed_at": null,
+      "exit_reason": null
+    },
     {
       "trade_id": "T000001",
       "symbol": "GAPLA",
@@ -4633,17 +4718,17 @@
       "cash_usd": 848.6781,
       "positions_value_usd": 0.0,
       "open_positions": 0
+    },
+    {
+      "round": 379,
+      "ts": "2026-06-02T23:32:44.197458+00:00",
+      "equity_usd": 848.6781,
+      "cash_usd": 780.7838,
+      "positions_value_usd": 67.8942,
+      "open_positions": 1
     }
   ],
   "round_activity": [
-    {
-      "round": 349,
-      "ts": "2026-06-02T08:31:00.116278+00:00",
-      "signals": 12,
-      "candidates": 0,
-      "opened": 0,
-      "positions": 0
-    },
     {
       "round": 350,
       "ts": "2026-06-02T09:01:02.590036+00:00",
@@ -4875,6 +4960,14 @@
       "candidates": 0,
       "opened": 0,
       "positions": 0
+    },
+    {
+      "round": 379,
+      "ts": "2026-06-02T23:32:43.427352+00:00",
+      "signals": 10,
+      "candidates": 1,
+      "opened": 1,
+      "positions": 1
     }
   ],
   "recent_trades": [
@@ -5597,21 +5690,41 @@
       "realized_pnl_pct": 113.9531,
       "unrealized_pnl_pct": 113.9531,
       "exit_reason": "TAKE_PROFIT"
+    },
+    {
+      "ts": "2026-06-02T23:32:43.426305+00:00",
+      "type": "BUY",
+      "round": 379,
+      "trade_id": "T000019",
+      "symbol": "Willow",
+      "name": "One Wish Willow",
+      "address": "2VkpEcZ7zUVWZ8RUPuhKjaARw2vPUnhV2dcmco7spump",
+      "buy_price": 0.00014593371693695276,
+      "sell_price": null,
+      "entry_price": 0.00014593371693695276,
+      "last_price": 0.00014593371693695276,
+      "cost_usd": 67.8942,
+      "pnl_usd": null,
+      "pnl_pct": 0.0,
+      "realized_pnl_usd": null,
+      "realized_pnl_pct": null,
+      "unrealized_pnl_pct": 0.0,
+      "exit_reason": null
     }
   ],
   "risk": {
-    "cooldowns": 1,
+    "cooldowns": 0,
     "blacklist": 6,
     "stop_loss_counts": 9
   },
   "strategy_analysis": {
     "strategy_version": "v4.1-whale-tuned",
-    "round": 378,
+    "round": 379,
     "equity_usd": 848.6781,
     "total_return_pct": -15.1322,
     "realized_pnl_usd": -151.32194392,
     "closed_trades": 18,
-    "open_trades": 0,
+    "open_trades": 1,
     "overall_closed": {
       "count": 18,
       "win_rate": 0.1667,
@@ -5620,17 +5733,17 @@
     },
     "by_wallet_type": {
       "Whale": {
-        "count": 18,
-        "win_rate": 0.1667,
-        "avg_pnl_pct": -10.642,
+        "count": 19,
+        "win_rate": 0.1579,
+        "avg_pnl_pct": -10.0819,
         "total_pnl_usd": -151.3221
       }
     },
     "by_sold_ratio": {
       "low_sold<=50": {
-        "count": 18,
-        "win_rate": 0.1667,
-        "avg_pnl_pct": -10.642,
+        "count": 19,
+        "win_rate": 0.1579,
+        "avg_pnl_pct": -10.0819,
         "total_pnl_usd": -151.3221
       },
       "mid_sold_51_75": {
@@ -5648,9 +5761,9 @@
     },
     "by_score_bucket": {
       "80+": {
-        "count": 18,
-        "win_rate": 0.1667,
-        "avg_pnl_pct": -10.642,
+        "count": 19,
+        "win_rate": 0.1579,
+        "avg_pnl_pct": -10.0819,
         "total_pnl_usd": -151.3221
       },
       "<60": {
@@ -5668,17 +5781,6 @@
     },
     "recommendations": [],
     "recent_trades": [
-      {
-        "symbol": "PACKS",
-        "status": "closed",
-        "exit_reason": "STOP_LOSS",
-        "score": 101.0,
-        "wallet_type": "Whale",
-        "sold_ratio_pct": 0.0,
-        "trigger_wallet_count": 4,
-        "pnl_usd": -25.7185,
-        "pnl_pct": -38.3015
-      },
       {
         "symbol": "PACKS",
         "status": "closed",
@@ -5777,6 +5879,17 @@
         "trigger_wallet_count": 4,
         "pnl_usd": 70.9038,
         "pnl_pct": 113.9531
+      },
+      {
+        "symbol": "Willow",
+        "status": "open",
+        "exit_reason": null,
+        "score": 94.76,
+        "wallet_type": "Whale",
+        "sold_ratio_pct": 20.95,
+        "trigger_wallet_count": 4,
+        "pnl_usd": null,
+        "pnl_pct": null
       }
     ]
   },
@@ -5788,10 +5901,10 @@
     "scan_interval_seconds": 1800,
     "scan_interval_label": "30 分钟",
     "session_started_at": "2026-05-25T10:34:29.261062+00:00",
-    "last_tick_at": "2026-06-02T23:02:40.463468+00:00",
-    "seconds_since_last_tick": 0,
-    "session_uptime_seconds": 736091,
-    "cumulative_online_seconds": 680248,
-    "tick_count": 384
+    "last_tick_at": "2026-06-02T23:32:43.427755+00:00",
+    "seconds_since_last_tick": 1,
+    "session_uptime_seconds": 737895,
+    "cumulative_online_seconds": 682051,
+    "tick_count": 385
   }
 }
