@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-06-03T19:04:49.990924+00:00",
+  "generated_at": "2026-06-03T19:34:53.500855+00:00",
   "project": "meme-onchain-explorer",
   "chain": "solana",
-  "round": 418,
-  "scan_count": 418,
-  "last_round_at": "2026-06-03T19:04:49.119466+00:00",
+  "round": 419,
+  "scan_count": 419,
+  "last_round_at": "2026-06-03T19:34:52.757093+00:00",
   "next_round_in_seconds": 1799,
-  "updated_at": "2026-06-03T19:04:49.945529+00:00",
+  "updated_at": "2026-06-03T19:34:53.447984+00:00",
   "config": {
     "initial_cash_usd": 1000.0,
     "max_positions": 3,
@@ -5121,17 +5121,17 @@
       "cash_usd": 826.8218,
       "positions_value_usd": 0.0,
       "open_positions": 0
+    },
+    {
+      "round": 419,
+      "ts": "2026-06-03T19:34:53.499705+00:00",
+      "equity_usd": 826.8218,
+      "cash_usd": 826.8218,
+      "positions_value_usd": 0.0,
+      "open_positions": 0
     }
   ],
   "round_activity": [
-    {
-      "round": 389,
-      "ts": "2026-06-03T04:33:11.316192+00:00",
-      "signals": 9,
-      "candidates": 0,
-      "opened": 0,
-      "positions": 0
-    },
     {
       "round": 390,
       "ts": "2026-06-03T05:03:13.931348+00:00",
@@ -5359,6 +5359,14 @@
     {
       "round": 418,
       "ts": "2026-06-03T19:04:49.764319+00:00",
+      "signals": 9,
+      "candidates": 0,
+      "opened": 0,
+      "positions": 0
+    },
+    {
+      "round": 419,
+      "ts": "2026-06-03T19:34:53.294845+00:00",
       "signals": 9,
       "candidates": 0,
       "opened": 0,
@@ -6174,7 +6182,7 @@
   },
   "strategy_analysis": {
     "strategy_version": "v4.1-whale-tuned",
-    "round": 418,
+    "round": 419,
     "equity_usd": 826.8218,
     "total_return_pct": -17.3178,
     "realized_pnl_usd": -173.17823228,
@@ -6356,10 +6364,10 @@
     "scan_interval_seconds": 1800,
     "scan_interval_label": "30 分钟",
     "session_started_at": "2026-05-25T10:34:29.261062+00:00",
-    "last_tick_at": "2026-06-03T19:04:49.764575+00:00",
+    "last_tick_at": "2026-06-03T19:34:53.295056+00:00",
     "seconds_since_last_tick": 0,
-    "session_uptime_seconds": 808221,
-    "cumulative_online_seconds": 752377,
-    "tick_count": 424
+    "session_uptime_seconds": 810024,
+    "cumulative_online_seconds": 754181,
+    "tick_count": 425
   }
 }
