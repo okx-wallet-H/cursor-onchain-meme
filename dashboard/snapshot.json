@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-06-04T19:09:09.483347+00:00",
+  "generated_at": "2026-06-04T19:39:17.042502+00:00",
   "project": "meme-onchain-explorer",
   "chain": "solana",
-  "round": 466,
-  "scan_count": 466,
-  "last_round_at": "2026-06-04T19:09:07.386286+00:00",
-  "next_round_in_seconds": 1798,
-  "updated_at": "2026-06-04T19:09:09.209533+00:00",
+  "round": 467,
+  "scan_count": 467,
+  "last_round_at": "2026-06-04T19:39:16.487374+00:00",
+  "next_round_in_seconds": 1799,
+  "updated_at": "2026-06-04T19:39:16.998435+00:00",
   "config": {
     "initial_cash_usd": 1000.0,
     "max_positions": 3,
@@ -18,97 +18,25 @@
     "strategy_version": "v4.1-whale-tuned"
   },
   "summary": {
-    "cash_usd": 760.67602633,
-    "positions_value_usd": 65.96383456785405,
-    "equity_usd": 826.6398608978541,
-    "realized_pnl_usd": -173.17823228,
-    "open_positions": 1,
+    "cash_usd": 793.68269819,
+    "positions_value_usd": 0.0,
+    "equity_usd": 793.68269819,
+    "realized_pnl_usd": -206.31730184,
+    "open_positions": 0,
     "initial_cash_usd": 1000.0,
-    "total_pnl_usd": -173.3601,
-    "total_pnl_pct": -17.336,
-    "unrealized_pnl_usd": -0.1819
+    "total_pnl_usd": -206.3173,
+    "total_pnl_pct": -20.6317,
+    "unrealized_pnl_usd": 0
   },
   "reconciliation": {
     "initial_cash_usd": 1000.0,
-    "cash_usd": 760.67602633,
-    "positions_value_usd": 65.96383456785405,
-    "equity_usd": 826.6398608978541,
-    "realized_pnl_usd": -173.17823228,
-    "unrealized_pnl_usd": -0.1819
+    "cash_usd": 793.68269819,
+    "positions_value_usd": 0.0,
+    "equity_usd": 793.68269819,
+    "realized_pnl_usd": -206.31730184,
+    "unrealized_pnl_usd": 0
   },
-  "open_positions": [
-    {
-      "trade_id": "T000021",
-      "status": "OPEN",
-      "address": "93DZYptL6z9BToESyPQ3iU6pJBAVt5fPDwaNcQarbonk",
-      "symbol": "BABY",
-      "name": "Baby",
-      "opened_at": "2026-06-04T19:09:08.723734+00:00",
-      "closed_at": null,
-      "entry_round": 466,
-      "exit_round": null,
-      "entry_price": 7.496369317025146e-05,
-      "signal_price": 7.672816118827299e-05,
-      "execution_price": 7.496369317025146e-05,
-      "last_price": 7.475753614249588e-05,
-      "take_profit_price": 0.000101200986,
-      "stop_loss_price": 6.596805e-05,
-      "units": 882370.36654231,
-      "cost_usd": 66.1457,
-      "market_value_usd": 65.9638,
-      "unrealized_pnl_usd": -0.1819,
-      "unrealized_pnl_pct": -0.275,
-      "max_pnl_pct": 0.0,
-      "min_pnl_pct": 0.0,
-      "score": 101.06,
-      "wallet_type_label": "Whale",
-      "trigger_wallet_count": 5,
-      "trigger_wallets": [
-        "p22XTRG9SEBM7kYUjasra2udVJ6PmCPjKT2sm8CMWfL",
-        "4MNiUt5kptveg8HN2nmcmRzoVRThBFXoAtfFrbSdWvJR",
-        "D1FRYdKRUEbuSY93DVUMJzzWJHnxE6Ey23AhHQAoFYve",
-        "8GbD45YUDKrUyhPjjy7iajTaGC1Fc8PASd27hG1p7Yq8",
-        "BKYYNoYNEmDNB4kgqQ12jHHEmGpLFK9hgjsBUjt3Cu6i"
-      ],
-      "signal_amount_usd": 2793.511,
-      "sold_ratio_pct": 49.72,
-      "holders": 815.0,
-      "market_cap_usd": 74346.0674,
-      "top10_holder_pct": 16.4562,
-      "cash_before_buy": 826.8218,
-      "cash_after_buy": 760.676,
-      "equity_at_entry": 826.8218,
-      "exit_reason": null,
-      "realized_pnl_usd": null,
-      "realized_pnl_pct": null,
-      "held_rounds": null,
-      "signal_snapshot": {
-        "chain": "solana",
-        "token_address": "93DZYptL6z9BToESyPQ3iU6pJBAVt5fPDwaNcQarbonk",
-        "symbol": "BABY",
-        "name": "Baby",
-        "holders": 815.0,
-        "market_cap_usd": 74346.0674,
-        "top10_holder_pct": 16.4562,
-        "wallet_type": "3",
-        "wallet_type_label": "Whale",
-        "trigger_wallet_count": 5,
-        "trigger_wallets": [
-          "p22XTRG9SEBM7kYUjasra2udVJ6PmCPjKT2sm8CMWfL",
-          "4MNiUt5kptveg8HN2nmcmRzoVRThBFXoAtfFrbSdWvJR",
-          "D1FRYdKRUEbuSY93DVUMJzzWJHnxE6Ey23AhHQAoFYve",
-          "8GbD45YUDKrUyhPjjy7iajTaGC1Fc8PASd27hG1p7Yq8",
-          "BKYYNoYNEmDNB4kgqQ12jHHEmGpLFK9hgjsBUjt3Cu6i"
-        ],
-        "signal_amount_usd": 2793.511,
-        "signal_price": 7.672816118827299e-05,
-        "sold_ratio_pct": 49.72,
-        "signal_timestamp_ms": "1780599980034",
-        "signal_cursor": "1780599980034!@#163178",
-        "score": 101.06
-      }
-    }
-  ],
+  "open_positions": [],
   "closed_positions": [
     {
       "trade_id": "T000001",
@@ -1537,24 +1465,80 @@
         "signal_cursor": "1780431910216!@#162612",
         "score": 93.82
       }
+    },
+    {
+      "trade_id": "T000021",
+      "status": "CLOSED",
+      "address": "93DZYptL6z9BToESyPQ3iU6pJBAVt5fPDwaNcQarbonk",
+      "symbol": "BABY",
+      "name": "Baby",
+      "opened_at": "2026-06-04T19:09:08.723734+00:00",
+      "closed_at": "2026-06-04T19:39:16.485856+00:00",
+      "entry_round": 466,
+      "exit_round": 466,
+      "entry_price": 7.496369317025146e-05,
+      "signal_price": 7.672816118827299e-05,
+      "execution_price": 7.496369317025146e-05,
+      "last_price": 3.7406822703962336e-05,
+      "take_profit_price": 0.000101200986,
+      "stop_loss_price": 6.596805e-05,
+      "units": 882370.36654231,
+      "cost_usd": 66.1457,
+      "market_value_usd": 33.0067,
+      "unrealized_pnl_usd": 0.0,
+      "unrealized_pnl_pct": -50.1001,
+      "max_pnl_pct": 0.0,
+      "min_pnl_pct": -50.1001,
+      "score": 101.06,
+      "wallet_type_label": "Whale",
+      "trigger_wallet_count": 5,
+      "trigger_wallets": [
+        "p22XTRG9SEBM7kYUjasra2udVJ6PmCPjKT2sm8CMWfL",
+        "4MNiUt5kptveg8HN2nmcmRzoVRThBFXoAtfFrbSdWvJR",
+        "D1FRYdKRUEbuSY93DVUMJzzWJHnxE6Ey23AhHQAoFYve",
+        "8GbD45YUDKrUyhPjjy7iajTaGC1Fc8PASd27hG1p7Yq8",
+        "BKYYNoYNEmDNB4kgqQ12jHHEmGpLFK9hgjsBUjt3Cu6i"
+      ],
+      "signal_amount_usd": 2793.511,
+      "sold_ratio_pct": 49.72,
+      "holders": 815.0,
+      "market_cap_usd": 74346.0674,
+      "top10_holder_pct": 16.4562,
+      "cash_before_buy": 826.8218,
+      "cash_after_buy": 760.676,
+      "equity_at_entry": 826.8218,
+      "exit_reason": "STOP_LOSS",
+      "realized_pnl_usd": -33.1391,
+      "realized_pnl_pct": -50.1001,
+      "held_rounds": 0,
+      "signal_snapshot": {
+        "chain": "solana",
+        "token_address": "93DZYptL6z9BToESyPQ3iU6pJBAVt5fPDwaNcQarbonk",
+        "symbol": "BABY",
+        "name": "Baby",
+        "holders": 815.0,
+        "market_cap_usd": 74346.0674,
+        "top10_holder_pct": 16.4562,
+        "wallet_type": "3",
+        "wallet_type_label": "Whale",
+        "trigger_wallet_count": 5,
+        "trigger_wallets": [
+          "p22XTRG9SEBM7kYUjasra2udVJ6PmCPjKT2sm8CMWfL",
+          "4MNiUt5kptveg8HN2nmcmRzoVRThBFXoAtfFrbSdWvJR",
+          "D1FRYdKRUEbuSY93DVUMJzzWJHnxE6Ey23AhHQAoFYve",
+          "8GbD45YUDKrUyhPjjy7iajTaGC1Fc8PASd27hG1p7Yq8",
+          "BKYYNoYNEmDNB4kgqQ12jHHEmGpLFK9hgjsBUjt3Cu6i"
+        ],
+        "signal_amount_usd": 2793.511,
+        "signal_price": 7.672816118827299e-05,
+        "sold_ratio_pct": 49.72,
+        "signal_timestamp_ms": "1780599980034",
+        "signal_cursor": "1780599980034!@#163178",
+        "score": 101.06
+      }
     }
   ],
   "position_ledger": [
-    {
-      "trade_id": "T000021",
-      "symbol": "BABY",
-      "name": "Baby",
-      "status": "持仓中",
-      "buy_price": 7.496369317025146e-05,
-      "sell_price": null,
-      "current_price": 7.475753614249588e-05,
-      "cost_usd": 66.1457,
-      "pnl_usd": -0.1819,
-      "pnl_pct": -0.275,
-      "opened_at": "2026-06-04T19:09:08.723734+00:00",
-      "closed_at": null,
-      "exit_reason": null
-    },
     {
       "trade_id": "T000001",
       "symbol": "GAPLA",
@@ -1853,6 +1837,21 @@
       "pnl_pct": -12.7108,
       "opened_at": "2026-06-03T01:32:54.803287+00:00",
       "closed_at": "2026-06-03T02:33:01.650598+00:00",
+      "exit_reason": "STOP_LOSS"
+    },
+    {
+      "trade_id": "T000021",
+      "symbol": "BABY",
+      "name": "Baby",
+      "status": "已平仓",
+      "buy_price": 7.496369317025146e-05,
+      "sell_price": 3.7406822703962336e-05,
+      "current_price": null,
+      "cost_usd": 66.1457,
+      "pnl_usd": -33.1391,
+      "pnl_pct": -50.1001,
+      "opened_at": "2026-06-04T19:09:08.723734+00:00",
+      "closed_at": "2026-06-04T19:39:16.485856+00:00",
       "exit_reason": "STOP_LOSS"
     }
   ],
@@ -5592,17 +5591,17 @@
       "cash_usd": 760.676,
       "positions_value_usd": 65.9638,
       "open_positions": 1
+    },
+    {
+      "round": 467,
+      "ts": "2026-06-04T19:39:17.041445+00:00",
+      "equity_usd": 793.6827,
+      "cash_usd": 793.6827,
+      "positions_value_usd": 0.0,
+      "open_positions": 0
     }
   ],
   "round_activity": [
-    {
-      "round": 437,
-      "ts": "2026-06-04T04:36:27.909695+00:00",
-      "signals": 10,
-      "candidates": 0,
-      "opened": 0,
-      "positions": 0
-    },
     {
       "round": 438,
       "ts": "2026-06-04T05:06:40.611137+00:00",
@@ -5834,29 +5833,17 @@
       "candidates": 1,
       "opened": 1,
       "positions": 1
+    },
+    {
+      "round": 467,
+      "ts": "2026-06-04T19:39:16.796943+00:00",
+      "signals": 12,
+      "candidates": 0,
+      "opened": 0,
+      "positions": 0
     }
   ],
   "recent_trades": [
-    {
-      "ts": "2026-05-25T13:39:03.219735+00:00",
-      "type": "BUY",
-      "round": 7,
-      "trade_id": "T000002",
-      "symbol": "SPCX",
-      "name": "SpaceExplorationTechnologiesCorp",
-      "address": "26YRpwvWhTSBSAkQbhNP6AXBNrJe8uRxibAn7ZXXpump",
-      "buy_price": 0.0003516335462391845,
-      "sell_price": null,
-      "entry_price": 0.0003516335462391845,
-      "last_price": 0.0003516335462391845,
-      "cost_usd": 80.0,
-      "pnl_usd": null,
-      "pnl_pct": 0.0,
-      "realized_pnl_usd": null,
-      "realized_pnl_pct": null,
-      "unrealized_pnl_pct": 0.0,
-      "exit_reason": null
-    },
     {
       "ts": "2026-05-25T14:35:11.710780+00:00",
       "type": "SELL",
@@ -6636,41 +6623,61 @@
       "realized_pnl_pct": null,
       "unrealized_pnl_pct": 0.0,
       "exit_reason": null
+    },
+    {
+      "ts": "2026-06-04T19:39:16.486024+00:00",
+      "type": "SELL",
+      "round": 466,
+      "trade_id": "T000021",
+      "symbol": "BABY",
+      "name": "Baby",
+      "address": "93DZYptL6z9BToESyPQ3iU6pJBAVt5fPDwaNcQarbonk",
+      "buy_price": 7.496369317025146e-05,
+      "sell_price": 3.7406822703962336e-05,
+      "entry_price": 7.496369317025146e-05,
+      "last_price": 3.7406822703962336e-05,
+      "cost_usd": 66.1457,
+      "pnl_usd": -33.1391,
+      "pnl_pct": -50.1001,
+      "realized_pnl_usd": -33.1391,
+      "realized_pnl_pct": -50.1001,
+      "unrealized_pnl_pct": -50.1001,
+      "exit_reason": "STOP_LOSS"
     }
   ],
   "risk": {
-    "cooldowns": 0,
+    "cooldowns": 1,
     "blacklist": 7,
-    "stop_loss_counts": 10
+    "stop_loss_counts": 11
   },
   "strategy_analysis": {
     "strategy_version": "v4.1-whale-tuned",
-    "round": 466,
-    "equity_usd": 826.6399,
-    "total_return_pct": -17.336,
-    "realized_pnl_usd": -173.17823228,
-    "closed_trades": 20,
-    "open_trades": 1,
+    "round": 467,
+    "equity_usd": 793.6827,
+    "total_return_pct": -20.6317,
+    "realized_pnl_usd": -206.31730184,
+    "closed_trades": 21,
+    "open_trades": 0,
     "overall_closed": {
-      "count": 20,
-      "win_rate": 0.15,
-      "avg_pnl_pct": -11.1974,
-      "total_pnl_usd": -173.1784
+      "count": 21,
+      "win_rate": 0.1429,
+      "avg_pnl_pct": -13.0499,
+      "total_pnl_usd": -206.3175
     },
     "by_wallet_type": {
       "Whale": {
         "count": 21,
         "win_rate": 0.1429,
-        "avg_pnl_pct": -10.6642,
-        "total_pnl_usd": -173.1784
+        "avg_pnl_pct": -13.0499,
+        "total_pnl_usd": -206.3175
       }
     },
     "by_sold_ratio": {
       "low_sold<=50": {
         "count": 21,
         "win_rate": 0.1429,
-        "avg_pnl_pct": -10.6642,
-        "total_pnl_usd": -173.1784
+        "avg_pnl_pct": -13.0499,
+        "total_pnl_usd": -206.3175
       },
       "mid_sold_51_75": {
         "count": 0,
@@ -6689,8 +6696,8 @@
       "80+": {
         "count": 21,
         "win_rate": 0.1429,
-        "avg_pnl_pct": -10.6642,
-        "total_pnl_usd": -173.1784
+        "avg_pnl_pct": -13.0499,
+        "total_pnl_usd": -206.3175
       },
       "<60": {
         "count": 0,
@@ -6808,14 +6815,14 @@
       },
       {
         "symbol": "BABY",
-        "status": "open",
-        "exit_reason": null,
+        "status": "closed",
+        "exit_reason": "STOP_LOSS",
         "score": 101.06,
         "wallet_type": "Whale",
         "sold_ratio_pct": 49.72,
         "trigger_wallet_count": 5,
-        "pnl_usd": null,
-        "pnl_pct": null
+        "pnl_usd": -33.1391,
+        "pnl_pct": -50.1001
       }
     ]
   },
@@ -6827,10 +6834,10 @@
     "scan_interval_seconds": 1800,
     "scan_interval_label": "30 分钟",
     "session_started_at": "2026-05-25T10:34:29.261062+00:00",
-    "last_tick_at": "2026-06-04T19:09:08.725510+00:00",
-    "seconds_since_last_tick": 1,
-    "session_uptime_seconds": 894880,
-    "cumulative_online_seconds": 839036,
-    "tick_count": 472
+    "last_tick_at": "2026-06-04T19:39:16.797145+00:00",
+    "seconds_since_last_tick": 0,
+    "session_uptime_seconds": 896688,
+    "cumulative_online_seconds": 840844,
+    "tick_count": 473
   }
 }
